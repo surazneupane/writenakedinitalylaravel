@@ -115,4 +115,6 @@ return [
         'name' => env('MAIL_FROM_NAME', 'Example'),
     ],
 
+    "adminemail" => env('ADMIN_EMAIL', 'admin@writenakedmethod.com')
+
 ];
