@@ -2,6 +2,7 @@ const emailInput = document.getElementById("emailInput");
 const downloadBtn = document.getElementById("downloadBtn");
 const emailError = document.getElementById("emailError");
 const form = document.getElementById("subscriptionForm");
+const newsLetterModal = document.getElementById("newsletterModal");
 
 // Email Validation
 const validateEmail = (email) => {
@@ -44,7 +45,8 @@ form.addEventListener("submit", (e) => {
             if (response.status == "success") {
                 downloadBtn.innerText = response.message;
                 downloadFiles(response.files, () => {
-                    window.location.href = siteUrl;
+                    newsLetterModal.style.visibility = "hidden";
+                    window.history.replaceState({}, "", "/");
                 });
                 form.reset();
             } else {

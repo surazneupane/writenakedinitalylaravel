@@ -32,13 +32,13 @@
                     </div>
 
                     <div class="file-details">
-                        <p>Activation I.mpeg</p>
+                        <p>Activation.mpeg</p>
                         <p>Audio File • 18.3 MB</p>
                     </div>
                 </div>
 
 
-                <div class="file-card">
+                {{-- <div class="file-card">
                     <div class="file-thumb">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -51,7 +51,7 @@
                         <p>Activation II.mpeg</p>
                         <p>Audio File • 5.3 MB</p>
                     </div>
-                </div>
+                </div> --}}
 
                 <button type="submit" id="downloadBtn" class="download-btn" disabled>
                     Download
