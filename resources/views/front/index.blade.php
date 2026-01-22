@@ -10,6 +10,9 @@
 
     <link rel="icon" type="image/x-icon" href="{{ asset('images/logos/favicon.png') }}" />
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" />
+    @if ($activation)
+        <link rel="stylesheet" href="{{ asset('assets/css/newsletter.css') }}" />
+    @endif
     <meta name="description"
         content="WRITE NAKED IN ITALY — a 5-day romantic bestseller retreat in Italy (Feb 17–21, 2026). Write your love-frequency book, receive a publishing deal, bestseller campaign, and elite brand photoshoot." />
 
@@ -45,11 +48,20 @@
     @include('front.partials.common.question')
     @include('front.partials.common.footer')
 
+    @if ($activation)
+        @include('front.popups.activation')
+    @endif
     <script>
-        const siteUrl = "{{config('app.url')}}";
+        const siteUrl = "{{ config('app.url') }}";
     </script>
 
     <script src="{{ asset('assets/js/index.js') }}"></script>
+    @if ($activation)
+        <script>
+            const activationDownloadUrl = "{{ route('front.download.activation') }}";
+        </script>
+        <script src="{{ asset('assets/js/newsletter.js') }}"></script>
+    @endif
 
 </body>
 

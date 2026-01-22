@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-
 Route::get('/', [HomeController::class, 'index'])->name('front.home');
-Route::get('/vipday', [HomeController::class, 'vipday'])->name('front.vipday');
+Route::get('/{page}', [HomeController::class, 'index'])->name('front.home.page');
 Route::post('/contact', [HomeController::class, 'contact'])->name('front.contact');
+Route::post('/download/activation', [HomeController::class, 'downloadActivation'])->name('front.download.activation');

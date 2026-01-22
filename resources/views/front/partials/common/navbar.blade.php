@@ -24,7 +24,7 @@
              <a href="{{ route('front.home') }}#about">About</a>
              <a href="{{ route('front.home') }}#daily">Daily Flow</a>
              <a href="{{ route('front.home') }}#contact">Contact</a>
-             <a class="btn primary vip" href="{{ route('front.vipday') }}">VIP DAY</a>
+             <a class="btn primary vip" href="{{ route('front.home.page', 'vipday') }}">VIP DAY</a>
              <a class="btn primary" href="{{ route('front.home') }}#reserve">Reserve Your Spot</a>
              <a class="btn ghost" target="_blank" href="https://calendly.com/peppercoaching/your-book-my-priority">Book
                  a Call</a>
