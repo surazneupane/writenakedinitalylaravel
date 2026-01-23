@@ -44,11 +44,13 @@ form.addEventListener("submit", (e) => {
         .then((response) => {
             if (response.status == "success") {
                 downloadBtn.innerText = response.message;
-                downloadFiles(response.files, () => {
-                    newsLetterModal.style.visibility = "hidden";
-                    window.history.replaceState({}, "", "/");
-                });
-                form.reset();
+                setTimeout(function () {
+                    downloadFiles(response.files);
+                    setTimeout(function () {
+                        newsLetterModal.style.visibility = "hidden";
+                        history.replaceState({}, "", "/");
+                    }, 2000);
+                }, 2000);
             } else {
                 downloadBtn.innerText = response.message;
             }
@@ -58,28 +60,25 @@ form.addEventListener("submit", (e) => {
         })
         .finally(() => {
             setTimeout(function () {
-                downloadBtn.disabled = false;
+                form.reset();
+                downloadBtn.disabled = true;
                 downloadBtn.innerText = "Download";
             }, 4000);
         });
 });
 
-function downloadFiles(files, onDone) {
+function downloadFiles(files) {
     files.forEach((url, index) => {
         const a = document.createElement("a");
         a.href = url;
-        a.download = "";
-        a.target = "_blank";
+        a.download = ""; // lets browser decide filename
+        a.target = "_blank"; // helps Safari
         document.body.appendChild(a);
 
+        // small delay to avoid popup blockers
         setTimeout(() => {
             a.click();
             a.remove();
-
-            // after last file is triggered
-            if (index === files.length - 1 && onDone) {
-                setTimeout(onDone, 500);
-            }
         }, index * 300);
     });
 }

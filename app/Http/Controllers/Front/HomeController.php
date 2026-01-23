@@ -48,11 +48,11 @@ class HomeController extends Controller
             });
 
             $files = [
-                asset('audios/Activation.mpeg'),
+                asset('audios/Author_Active_Meditation.mpeg'),
                 // asset('audios/Activation_II.mpeg')
             ];
 
-            echo json_encode(["status" => "success", "message" => "Your File Is Downloading....", "files" => $files]);
+            echo json_encode(["status" => "success", "message" => "Your file is downloading. please wait....", "files" => $files]);
         } catch (Exception $e) {
             echo json_encode([
                 "status" => "error",

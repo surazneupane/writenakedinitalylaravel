@@ -1,18 +1,21 @@
-    <div id="newsletterModal" class="modal-overlay">
-        <div class="modal-content">
+<link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet">
 
-            <div class="file-icon-container">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                    <polyline points="14 2 14 8 20 8"></polyline>
-                    <line x1="12" y1="18" x2="12" y2="12"></line>
-                    <polyline points="9 15 12 18 15 15"></polyline>
-                </svg>
+<div id="newsletterModal" class="modal-overlay">
+    <div class="modal-content">
+
+
+        <div class="modal-header">
+            <div class="logo-container">
+                <img src="{{ asset('images/logos/logo_black.jpeg') }}" alt="Author Logo">
             </div>
+            <h1>Embody the Bestselling Author Identity</h1>
+            <p class="subtitle">Enter your email to download the active meditation audio.</p>
+        </div>
 
-            <h1>Download Activation</h1>
-
+        <!-- Form Section -->
+        <div class="modal-body">
             <form id="subscriptionForm">
                 @csrf
                 <div class="form-group">
@@ -24,42 +27,29 @@
 
                 <div class="file-card">
                     <div class="file-thumb">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
-                            <polyline points="13 2 13 9 20 9"></polyline>
+                            <path d="M9 18V5l12-2v13"></path>
+                            <circle cx="6" cy="18" r="3"></circle>
+                            <circle cx="18" cy="16" r="3"></circle>
                         </svg>
                     </div>
-
                     <div class="file-details">
-                        <p>Activation.mpeg</p>
-                        <p>Audio File • 18.3 MB</p>
+                        <span class="file-name">Write Naked & Wild Bestselling Author Active meditation</span>
+                        <span class="file-meta">Audio MPEG • 18.3 MB</span>
                     </div>
                 </div>
 
-
-                {{-- <div class="file-card">
-                    <div class="file-thumb">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
-                            <polyline points="13 2 13 9 20 9"></polyline>
-                        </svg>
-                    </div>
-
-                    <div class="file-details">
-                        <p>Activation II.mpeg</p>
-                        <p>Audio File • 5.3 MB</p>
-                    </div>
-                </div> --}}
-
                 <button type="submit" id="downloadBtn" class="download-btn" disabled>
-                    Download
+                    <span>Download</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
                 </button>
             </form>
         </div>
     </div>
-
-    <div id="successMessage">
-        Thank you! Your download is starting...
-    </div>
+</div>
