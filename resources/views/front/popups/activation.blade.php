@@ -18,13 +18,6 @@
         <div class="modal-body">
             <form id="subscriptionForm">
                 @csrf
-                <div class="form-group">
-                    <label for="emailInput">Email Address</label>
-                    <input type="email" id="emailInput" name="email" class="input-field"
-                        placeholder="hello@example.com" required>
-                    <p id="emailError" class="error-text">Please enter a valid email address.</p>
-                </div>
-
                 <div class="file-card">
                     <div class="file-thumb">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -39,6 +32,15 @@
                         <span class="file-meta">Audio MPEG • 18.3 MB</span>
                     </div>
                 </div>
+
+                <div class="form-group">
+                    <label for="emailInput">Email Address</label>
+                    <input type="email" id="emailInput" name="email" class="input-field"
+                        placeholder="hello@example.com" required>
+                    <p id="emailError" class="error-text">Please enter a valid email address.</p>
+                </div>
+
+
 
                 <button type="submit" id="downloadBtn" class="download-btn" disabled>
                     <span>Download</span>
