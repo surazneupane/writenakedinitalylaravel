@@ -8,7 +8,7 @@
 
         <div class="modal-header">
             <div class="logo-container">
-                <img src="{{ asset('images/logos/logo_black.jpeg') }}" alt="Author Logo">
+                <img src="{{ asset('images/logos/logo_black.png') }}" alt="Author Logo">
             </div>
             <h1>Embody the Bestselling Author Identity</h1>
             <p class="subtitle">Enter your email to download the active meditation audio.</p>

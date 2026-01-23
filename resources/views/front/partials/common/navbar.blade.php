@@ -1,8 +1,3 @@
- <?php
- // Determine the root URL dynamically
- $protocol = !empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' ? 'https' : 'http';
- $rootUrl = $protocol . '://' . $_SERVER['HTTP_HOST'] . '/';
- ?>
 
  <!-- NAV -->
  <nav class="nav">
