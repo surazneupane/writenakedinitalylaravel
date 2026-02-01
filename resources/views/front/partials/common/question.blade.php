@@ -12,6 +12,7 @@
 
             <form class="contact-form" onsubmit="event.preventDefault(); sendContactForm(event);">
                 @csrf
+                <input type="hidden" name="g-recaptcha-response" id="recaptcha-token">
                 <div class="input-row">
                     <input type="text" required placeholder="Full Name" aria-label="Full Name" name="name" />
                     <input type="email" required placeholder="Email" aria-label="Email" name="email" />

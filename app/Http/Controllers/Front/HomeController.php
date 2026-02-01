@@ -72,6 +72,15 @@ class HomeController extends Controller
                 'question' => 'required|string',
             ]);
 
+            if (!$this->verfiyCaptcha($request)) {
+                echo json_encode([
+                    "status" => "error",
+                    "message" => "Recaptcha verification failed. Please try again.",
+                ]);
+
+                return;
+            }
+
             ContactForm::create([
                 'name' => $request->name,
                 'email' => $request->email,

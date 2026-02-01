@@ -2,6 +2,9 @@
 
 namespace App\Traits;
 
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Http;
+
 trait Contact
 {
     function getHomeContactEmailTemplate($name, $email, $question)
@@ -131,5 +134,30 @@ trait Contact
                         </td>
                     </tr>
                 </table>";
+    }
+
+
+
+    function verfiyCaptcha(Request $request)
+    {
+        $token = $request->input('g-recaptcha-response');
+
+        $result = Http::asForm()->post(
+            'https://www.google.com/recaptcha/api/siteverify',
+            [
+                'secret' => config('services.recaptcha.secret_key'),
+                'response' => $token,
+                'remoteip' => $request->ip(),
+            ]
+        );
+
+        $result = $result->json();
+
+        if (!($result['success'] ?? false) || ($result['score'] ?? 0) < 0.5) {
+            return false;
+        }
+
+
+        return true;
     }
 }

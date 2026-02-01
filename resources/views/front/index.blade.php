@@ -39,6 +39,7 @@
         href="https://fonts.googleapis.com/css2?family=Butler:wght@400;700;900&family=Manrope:wght@400;500;700&display=swap"
         rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render={{ config('services.recaptcha.site_key') }}"></script>
 </head>
 
 <body>
@@ -63,6 +64,18 @@
         <script src="{{ asset('assets/js/newsletter.js') }}"></script>
     @endif
 
+
+    <script>
+        grecaptcha.ready(function() {
+            grecaptcha.execute("{{ config('services.recaptcha.site_key') }}", {
+                action: 'submit'
+            }).then(function(token) {
+                document.getElementById('recaptcha-token').value = token;
+            });
+        });
+    </script>
+
 </body>
+
 
 </html>
