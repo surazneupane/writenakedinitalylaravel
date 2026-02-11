@@ -10,7 +10,7 @@
 
     <link rel="icon" type="image/x-icon" href="{{ asset('images/logos/favicon.png') }}" />
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" />
-    @if ($activation)
+    @if ($activation || $sleepMeditation)
         <link rel="stylesheet" href="{{ asset('assets/css/newsletter.css') }}" />
     @endif
     <meta name="description"
@@ -51,16 +51,24 @@
 
     @if ($activation)
         @include('front.popups.activation')
+    @elseif($sleepMeditation)
+        @include('front.popups.sleepingmeditation')
     @endif
     <script>
         const siteUrl = "{{ config('app.url') }}";
     </script>
 
     <script src="{{ asset('assets/js/index.js') }}"></script>
-    @if ($activation)
-        <script>
-            const activationDownloadUrl = "{{ route('front.download.activation') }}";
-        </script>
+    @if ($activation || $sleepMeditation)
+        @if ($activation)
+            <script>
+                const activationDownloadUrl = "{{ route('front.download.activation') }}";
+            </script>
+        @else
+            <script>
+                const activationDownloadUrl = "{{ route('front.download.sleepmeditation') }}";
+            </script>
+        @endif
         <script src="{{ asset('assets/js/newsletter.js') }}"></script>
     @endif
 
