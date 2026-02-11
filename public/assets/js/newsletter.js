@@ -48,6 +48,14 @@ form.addEventListener("submit", (e) => {
                     downloadFiles(response.files);
                     setTimeout(function () {
                         newsLetterModal.style.visibility = "hidden";
+                        if (scrollToDiv != undefined) {
+                            document
+                                .getElementById(scrollToDiv)
+                                .scrollIntoView({
+                                    behavior: "smooth",
+                                    block: "start",
+                                });
+                        }
                         history.replaceState({}, "", "/");
                     }, 2000);
                 }, 2000);
