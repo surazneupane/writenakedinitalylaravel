@@ -989,6 +989,7 @@ div.inline div {
     }
 }
 
+
 .btn.vip {
     background: var(--gold);
     opacity: 0;
@@ -1309,4 +1310,25 @@ div.inline div {
 
 #success-stories {
     padding: 0px !important;
+}
+
+#sweden{
+    margin-top: 70px;
+}
+@media screen and (max-width: 1080px) {
+    #sweden{
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 1080px) { 
+    #sweden .videoandinvitaion {
+        flex-direction: column;
+    }
+
+    #sweden .button.button--pink {
+        display: inline-block;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
 }

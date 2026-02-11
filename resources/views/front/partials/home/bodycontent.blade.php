@@ -311,9 +311,47 @@
     </div>
 </section>
 
+<section id="sweden" class="invitation-section bigcontainer">
+    <div class="invitation-wrapper">
 
+        <div class="invitation-card">
+            <div class="videoandinvitaion">
 
+                <div>
 
+                    <h1 class="invitation-title">Write Naked in Sweden</h1>
+
+                    <!-- <p class="invitation-body" style="margin-bottom:50px">
+                        Immerse yourself in five unforgettable days of creativity, inspiration, and focused writing. Guided gently, you’ll craft your book, plan its path to bestseller success, and capture professional author photos to celebrate your journey—all while enjoying a romantic Swedish escape designed to spark your creativity.
+                    </p> -->
+                    <p class="invitation-body" style="margin-bottom:50px">
+                       Over five transformational days in Sweden’s breathtaking countryside, you’ll dedicate yourself fully to your book — supported, focused, and free from distraction.</p>
+                    <p class="invitation-body" style="margin-bottom:50px">
+                       In an environment designed for clarity and momentum, your manuscript won’t just begin… it will take shape.
+                    </p>
+                    <div class="invitation-details">
+                        <p>✦ Write your book in five deeply focused, distraction-free days surrounded by Sweden’s tranquil forests covered with snow and lakes</p>
+                        <p>✦ Receive a precise roadmap to position and publish your book as a bestseller</p>
+                        <p>✦ Experience a romantic Swedish escape crafted for inspiration, with curated cultural moments and the magic of Nordic simplicity</p>
+                        <p>✦Have your elite professional author photos captured against breathtaking Scandinavian backdrops — plus an intimate backstage photoshoot to honor your journey</p>
+                        <p>✦ Publishing deal included, along with a personal follow-up 1:1 call to support your next chapter</p>
+
+                    </div>
+
+                    <a href="https://payhip.com/b/SMmX6/post-intake" class="button button--pink" target="_blank" style="display: inline-block !important; width: auto;">Join us in Sweden</a>
+
+                </div>
+                <div class="videosection">
+                    <video autoplay playsinline loop muted controls class="client-video" style="width:100%">
+                        <source src="images/WN Sweden.mp4" type="video/mp4" />
+                        Your browser does not support HTML5 video.
+                    </video>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
 
 
 
