@@ -343,7 +343,7 @@
                 </div>
                 <div class="videosection">
                     <video autoplay playsinline loop muted controls class="client-video" style="width:100%">
-                        <source src="images/WN Sweden.mp4" type="video/mp4" />
+                        <source src="images/write_naked_in_sweden.mp4" type="video/mp4" />
                         Your browser does not support HTML5 video.
                     </video>
                 </div>
