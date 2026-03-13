@@ -311,7 +311,7 @@
     </div>
 </section>
 
-<section id="sweden" class="invitation-section bigcontainer">
+{{-- <section id="sweden" class="invitation-section bigcontainer">
     <div class="invitation-wrapper">
 
         <div class="invitation-card">
@@ -351,7 +351,7 @@
 
         </div>
     </div>
-</section>
+</section> --}}
 
 
 

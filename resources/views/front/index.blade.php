@@ -67,7 +67,7 @@
         @else
             <script>
                 const activationDownloadUrl = "{{ route('front.download.sleepmeditation') }}";
-                const scrollToDiv ="sweden";
+                const scrollToDiv = "about";
             </script>
         @endif
         <script src="{{ asset('assets/js/newsletter.js') }}"></script>
