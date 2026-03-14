@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\ActivationDownloader;
 use App\Models\ContactForm;
 use App\Models\MeditationDownloader;
+use App\Models\RoadmapDownloader;
 use App\Traits\Contact;
 use Exception;
 use Illuminate\Http\Request;
@@ -25,9 +26,11 @@ class HomeController extends Controller
 
         $sleepMeditation = $page == 'sleepingmeditation';
 
-        $page = empty($page) || $activation || $sleepMeditation ? 'index' : $page;
+        $roadMap = $page == 'roadmap';
 
-        return view('front.' . $page, compact('activation', 'sleepMeditation'));
+        $page = empty($page) || $activation || $sleepMeditation || $roadMap ? 'index' : $page;
+
+        return view('front.' . $page, compact('activation', 'sleepMeditation', 'roadMap'));
     }
 
     public function downloadActivation(Request $request)
@@ -88,6 +91,42 @@ class HomeController extends Controller
             $files = [
                 asset('audios/Sleeping_Meditation.mp3'),
                 // asset('audios/Activation_II.mpeg')
+            ];
+
+            echo json_encode(["status" => "success", "message" => "Your file is downloading. please wait....", "files" => $files]);
+        } catch (Exception $e) {
+            echo json_encode([
+                "status" => "error",
+                "message" => "Download Error. Please Try Again!",
+                "error" => $e->getMessage()
+            ]);
+        }
+    }
+
+
+    public function downloadRoadmap(Request $request)
+    {
+        try {
+            $request->validate([
+                'email' => 'required|string|email'
+            ]);
+
+            RoadmapDownloader::create(
+                [
+                    'email' => $request->email
+                ]
+            );
+
+            $mailContent = $this->getRoadmapDownloadTemplate($request->email);
+
+            Mail::html($mailContent, function ($message) use ($request) {
+                $message->to(config('mail.adminemail'))
+                    ->replyTo($request->email)
+                    ->subject('Write Naked in Italy - Roadmap Download');
+            });
+
+            $files = [
+                asset('images/write_naked_roadmap.jpeg'),
             ];
 
             echo json_encode(["status" => "success", "message" => "Your file is downloading. please wait....", "files" => $files]);
