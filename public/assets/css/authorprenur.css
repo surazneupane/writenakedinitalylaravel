@@ -1,0 +1,41 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+  color: var(--gold);
+}
+
+section {
+  max-width: 900px;
+  margin: auto;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.btn-primary {
+  border: 1px solid var(--gold);
+  padding: 12px 30px;
+  color: var(--gold);
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  background: var(--gold);
+  color: #fff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid #eee;
+  padding: 20px;
+  background: #fff;
+}
