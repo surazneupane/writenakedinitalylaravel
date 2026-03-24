@@ -50,7 +50,7 @@
                         'accent-bg': '#f7f7f2',
                     },
                     fontFamily: {
-                        'display': ['"Playfair Display"', 'serif'],
+                        'display': ['"Butler"', 'serif'],
                         'body': ['"Manrope"', 'sans-serif'],
                     }
                 }
