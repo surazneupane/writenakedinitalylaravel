@@ -1,0 +1,501 @@
+.testimonial-container {
+    display: flex;
+    margin: 0px auto;
+    align-items: center;
+    gap: 25px;
+}
+
+.testimonial-container .image-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.testimonial-container .profile-img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+    /* Placeholder for the user's image */
+}
+
+/* Content Styling */
+.testimonial-container .content {
+    flex: 2;
+}
+
+.testimonial-container .headline {
+    font-family:
+        "Playfair Display", serif; /* Use a Google Font or system Serif */
+    font-size: 2.2rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+
+.testimonial-container .body-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.testimonial-container .author-name {
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+}
+
+.authorandreadmore {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .testimonial-container {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 25px;
+    }
+    .testimonial-container .profile-img {
+        width: 250px;
+        height: 250px;
+    }
+    .testimonial-container .headline {
+        font-size: 1.8rem;
+    }
+    .image-wrapper {
+        width: 80% !important;
+    }
+}
+
+.client-video {
+    border-radius: 10px;
+}
+
+#success-stories {
+    padding: 0px !important;
+}
+
+#sweden {
+    margin-top: 70px;
+}
+@media screen and (max-width: 1080px) {
+    #sweden {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 1080px) {
+    #sweden .videoandinvitaion {
+        flex-direction: column;
+    }
+
+    #sweden .button.button--pink {
+        display: inline-block;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+}
+
+/* Banner */
+.banner {
+    position: relative;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    /* background: url("https://images.unsplash.com/photo-1534237710431-e2fc6817c4d6?q=80&w=2000&auto=format&fit=crop")
+        center/cover no-repeat; */
+    filter: blur(8px) brightness(0.6);
+    transform: scale(1.1);
+    z-index: -2;
+}
+
+.banner::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, #cf4834, #f2e1cb);
+    z-index: -1;
+}
+
+.banner-inner {
+    position: relative;
+    z-index: 1;
+    /* ensure text is above video + overlay */
+    text-align: center;
+    color: #fff;
+    padding: 120px 0 80px;
+}
+
+.banner h1 {
+    font-size: clamp(38px, 7vw, 76px);
+    line-height: 1.06;
+    margin: 16px 0;
+}
+
+.banner p {
+    max-width: 780px;
+    margin: 0 auto 26px;
+    font-size: clamp(16px, 2.2vw, 20px);
+    opacity: 0.98;
+}
+
+.badge-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.badge {
+    /* border: 1px solid orange; */
+    padding: 4px 8px;
+    background-color: #daa420;
+    color: white;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.testimonial-section {
+    padding: 60px 20px;
+    background: #fafafa;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.testimonial-card {
+    background: #ffffff;
+    border: 1px solid #be9633;
+    border-radius: 20px;
+    padding: 50px 25px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.quote {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #daa420, #c29200);
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.testimonial-text {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.testimonial-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #222;
+}
+
+@media (max-width: 480px) {
+    .testimonial-card {
+        padding: 25px 20px;
+    }
+}
+
+.authorprenur-section {
+    padding: 30px 0px;
+}
+
+.step-section-width {
+    width: 75%;
+}
+
+@media (max-width: 1080px) {
+    .step-section-width {
+        width: 100%;
+    }
+}
+
+/* ========================================
+   AUTHORPRENEUR CONTENT — Component Styles
+   ======================================== */
+
+/* Typography */
+.ap-luxury-heading {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: -0.01em;
+    line-height: 1.1;
+}
+
+/* Buttons */
+.ap-btn {
+    padding: 1.125rem 2.5rem;
+    border-radius: 2px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    display: inline-block;
+    border: 2px solid transparent;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.ap-btn--gold {
+    background: #be9633;
+    color: #fff;
+    border-color: #be9633;
+}
+
+.ap-btn--gold:hover {
+    background: transparent;
+    color: #8e6f24;
+}
+
+.ap-btn--gold-outline {
+    background: transparent;
+    color: #be9633;
+    border-color: #be9633;
+}
+
+.ap-btn--gold-outline:hover {
+    background: #be9633;
+    color: #fff;
+}
+
+.ap-btn--outline-white {
+    background: transparent;
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.ap-btn--outline-white:hover {
+    background: #fff;
+    color: #121212;
+    border-color: #fff;
+}
+
+/* Video wrapper with gold offset shadow */
+.ap-video-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: -20px;
+    bottom: -20px;
+    background: #be9633;
+    z-index: -1;
+    transition: all 0.5s ease;
+}
+
+.ap-video-wrapper:hover::after {
+    top: 24px;
+    left: 24px;
+    right: -24px;
+    bottom: -24px;
+}
+
+/* Bullet list with gold arrows */
+.ap-bullet-gold {
+    list-style: none;
+    padding: 0;
+}
+
+.ap-bullet-gold li {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.ap-bullet-gold li::before {
+    content: '\2192';
+    position: absolute;
+    left: 0;
+    color: #be9633;
+    font-weight: 900;
+}
+
+/* Curriculum timeline card — light mode */
+.ap-timeline-card-light {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    padding: 2.5rem 1.5rem;
+    border-radius: 4px;
+    transition: all 0.4s ease;
+}
+
+.ap-timeline-card-light:hover {
+    background: rgba(190, 150, 51, 0.04);
+    border-bottom-color: rgba(190, 150, 51, 0.3);
+}
+
+.ap-timeline-card-light:last-child {
+    border-bottom: none;
+}
+
+/* Curriculum timeline card — dark mode (legacy) */
+.ap-timeline-card {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 2.5rem 1.5rem;
+    border-radius: 4px;
+    transition: all 0.4s ease;
+}
+
+.ap-timeline-card:hover {
+    background: rgba(190, 150, 51, 0.06);
+    border-bottom-color: rgba(190, 150, 51, 0.3);
+}
+
+.ap-timeline-card:last-child {
+    border-bottom: none;
+}
+
+/* Outcome badge */
+.ap-outcome-badge {
+    display: inline-block;
+    background: #be9633;
+    color: white;
+    padding: 5px 14px;
+    font-size: 0.8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 2px;
+}
+
+/* Testimonial card */
+.ap-testimonial {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.ap-testimonial:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.ap-testimonial::before {
+    content: '\201C';
+    font-family: 'Playfair Display', serif;
+    font-size: 6rem;
+    line-height: 1;
+    color: #be9633;
+    opacity: 0.15;
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    pointer-events: none;
+}
+
+/* Investment pricing card */
+.ap-pricing-card {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.ap-pricing-card:hover {
+    transform: translateY(-6px);
+}
+
+/* Gold decorative separator */
+.ap-separator {
+    width: 60px;
+    height: 2px;
+    background: #be9633;
+    display: block;
+}
+
+/* Step card with animated top bar */
+.ap-step-card {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.ap-step-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: #be9633;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease;
+}
+
+.ap-step-card:hover::before {
+    transform: scaleX(1);
+}
+
+.ap-step-card:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+/* ========================================
+   Scroll Animations
+   ======================================== */
+
+.ap-fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.ap-fade-in.ap-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.ap-fade-in-left {
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.ap-fade-in-left.ap-visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.ap-fade-in-right {
+    opacity: 0;
+    transform: translateX(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.ap-fade-in-right.ap-visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Stagger children animation delays */
+.ap-stagger > *:nth-child(1) { transition-delay: 0s; }
+.ap-stagger > *:nth-child(2) { transition-delay: 0.12s; }
+.ap-stagger > *:nth-child(3) { transition-delay: 0.24s; }
+.ap-stagger > *:nth-child(4) { transition-delay: 0.36s; }

@@ -28,9 +28,11 @@ class HomeController extends Controller
 
         $roadMap = $page == 'roadmap';
 
+        $authorprenur = $page == "authorprenur";
+
         $page = empty($page) || $activation || $sleepMeditation || $roadMap ? 'index' : $page;
 
-        return view('front.' . $page, compact('activation', 'sleepMeditation', 'roadMap'));
+        return view('front.' . $page, compact('activation', 'sleepMeditation', 'roadMap','authorprenur'));
     }
 
     public function downloadActivation(Request $request)
