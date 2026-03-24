@@ -334,13 +334,11 @@
 
 
     {{-- ==========================================
-         ABOUT MIRAV + TESTIMONIALS
+         ABOUT MIRAV
          ========================================== --}}
     <section class="py-28 bg-white">
         <div class="container mx-auto px-8 max-w-5xl">
-
-            {{-- Bio --}}
-            <div class="text-center mb-24 ap-fade-in">
+            <div class="text-center ap-fade-in">
                 <span class="ap-separator mx-auto mb-6"></span>
                 <h2 class="ap-luxury-heading text-4xl mb-10 italic text-dark">About Mirav Tarkka</h2>
                 <div class="space-y-6 text-[#3a3a3a] font-light leading-relaxed max-w-3xl mx-auto text-lg">
@@ -358,21 +356,106 @@
                     </p>
                 </div>
             </div>
-
-            {{-- Testimonials --}}
-            <div class="grid md:grid-cols-3 gap-10 ap-stagger">
-                @foreach ([['quote' => "Mirav is a queen in the Bestseller world \u{2013} a true motivational diva who sees the gold in every story.", 'name' => 'Sofia Halter'], ['quote' => 'She leads with love and fire. Working with her is a bulletproof path to becoming an unstoppable authority.', 'name' => 'Jane Doe'], ['quote' => "Her words ignite revolutions. She doesn\u{2019}t just teach publishing, she teaches power.", 'name' => 'Zara Monroe']] as $testimonial)
-                    <div class="ap-testimonial p-10 italic text-dark bg-accent-bg rounded-lg ap-fade-in">
-                        <p class="mb-8 relative z-10 leading-relaxed text-base">"{{ $testimonial['quote'] }}"</p>
-                        <span class="text-[13px] font-extrabold not-italic uppercase tracking-[0.2em] text-gold">
-                            — {{ $testimonial['name'] }}
-                        </span>
-                    </div>
-                @endforeach
-            </div>
-
         </div>
     </section>
+
+
+    {{-- ==========================================
+         TESTIMONIALS
+         ========================================== --}}
+    <section class="py-28 bg-accent-bg">
+        <div class="container mx-auto px-8 max-w-6xl">
+            <div class="text-center mb-20 ap-fade-in">
+                <span class="ap-separator mx-auto mb-6"></span>
+                <h2 class="ap-luxury-heading text-4xl md:text-5xl italic text-dark">What Our Authors Say</h2>
+            </div>
+
+            {{-- Featured testimonial — Alina (full width) --}}
+            <div class="mb-12 ap-fade-in">
+                <div class="relative bg-white rounded-xl p-12 md:p-16 border border-gold/15 shadow-lg overflow-hidden">
+                    {{-- Decorative quote mark --}}
+                    <div
+                        class="absolute top-6 left-8 text-[8rem] leading-none font-display text-gold/10 pointer-events-none select-none">
+                        &ldquo;</div>
+                    <div class="relative z-10">
+                        <p class="text-[#3a3a3a] text-lg md:text-xl font-light italic leading-[1.9] mb-8 max-w-4xl">
+                            "If you want to hold your book in your hands, the person you should choose is Mirav and her
+                            bestselling program. Mirav and her team work hard to bring your book to life. The entire
+                            process is a transformational experience, from writing your book to committing to getting
+                            published, to designing your vision on the book cover, and finally seeing it on Amazon as a
+                            #1 bestseller. It's a wonderful feeling of accomplishment and gratitude for all the people
+                            who made this book happen. Mirav is successful because she has made 80 authors bestsellers
+                            before me, and now I am one of those authors. She is going to bring many more authors and
+                            books to life. Remember to be yourself during this process and enjoy it. Stay true to your
+                            dreams and keep shining!"
+                        </p>
+                        <div class="flex items-center gap-4">
+                            <span class="w-10 h-[2px] bg-gold block"></span>
+                            <span class="text-[13px] font-extrabold uppercase tracking-[0.25em] text-gold">Alina</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {{-- Two-column testimonials --}}
+            <div class="grid md:grid-cols-2 gap-10 ap-stagger">
+
+                {{-- Renato --}}
+                <div class="ap-fade-in">
+                    <div
+                        class="relative bg-white rounded-xl p-10 border border-gold/10 shadow-sm hover:shadow-lg hover:border-gold/20 transition-all duration-500 h-full overflow-hidden">
+                        <div
+                            class="absolute top-4 left-6 text-[5rem] leading-none font-display text-gold/10 pointer-events-none select-none">
+                            &ldquo;</div>
+                        <div class="relative z-10">
+                            <p class="text-[#3a3a3a] text-base font-light italic leading-[1.85] mb-8">
+                                "You are such a professional and inspiration and by taking care of every detail you made
+                                me feel like home and honored. Sharing with other authors was really nice, because of
+                                this you let me discover a new me as writer and have a vision about how far I can go.
+                                I'm looking forward to repeat this deep experience with you and other writers because
+                                the magic, the sparkling comes from you."
+                            </p>
+                            <div class="flex items-center gap-4">
+                                <span class="w-8 h-[2px] bg-gold block"></span>
+                                <span
+                                    class="text-[13px] font-extrabold uppercase tracking-[0.25em] text-gold">Renato</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {{-- Wendy Panther --}}
+                <div class="ap-fade-in">
+                    <div
+                        class="relative bg-white rounded-xl p-10 border border-gold/10 shadow-sm hover:shadow-lg hover:border-gold/20 transition-all duration-500 h-full overflow-hidden">
+                        <div
+                            class="absolute top-4 left-6 text-[5rem] leading-none font-display text-gold/10 pointer-events-none select-none">
+                            &ldquo;</div>
+                        <div class="relative z-10">
+                            <p class="text-[#3a3a3a] text-base font-light italic leading-[1.85] mb-8">
+                                "I joined a five day challenge with Mirav and discovered the perfect formula for me. Her
+                                power shots set me up for the day, emotionally and physically. The format of the session
+                                is what I love the most. I am never bored. I never know what Mirav will come up with
+                                next to keep us stimulated and physically fit. My face and body have both toned up and I
+                                feel physically stronger. I have met some lovely people, and found a way to keep fit
+                                that suits me. I would recommend Mirav's power shots for anyone looking for a fun and
+                                flexible way to keep fit with a bunch of spiritual and likeminded people."
+                            </p>
+                            <div class="flex items-center gap-4">
+                                <span class="w-8 h-[2px] bg-gold block"></span>
+                                <span class="text-[13px] font-extrabold uppercase tracking-[0.25em] text-gold">Wendy
+                                    Panther</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
 
 
     {{-- ==========================================
