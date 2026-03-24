@@ -5,11 +5,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>
-        VIP Day | The Published Author Experience | Italy 22.02.2026 - Write Naked in Italy
+        Authorpreneur
     </title>
     <link rel="icon" type="image/x-icon" href="{{ asset('images/logos/favicon.png') }}" />
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/css/vipday.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/authorprenur.css') }}" />
     <meta name="description"
         content="A world-first luxury visibility experience for published authors. Press, prestige, and Italian luxury await on 22.02.2026. Limited spaces available." />
 
@@ -43,6 +44,9 @@
     @include('front.partials.common.navbar')
     @include('front.partials.authorprenur.banner')
     @include('front.partials.authorprenur.authorprenurcontent')
+
+    @include('front.partials.common.footer')
+
 
     <script>
         const siteUrl = "{{ config('app.url') }}";
