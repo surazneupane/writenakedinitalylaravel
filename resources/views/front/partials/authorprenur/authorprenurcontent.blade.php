@@ -404,7 +404,7 @@
                         class="absolute top-6 left-8 text-[8rem] leading-none font-display text-gold/10 pointer-events-none select-none">
                         &ldquo;</div>
                     <div class="relative z-10">
-                        <p class="text-[#3a3a3a] text-lg md:text-xl font-light italic leading-[1.9] mb-8 max-w-4xl">
+                        <p class="text-[#3a3a3a] text-base md:text-lg font-light italic leading-[1.9] mb-8 max-w-4xl">
                             "If you want to hold your book in your hands, the person you should choose is Mirav and her
                             bestselling program. Mirav and her team work hard to bring your book to life. The entire
                             process is a transformational experience, from writing your book to committing to getting
@@ -434,7 +434,7 @@
                             class="absolute top-4 left-6 text-[5rem] leading-none font-display text-gold/10 pointer-events-none select-none">
                             &ldquo;</div>
                         <div class="relative z-10">
-                            <p class="text-[#3a3a3a] text-base font-light italic leading-[1.85] mb-8">
+                            <p class="text-[#3a3a3a] text-sm md:text-base font-light italic leading-[1.85] mb-8">
                                 "You are such a professional and inspiration and by taking care of every detail you made
                                 me feel like home and honored. Sharing with other authors was really nice, because of
                                 this you let me discover a new me as writer and have a vision about how far I can go.
@@ -458,7 +458,7 @@
                             class="absolute top-4 left-6 text-[5rem] leading-none font-display text-gold/10 pointer-events-none select-none">
                             &ldquo;</div>
                         <div class="relative z-10">
-                            <p class="text-[#3a3a3a] text-base font-light italic leading-[1.85] mb-8">
+                            <p class="text-[#3a3a3a] text-sm md:text-base font-light italic leading-[1.85] mb-8">
                                 "I joined a five day challenge with Mirav and discovered the perfect formula for me. Her
                                 power shots set me up for the day, emotionally and physically. The format of the session
                                 is what I love the most. I am never bored. I never know what Mirav will come up with
