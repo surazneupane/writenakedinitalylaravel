@@ -230,7 +230,32 @@
             </div>
 
             <div class="space-y-0">
-                @foreach ([['period' => 'Months 1–3', 'title' => 'Author + Writing', 'desc' => 'Book vision, positioning, chapter mapping, daily writing systems, and identity work.', 'outcome' => 'First draft complete'], ['period' => 'Month 4', 'title' => 'Production', 'desc' => 'Professional editing, proofreading, title refinement, and choosing your publishing pathway.', 'outcome' => 'Ready to publish'], ['period' => 'Month 5', 'title' => 'Launch', 'desc' => 'Visibility plans, content strategy from your book, and our signature silent launch method.', 'outcome' => 'Book published'], ['period' => 'Month 6', 'title' => 'Authority', 'desc' => 'Scale visibility through podcasts and PR. Turn readers into high-ticket clients.', 'outcome' => 'Book becomes a growth engine']] as $item)
+                @foreach ([
+        [
+            'period' => 'Months 1–3',
+            'title' => 'Author + Writing',
+            'bullets' => ['Book vision + positioning', 'Structure + chapter mapping', 'Daily writing system (1 page/day)', 'Writing sprints + feedback loops', 'Identity & embodiment work'],
+            'outcome' => 'First draft complete',
+        ],
+        [
+            'period' => 'Month 4',
+            'title' => 'Production & Pre-Launch',
+            'bullets' => ['Editing + proofreading guidance', 'Title + concept refinement', 'Publishing pathway', 'Review strategy'],
+            'outcome' => 'Ready to publish',
+        ],
+        [
+            'period' => 'Month 5',
+            'title' => 'Launch',
+            'bullets' => ['Content strategy from your book', 'Visibility plan', 'Silent launch + bestseller strategy'],
+            'outcome' => 'Book published',
+        ],
+        [
+            'period' => 'Month 6',
+            'title' => 'Authority & Business',
+            'bullets' => ['Turn readers into clients', 'Scale visibility (podcasts, PR, speaking)', 'Business integration'],
+            'outcome' => 'Book becomes a growth engine',
+        ],
+    ] as $item)
                     <div class="ap-timeline-card-light group ap-fade-in">
                         <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
                             <div class="md:w-1/3">
@@ -242,8 +267,12 @@
                                 </h3>
                             </div>
                             <div class="md:w-2/3">
-                                <p class="text-[#3a3a3a] font-light text-base mb-4 leading-relaxed">{{ $item['desc'] }}
-                                </p>
+                                <ul
+                                    class="ap-bullet-gold space-y-2 text-[#3a3a3a] font-light text-base leading-relaxed mb-4">
+                                    @foreach ($item['bullets'] as $bullet)
+                                        <li>{{ $bullet }}</li>
+                                    @endforeach
+                                </ul>
                                 <span class="ap-outcome-badge">&#10004; Outcome: {{ $item['outcome'] }}</span>
                             </div>
                         </div>
@@ -274,6 +303,10 @@
                         <li>Private, focused community of peers</li>
                         <li>Guest expert sessions (publishing, PR, positioning)</li>
                         <li>Weekly recorded teachings + Q&amp;A</li>
+                        <li><strong class="font-semibold">Bonus Week:</strong>
+                            Early sign-ups get an extra week of personalized launch support
+
+                        </li>
                     </ul>
                 </div>
 
@@ -350,8 +383,8 @@
             <div class="text-center mb-20 ap-fade-in">
                 <span class="ap-separator mx-auto mb-6"></span>
                 <h2 class="ap-luxury-heading text-5xl mb-4 italic text-dark">The Investment</h2>
-                <p class="text-gold text-[13px] font-extrabold uppercase tracking-[0.3em] mt-4">Founding Round Pricing
-                </p>
+                {{-- <p class="text-gold text-[13px] font-extrabold uppercase tracking-[0.3em] mt-4">Founding Round Pricing
+                </p> --}}
             </div>
 
             <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
@@ -363,31 +396,33 @@
                         class="absolute top-0 right-0 bg-gold text-white text-[11px] font-extrabold uppercase tracking-wider px-4 py-2 rounded-bl-lg">
                         Best Value
                     </div>
-                    <span class="text-gold-dark text-[13px] font-extrabold uppercase tracking-[0.2em] mb-6 block">Paid
-                        In Full</span>
-                    <h3 class="ap-luxury-heading text-6xl mb-6 text-dark">&euro;2,665</h3>
-                    <p class="text-[#3a3a3a] font-light text-base mb-6 leading-relaxed">
-                        The most efficient investment for your business legacy.
-                    </p>
-                    <p class="text-gray-400 text-sm line-through mb-10">Regular Price: &euro;4,444</p>
-                    <a href="#" class="ap-btn ap-btn--gold w-full text-center">Apply &amp; Join Now</a>
+                    <span
+                        class="text-gold-dark text-[13px] font-extrabold uppercase tracking-[0.2em] mb-6 block">Founding
+                        Round</span>
+                    <h3 class="ap-luxury-heading text-6xl  text-dark">&euro;2,665 </h3>
+                    <p class="text-xl font-medium my-2">or</p>
+                    <h3 class="ap-luxury-heading text-2xl mb-6 text-dark">&euro;555/6 mo</h3>
+
+
+
+                    <a href="#" class="ap-btn ap-btn--gold ap-btn--gold-outline w-full text-center">Secure My
+                        Spot</a>
                 </div>
 
                 {{-- Installment Plan --}}
                 <div
                     class="ap-pricing-card p-16 border border-gray-200 text-center rounded-lg ap-fade-in bg-white shadow-sm">
                     <span
-                        class="text-[#5a5a5a] text-[13px] font-extrabold uppercase tracking-[0.2em] mb-6 block">Installment
-                        Plan</span>
+                        class="text-[#5a5a5a] text-[13px] font-extrabold uppercase tracking-[0.2em] mb-6 block">Regular
+                        Price
+                    </span>
                     <h3 class="ap-luxury-heading text-6xl mb-6 text-dark">
-                        &euro;555 <span class="text-xl font-light text-[#5a5a5a]">/mo</span>
+                        &euro;4,444
                     </h3>
-                    <p class="text-[#3a3a3a] font-light text-base mb-10 leading-relaxed">
-                        Spread the investment over 6 months of growth.
-                    </p>
-                    <div class="h-12 hidden md:block"></div>
-                    <a href="#" class="ap-btn ap-btn--gold ap-btn--gold-outline w-full text-center">Secure My
-                        Spot</a>
+
+                    <div class="h-20 hidden md:block"></div>
+                    <a href="#" class="ap-btn ap-btn--gold w-full text-center">Apply &amp; Join Now</a>
+
                 </div>
 
             </div>

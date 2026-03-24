@@ -327,7 +327,7 @@
 .ap-bullet-gold li {
     position: relative;
     padding-left: 2rem;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
 }
 
 .ap-bullet-gold li::before {
