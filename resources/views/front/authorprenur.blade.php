@@ -36,21 +36,36 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Butler:wght@400;700;900&family=Manrope:wght@400;500;700&display=swap"
         rel="stylesheet" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'gold': '#be9633',
+                        'gold-dark': '#8e6f24',
+                        'gold-light': '#d4b761',
+                        'dark': '#121212',
+                        'off-white': '#fdfdfb',
+                        'accent-bg': '#f7f7f2',
+                    },
+                    fontFamily: {
+                        'display': ['"Playfair Display"', 'serif'],
+                        'body': ['"Manrope"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 
 <body>
 
     @include('front.partials.common.navbar')
-    @include('front.partials.authorprenur.banner')
     @include('front.partials.authorprenur.authorprenurcontent')
-
     @include('front.partials.common.footer')
-
-
-    <script>
-        const siteUrl = "{{ config('app.url') }}";
-    </script>
     <script src="{{ asset('assets/js/index.js') }}"></script>
 
 </body>
