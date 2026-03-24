@@ -31,7 +31,7 @@
                         class="text-[#3a3a3a] text-lg md:text-2xl max-w-2xl mb-14 font-light leading-[1.8] lg:mx-0 mx-auto">
                         Become a recognized authority, and grow your business — all in 6 months.
                     </p>
-                    <a href="#investment" class="ap-btn ap-btn--gold">Apply / Join Now</a>
+                    <a href="#investment" class="ap-btn ap-btn--gold">OMG I Am Ready!</a>
                 </div>
 
                 {{-- Right: Book Cover Image --}}
@@ -172,7 +172,7 @@
                 </div>
 
                 <div class="mt-16 text-center ap-fade-in">
-                    <a href="#investment" class="ap-btn ap-btn--gold">Apply Now</a>
+                    <a href="#investment" class="ap-btn ap-btn--gold">Yeah Mamma!</a>
                 </div>
             </div>
         </div>
@@ -323,7 +323,8 @@
                             <li>Long-term visibility, credibility, and growth</li>
                         </ul>
                         <div class="mt-12 pt-8 border-t border-gray-100">
-                            <a href="#investment" class="ap-btn ap-btn--gold w-full text-center">Join Now</a>
+                            <a href="#investment" class="ap-btn ap-btn--gold w-full text-center">Gimmi Gimmi
+                                Gimmi!</a>
                         </div>
                     </div>
                 </div>
@@ -527,7 +528,7 @@
                 Ready to turn expertise into<br>
                 <span class="italic font-normal">published authority?</span>
             </h2>
-            <a href="#investment" class="ap-btn ap-btn--gold">Apply Now</a>
+            <a href="#investment" class="ap-btn ap-btn--gold">Gimmi Gimmi Gimmi!</a>
         </div>
     </section>
 
