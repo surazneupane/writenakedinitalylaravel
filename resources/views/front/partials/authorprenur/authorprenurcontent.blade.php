@@ -24,11 +24,11 @@
                     <span class="inline-block text-gold-dark text-[13px] font-extrabold uppercase tracking-[0.4em] mb-8">
                         Write The Book That Positions You
                     </span>
-                    <h1 class="ap-luxury-heading text-5xl md:text-7xl lg:text-[5rem] xl:text-[5.5rem] mb-10 text-dark">
+                    <h1 class="ap-luxury-heading text-4xl md:text-6xl lg:text-[4rem] xl:text-[4.5rem] mb-10 text-dark">
                         Turn your expertise into a <span class="italic font-normal">published</span> book.
                     </h1>
                     <p
-                        class="text-[#3a3a3a] text-lg md:text-xl max-w-2xl mb-14 font-light leading-[1.8] lg:mx-0 mx-auto">
+                        class="text-[#3a3a3a] text-lg md:text-2xl max-w-2xl mb-14 font-light leading-[1.8] lg:mx-0 mx-auto">
                         Become a recognized authority, and grow your business — all in 6 months.
                     </p>
                     <a href="#investment" class="ap-btn ap-btn--gold">Apply / Join Now</a>
@@ -123,7 +123,7 @@
             </div>
 
             <div class="grid md:grid-cols-3 gap-10 ap-stagger">
-                @foreach ([['num' => '01', 'title' => 'The Ready', 'text' => "You're ready to finally write, finish, and publish your book once and for all."], ['num' => '02', 'title' => 'The Impactful', 'text' => 'You want your work to reach more people, and your message to carry undeniable authority.'], ['num' => '03', 'title' => 'The Leader', 'text' => "You're a coach or entrepreneur looking to leverage a book as a business and legacy asset."]] as $card)
+                @foreach ([['num' => '01', 'title' => '', 'text' => "You're ready to finally write, finish, and publish your book once and for all."], ['num' => '02', 'title' => '', 'text' => 'You want your work to reach more people, and your message to carry undeniable authority.'], ['num' => '03', 'title' => '', 'text' => "You're a coach or entrepreneur looking to leverage a book as a business and legacy asset."]] as $card)
                     <div
                         class="text-center p-10 bg-accent-bg rounded-lg ap-fade-in hover:shadow-lg transition-all duration-500">
                         <div class="text-gold text-4xl mb-5 italic font-display font-bold">{{ $card['num'] }}</div>
@@ -165,7 +165,7 @@
                                 class="bg-white/80 backdrop-blur-sm rounded-lg p-8 border border-gold/10 shadow-sm hover:shadow-lg hover:border-gold/30 transition-all duration-500 h-full">
                                 <div class="text-3xl mb-4">{!! $item['icon'] !!}</div>
                                 <p class="text-lg font-light italic text-[#3a3a3a] leading-relaxed">
-                                    "{{ $item['quote'] }}"</p>
+                                    {{ $item['quote'] }}</p>
                             </div>
                         </div>
                     @endforeach
@@ -184,17 +184,29 @@
          ========================================== --}}
     <section class="py-28 bg-white">
         <div class="container mx-auto px-8 max-w-7xl">
-            <div class="text-center mb-20 ap-fade-in">
-                <span class="text-gold-dark text-[13px] font-extrabold uppercase tracking-[0.25em] mb-4 block">
+            <div class="text-center mb-28 ap-fade-in">
+                <span class="text-gold-dark text-[20px] font-extrabold uppercase tracking-[0.25em] mb-4 block">
                     Introducing Authorpreneur
                 </span>
-                <h2 class="ap-luxury-heading text-5xl italic text-dark">Your 4-Step Game Plan</h2>
+                <div class="mt-8 mb-16 text-center ap-fade-in">
+                    <div
+                        class="inline-block p-8 border-l-4 border-gold bg-gold/5 text-lg text-dark shadow-sm max-w-5xl">
+                        <p class="mb-8"> A 6-month high-touch container that guides you from idea to published
+                            book—and
+                            positions it as a strategic business asset.</p>
+                        <strong>Exclusive Bonus:</strong>
+                        <span class="font-light italic"> Early sign-ups receive 1 extra week of personalized launch
+                            support.</span>
+                    </div>
+                </div>
             </div>
 
+            <h2 class="ap-luxury-heading text-5xl italic text-dark text-center mb-10">Your 4-Step Game Plan</h2>
+
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 ap-stagger">
-                @foreach ([['step' => 'Step 1', 'title' => 'Become the Author', 'text' => 'Step fully into your author identity and lead your audience with conviction.'], ['step' => 'Step 2', 'title' => 'Write Your Book', 'text' => 'One page a day, supported by a structured, accountable system.'], ['step' => 'Step 3', 'title' => 'Publish Strategically', 'text' => 'Professional editing, publishing pathways, and review systems.'], ['step' => 'Step 4', 'title' => 'Business Asset', 'text' => 'Leverage your book for authority, visibility, and long-term monetization.']] as $step)
+                @foreach ([['step' => 'Step 1', 'title' => 'Become the Author', 'text' => 'Step fully into your author identity.'], ['step' => 'Step 2', 'title' => 'Write Your Book', 'text' => 'One page a day, supported by a structured, and accountable.'], ['step' => 'Step 3', 'title' => 'Publish Strategically', 'text' => 'Editing, publishing pathway, and review strategy.'], ['step' => 'Step 4', 'title' => 'Turn Your Book Into a Business Asset', 'text' => 'Authority, visibility, and monetization.']] as $step)
                     <div class="ap-step-card p-10 border border-gray-100 bg-white ap-fade-in">
-                        <h3 class="font-extrabold text-[13px] uppercase tracking-[0.2em] mb-6 text-gold">
+                        <h3 class="font-extrabold text-[15px] uppercase tracking-[0.2em] mb-6 text-gold">
                             {{ $step['step'] }}</h3>
                         <h4 class="ap-luxury-heading text-2xl mb-4 text-dark">{{ $step['title'] }}</h4>
                         <p class="text-[#3a3a3a] text-base font-light leading-relaxed">{{ $step['text'] }}</p>
@@ -202,13 +214,7 @@
                 @endforeach
             </div>
 
-            <div class="mt-16 text-center ap-fade-in">
-                <div class="inline-block p-8 border-l-4 border-gold bg-gold/5 text-lg text-dark shadow-sm max-w-2xl">
-                    <strong>Exclusive Bonus:</strong>
-                    <span class="font-light italic"> Early sign-ups receive 1 extra week of personalized launch
-                        support.</span>
-                </div>
-            </div>
+
         </div>
     </section>
 
