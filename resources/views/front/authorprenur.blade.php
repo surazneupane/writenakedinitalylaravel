@@ -9,7 +9,6 @@
     </title>
     <link rel="icon" type="image/x-icon" href="{{ asset('images/logos/favicon.png') }}" />
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" />
-    <link rel="stylesheet" href="{{ asset('assets/css/vipday.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/css/authorprenur.css') }}" />
     <meta name="description"
         content="A world-first luxury visibility experience for published authors. Press, prestige, and Italian luxury await on 22.02.2026. Limited spaces available." />
