@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Front;
 use App\Http\Controllers\Controller;
 use App\Models\ActivationDownloader;
 use App\Models\ContactForm;
+use App\Models\MasterclassDownloader;
 use App\Models\MeditationDownloader;
 use App\Models\RoadmapDownloader;
 use App\Traits\Contact;
@@ -32,7 +33,7 @@ class HomeController extends Controller
 
         $page = empty($page) || $activation || $sleepMeditation || $roadMap ? 'index' : $page;
 
-        return view('front.' . $page, compact('activation', 'sleepMeditation', 'roadMap','authorprenur'));
+        return view('front.' . $page, compact('activation', 'sleepMeditation', 'roadMap', 'authorprenur'));
     }
 
     public function downloadActivation(Request $request)
@@ -178,6 +179,37 @@ class HomeController extends Controller
             echo json_encode([
                 "status" => "error",
                 "message" => "Email could not be sent. make sure all the fields are filled.",
+                "error" => $e->getMessage()
+            ]);
+        }
+    }
+
+    public function downloadMasterclass(Request $request)
+    {
+        try {
+            $request->validate([
+                'email' => 'required|string|email'
+            ]);
+
+            MasterclassDownloader::create([
+                'email' => $request->email
+            ]);
+
+            $mailContent = $this->getMasterclassDownloadTemplate($request->email);
+
+            Mail::html($mailContent, function ($message) use ($request) {
+                $message->to(config('mail.adminemail'))
+                    ->replyTo($request->email)
+                    ->subject('Write Naked Method - LFG Publish Applied');
+            });
+
+
+
+            echo json_encode(["status" => "success", 'redirectRoute' => route('front.home.page', 'authorprenur')]);
+        } catch (Exception $e) {
+            echo json_encode([
+                "status" => "error",
+                "message" => "Some Error Occurred. Please Try Again!",
                 "error" => $e->getMessage()
             ]);
         }

@@ -50,9 +50,9 @@
                         @endforeach
                     </ul>
 
-                    <a href="{{ route('front.home.page', 'authorprenur') }}" class="ap-btn ap-btn--gold">LFG Publish
+                    <button type="button" onclick="openLfgModal()" class="ap-btn ap-btn--gold">LFG Publish
                         Now!
-                        &rarr;</a>
+                        &rarr;</button>
                 </div>
 
                 {{-- Right: Image --}}
@@ -93,8 +93,8 @@
                     This is EXACTLY how I guided over 100 authors to become #1 bestsellers — fast, soul-led, and the fun
                     way :D
                 </p>
-                <a href="{{ route('front.home.page', 'authorprenur') }}" class="ap-btn ap-btn--gold">LFG Publish Now!
-                    &rarr;</a>
+                <button type="button" onclick="openLfgModal()" class="ap-btn ap-btn--gold">LFG Publish Now!
+                    &rarr;</button>
             </div>
         </div>
     </section>
@@ -156,23 +156,73 @@
 
 
 {{-- ==========================================
-     Scroll Animation Observer
+     LFG EMAIL POPUP MODAL
      ========================================== --}}
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const observer = new IntersectionObserver(function(entries) {
-            entries.forEach(function(entry) {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('ap-visible');
-                }
-            });
-        }, {
-            threshold: 0.1,
-            rootMargin: '0px 0px -40px 0px'
-        });
+<div id="lfgModal" class="fixed inset-0 z-[9999] hidden items-center justify-center">
+    {{-- Overlay --}}
+    <div class="absolute inset-0 bg-dark/60 backdrop-blur-sm" onclick="closeLfgModal()"></div>
 
-        document.querySelectorAll('.ap-fade-in, .ap-fade-in-left, .ap-fade-in-right').forEach(function(el) {
-            observer.observe(el);
-        });
-    });
-</script>
+    {{-- Modal Card --}}
+    <div class="relative bg-white rounded-xl shadow-2xl w-full max-w-md mx-4 overflow-hidden transform transition-all duration-500 scale-95 opacity-0"
+        id="lfgModalCard">
+        {{-- Gold top accent --}}
+        <div class="h-1 bg-gradient-to-r from-gold-dark via-gold to-gold-light"></div>
+
+        {{-- Close button --}}
+        <button onclick="closeLfgModal()"
+            class="absolute top-4 right-4 text-gray-400 hover:text-dark transition-colors">
+            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+
+        <div class="p-8 md:p-10">
+
+            {{-- FORM STATE --}}
+            <div id="lfgFormState">
+                <div class="text-center mb-8">
+                    <span class="ap-separator mx-auto mb-4"></span>
+                    <h3 class="ap-luxury-heading text-3xl text-dark mb-3">Almost There!</h3>
+                    <p class="text-[#5a5a5a] font-light text-base">Enter your email and I'll personally send you the
+                        details.</p>
+                </div>
+
+                <form id="lfgEmailForm" onsubmit="submitLfgEmail(event)">
+                    <input type="hidden" name="_token" id="lfgCsrfToken" value="{{ csrf_token() }}">
+                    <div class="mb-4">
+                        <input type="email" id="lfgEmailInput" name="email" required
+                            placeholder="Your  email address"
+                            class="w-full px-5 py-4 border-2 border-gray-200 rounded-lg text-dark text-base font-body focus:border-gold focus:outline-none transition-colors duration-300 placeholder:text-gray-400" />
+                    </div>
+                    <div id="lfgEmailError" class="text-red-500 text-sm mb-3 hidden"></div>
+                    <button type="submit" id="lfgSubmitBtn" class="ap-btn ap-btn--gold w-full text-center">
+                        Send Me the Details &rarr;
+                    </button>
+                </form>
+            </div>
+
+            {{-- SUCCESS STATE --}}
+            <div id="lfgSuccessState" class="hidden text-center">
+                <div class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gold/10 text-gold mb-6">
+                    <svg class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                        stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                </div>
+                <h3 class="ap-luxury-heading text-3xl text-dark mb-4">You're In!</h3>
+                <p class="text-[#3a3a3a] font-light text-lg leading-relaxed mb-6">
+                    You will be personally emailed by me promptly.
+                </p>
+                <div class="bg-accent-bg rounded-lg p-5">
+                    <p class="text-[#5a5a5a] text-sm font-medium">
+                        Redirecting you to the Authorpreneur page in
+                    </p>
+                    <span id="lfgCountdown" class="text-gold ap-luxury-heading text-5xl block mt-2">7</span>
+                    <p class="text-[#5a5a5a] text-xs mt-2">seconds</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script src="{{ asset('assets/js/masterclass.js') }}"></script>
