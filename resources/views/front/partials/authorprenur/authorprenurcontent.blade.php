@@ -461,7 +461,7 @@
                     class="ap-pricing-card p-16 bg-accent-bg text-center rounded-lg relative overflow-hidden ap-fade-in border border-gold/20 shadow-md">
                     <div
                         class="absolute top-0 right-0 bg-gold text-white text-[11px] font-extrabold uppercase tracking-wider px-4 py-2 rounded-bl-lg">
-                        Best Value
+                        Wise Choice
                     </div>
                     <span
                         class="text-gold-dark text-[13px] font-extrabold uppercase tracking-[0.2em] mb-6 block">Founding

@@ -62,9 +62,10 @@
 
 <body>
 
-    @include('front.partials.common.navbar')
+    @include('front.partials.common.navbar', ['hideLogoTitle' => true])
     @include('front.partials.authorprenur.authorprenurcontent')
-    @include('front.partials.common.footer')
+    @include('front.partials.common.footer', ['hideDescription' => true])
+
     <script src="{{ asset('assets/js/index.js') }}"></script>
 
 </body>

@@ -1,7 +1,7 @@
 <!-- NAV -->
 @php
     $hideLogoTitle = $hideLogoTitle ?? false;
-    $logoStyle = $hideLogoTitle ? 'height: 40px; margin-left: 70px;' : 'height: 40px;';
+    $logoStyle = $hideLogoTitle ? 'height: 40px; margin-left: 0px;' : 'height: 40px;';
 @endphp
 
 <nav class="nav">
