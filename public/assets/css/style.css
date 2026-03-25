@@ -1218,6 +1218,7 @@ div.inline div {
 .readmore {
     cursor: pointer;
     font-weight: 700;
+    text-decoration: none;
 }
 
 .readmore:hover {

@@ -189,7 +189,7 @@
                     visibility.
                 </p>
 
-                <a class="text-color readmore"> Read more </a>
+                <a class="text-color readmore" href="{{ route('front.home.page', 'about') }}"> Read more </a>
             </div>
 
             <div class="card">

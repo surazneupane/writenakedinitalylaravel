@@ -41,7 +41,7 @@
                      </p>
                  </div>
 
-                 <a href="#"
+                 <a href="{{ route('front.home.page', 'about') }}"
                      class="inline-flex items-center gap-2 mt-8 text-gold font-semibold text-base tracking-wide group transition-all duration-300 hover:gap-3">
                      Read More
                      <svg xmlns="http://www.w3.org/2000/svg"
