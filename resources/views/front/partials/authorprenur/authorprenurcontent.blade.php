@@ -449,46 +449,112 @@
         <div class="container mx-auto px-8">
             <div class="text-center mb-20 ap-fade-in">
                 <span class="ap-separator mx-auto mb-6"></span>
-                <h2 class="ap-luxury-heading text-5xl mb-4 italic text-dark">The Investment</h2>
+                <h2 class="ap-luxury-heading text-4xl md:text-5xl mb-4 italic text-dark">The Investment</h2>
                 {{-- <p class="text-gold text-[13px] font-extrabold uppercase tracking-[0.3em] mt-4">Founding Round Pricing
                 </p> --}}
             </div>
 
-            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+            <div class="max-w-7xl mx-auto">
 
-                {{-- Paid in Full --}}
-                <div
-                    class="ap-pricing-card p-16 bg-accent-bg text-center rounded-lg relative overflow-hidden ap-fade-in border border-gold/20 shadow-md">
-                    <div
-                        class="absolute top-0 right-0 bg-gold text-white text-[11px] font-extrabold uppercase tracking-wider px-4 py-2 rounded-bl-lg">
-                        Wise Choice
-                    </div>
-                    <span
-                        class="text-gold-dark text-[13px] font-extrabold uppercase tracking-[0.2em] mb-6 block">Founding
-                        Round</span>
-                    <h3 class="ap-luxury-heading text-6xl  text-dark">&euro;2,665 </h3>
-                    <p class="text-xl font-medium my-2">or</p>
-                    <h3 class="ap-luxury-heading text-2xl mb-6 text-dark">&euro;555/6 mo</h3>
+                <div class="grid md:grid-cols-3 gap-6 lg:gap-8 items-stretch ap-stagger">
 
+                    {{-- PIF Option --}}
+                    <a href="https://buy.stripe.com/8x2dRa88J03E0Px8x07AI1E" target="_blank"
+                        class="group block rounded-xl border-2 border-gold/20 bg-accent-bg p-8 lg:p-10 text-center transition-all duration-500 hover:border-gold hover:shadow-xl hover:-translate-y-1 relative overflow-hidden ap-fade-in">
+                        <div
+                            class="absolute top-0 right-0 bg-gold text-white text-[10px] font-extrabold uppercase tracking-wider px-4 py-1.5 rounded-bl-lg">
+                            Wise Choice
+                        </div>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-br from-gold/[0.03] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        </div>
+                        <div class="relative z-10">
+                            <span
+                                class="text-gold-dark text-[11px] font-extrabold uppercase tracking-[0.3em] mb-2 block">Founding
+                                Round</span>
+                            <span
+                                class="text-gold text-[12px] font-extrabold uppercase tracking-[0.3em] mb-6 block">Pay
+                                in Full</span>
+                            <div class="flex items-baseline justify-center gap-2 mb-4">
+                                <span class="text-2xl font-light text-dark">&euro;</span>
+                                <span class="ap-luxury-heading text-5xl lg:text-6xl text-dark">2,665</span>
+                            </div>
+                            <span class="text-[#5a5a5a] text-sm font-light block mb-8">One-time payment &middot; Best
+                                value</span>
+                            <span
+                                class="inline-flex items-center gap-2 text-gold font-semibold text-base tracking-wide group-hover:gap-3 transition-all duration-300">
+                                Secure My Spot
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                </svg>
+                            </span>
+                        </div>
+                    </a>
 
+                    {{-- Payment Plan Option --}}
+                    <a href="https://buy.stripe.com/28EaEY9cNeYy8hZ5kO7AI1F" target="_blank"
+                        class="group block rounded-xl border-2 border-gray-200 bg-white p-8 lg:p-10 text-center transition-all duration-500 hover:border-gold hover:shadow-xl hover:-translate-y-1 relative overflow-hidden ap-fade-in">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-br from-gold/[0.03] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        </div>
+                        <div class="relative z-10">
+                            <span
+                                class="text-gold-dark text-[11px] font-extrabold uppercase tracking-[0.3em] mb-2 block">Founding
+                                Round</span>
+                            <span
+                                class="text-[#5a5a5a] text-[12px] font-extrabold uppercase tracking-[0.3em] mb-6 block">Payment
+                                Plan</span>
+                            <div class="flex items-baseline justify-center gap-2 mb-1">
+                                <span class="text-2xl font-light text-dark">&euro;</span>
+                                <span class="ap-luxury-heading text-5xl lg:text-6xl text-dark">555</span>
+                            </div>
+                            <span class="text-dark text-lg font-light block mb-3">&times; 6 payments</span>
+                            <span class="text-[#5a5a5a] text-sm font-light block mb-8">Spread over 6 months</span>
+                            <span
+                                class="inline-flex items-center gap-2 text-gold font-semibold text-base tracking-wide group-hover:gap-3 transition-all duration-300">
+                                Start My Plan
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                </svg>
+                            </span>
+                        </div>
+                    </a>
 
-                    <a href="#" class="ap-btn ap-btn--gold ap-btn--gold-outline w-full text-center">Secure My
-                        Spot</a>
-                </div>
-
-                {{-- Installment Plan --}}
-                <div
-                    class="ap-pricing-card p-16 border border-gray-200 text-center rounded-lg ap-fade-in bg-white shadow-sm">
-                    <span
-                        class="text-[#5a5a5a] text-[13px] font-extrabold uppercase tracking-[0.2em] mb-6 block">Regular
-                        Price
-                    </span>
-                    <h3 class="ap-luxury-heading text-6xl mb-6 text-dark">
-                        &euro;4,444
-                    </h3>
-
-                    <div class="h-20 hidden md:block"></div>
-                    <a href="#" class="ap-btn ap-btn--gold w-full text-center">Apply &amp; Join Now</a>
+                    {{-- Regular Price --}}
+                    <a href="https://buy.stripe.com/3cI7sM1KlcQqfKr28C7AI1G" target="_blank"
+                        class="group block rounded-xl border-2 border-gray-200 bg-white p-8 lg:p-10 text-center transition-all duration-500 hover:border-gold hover:shadow-xl hover:-translate-y-1 relative overflow-hidden ap-fade-in">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-br from-gold/[0.03] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        </div>
+                        <div class="relative z-10">
+                            <span
+                                class="text-[#5a5a5a] text-[11px] font-extrabold uppercase tracking-[0.3em] mb-2 block">&nbsp;</span>
+                            <span
+                                class="text-[#5a5a5a] text-[12px] font-extrabold uppercase tracking-[0.3em] mb-6 block">Regular
+                                Price</span>
+                            <div class="flex items-baseline justify-center gap-2 mb-4">
+                                <span class="text-2xl font-light text-dark">&euro;</span>
+                                <span class="ap-luxury-heading text-5xl lg:text-6xl text-dark">4,444</span>
+                            </div>
+                            <span class="text-[#5a5a5a] text-sm font-light block mb-8">&nbsp;</span>
+                            <span
+                                class="inline-flex items-center gap-2 text-gold font-semibold text-base tracking-wide group-hover:gap-3 transition-all duration-300">
+                                Apply &amp; Join Now
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                </svg>
+                            </span>
+                        </div>
+                    </a>
 
                 </div>
 
@@ -500,7 +566,7 @@
     {{-- ==========================================
          FINAL CTA
          ========================================== --}}
-    <section class="py-36 bg-white text-center overflow-hidden relative">
+    <section class="py-20 bg-white text-center overflow-hidden relative">
         <div class="absolute inset-0 pointer-events-none">
             <div
                 class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gold/[0.03] rounded-full blur-[120px]">
