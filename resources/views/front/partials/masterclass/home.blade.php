@@ -30,7 +30,7 @@
                     </h1>
                     <p
                         class="text-[#3a3a3a] text-xl md:text-2xl max-w-2xl mb-14 font-light leading-[1.8] lg:mx-0 mx-auto font-display italic">
-                        "Free Masterclass for Those Who Are Ready to Become Bestselling Authors"
+                        Free Masterclass for Those Who Are Ready to Become Bestselling Authors
                     </p>
 
                     {{-- Bullet points --}}
@@ -150,27 +150,7 @@
     </section>
 
 
-    {{-- ==========================================
-         CTA — LFG PUBLISH NOW
-         ========================================== --}}
-    {{-- <section id="signup" class="py-36 bg-accent-bg text-center overflow-hidden relative">
-        <div class="absolute inset-0 pointer-events-none">
-            <div
-                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gold/[0.03] rounded-full blur-[120px]">
-            </div>
-        </div>
-        <div class="container mx-auto px-8 relative z-10 ap-fade-in">
-            <span class="ap-separator mx-auto mb-8"></span>
-            <h2 class="ap-luxury-heading text-5xl md:text-7xl mb-8 text-dark leading-tight">
-                Ready to Become a<br>
-                <span class="italic font-normal text-gold">Bestselling Author?</span>
-            </h2>
-            <p class="text-[#5a5a5a] text-lg font-light mb-14 max-w-xl mx-auto">
-                Join the free masterclass and go from idea to published book — fast.
-            </p>
-            <a href="#" class="ap-btn ap-btn--gold">LFG Publish Now! &rarr;</a>
-        </div>
-    </section> --}}
+    @include('front.partials.authorprenur.about_section')
 
 </div>
 

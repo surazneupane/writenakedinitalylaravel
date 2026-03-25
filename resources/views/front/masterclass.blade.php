@@ -17,7 +17,7 @@
     <meta property="og:title" content="LFG Publish — Free Masterclass | From Idea to Published Book" />
     <meta property="og:description"
         content="Free Masterclass for those ready to become bestselling authors. Experience the Write Naked method, write your first raw page, and learn the path from idea to Amazon." />
-    <meta property="og:image" content="{{ asset('images/share_image.jpg') }}" />
+    <meta property="og:image" content="{{ asset('images/LFG.png') }}" />
     <meta property="og:url" content="{{ config('app.url') }}" />
     <meta property="og:type" content="website" />
 
@@ -26,7 +26,7 @@
     <meta name="twitter:title" content="LFG Publish — Free Masterclass | From Idea to Published Book" />
     <meta name="twitter:description"
         content="Free Masterclass for those ready to become bestselling authors. Experience the Write Naked method and learn the path from idea to Amazon." />
-    <meta name="twitter:image" content="{{ asset('images/share_image.jpg') }}" />
+    <meta name="twitter:image" content="{{ asset('images/LFG.png') }}" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -59,9 +59,9 @@
 </head>
 
 <body>
-    @include('front.partials.common.navbar')
+    @include('front.partials.common.navbar', ['hideLogoTitle' => true])
     @include('front.partials.masterclass.home')
-    @include('front.partials.common.footer')
+    @include('front.partials.common.footer', ['hideDescription' => true])
 
     <script src="{{ asset('assets/js/index.js') }}"></script>
 </body>

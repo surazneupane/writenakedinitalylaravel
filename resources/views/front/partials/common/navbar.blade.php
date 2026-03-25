@@ -1,10 +1,18 @@
 <!-- NAV -->
+@php
+    $hideLogoTitle = $hideLogoTitle ?? false;
+    $logoStyle = $hideLogoTitle ? 'height: 40px; margin-left: 70px;' : 'height: 40px;';
+@endphp
+
 <nav class="nav">
     <div class="nav-inner">
         <a href="{{ route('front.home') }}" class="brand" aria-label="Write Naked in Italy">
             <div>
-                <img src="{{ asset('images/logos/logo.png') }}" alt="Write Naked in Italy logo" style="height: 40px" />
-                <span>Write Naked in Italy</span>
+                <img src="{{ asset('images/logos/logo.png') }}" alt="Write Naked in Italy logo"
+                    style="{{ $logoStyle }}" />
+                @if (!$hideLogoTitle)
+                    <span>Write Naked in Italy</span>
+                @endif
             </div>
         </a>
 
