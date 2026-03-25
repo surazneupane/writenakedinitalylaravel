@@ -63,7 +63,6 @@
     @include('front.partials.masterclass.home')
     @include('front.partials.common.footer', ['hideDescription' => true])
 
-    <script src="{{ asset('assets/js/index.js') }}"></script>
 </body>
 
 
