@@ -4,30 +4,27 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>
-        Authorpreneur
-    </title>
+    <title>Authorpreneur — Turn Your Expertise Into a Published Book | Write Naked Method</title>
     <link rel="icon" type="image/x-icon" href="{{ asset('images/logos/favicon.png') }}" />
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/css/authorprenur.css') }}" />
     <meta name="description"
-        content="A world-first luxury visibility experience for published authors. Press, prestige, and Italian luxury await on 22.02.2026. Limited spaces available." />
-
+        content="Authorpreneur is a 6-month high-touch program by Mirav Tarkka that guides you from idea to published book — and positions it as a strategic business asset. 100+ authors, 100% bestseller success." />
 
     <!-- Open Graph (Facebook, LinkedIn, etc.) -->
-    <meta property="og:title" content="VIP Day | The Published Author Experience" />
+    <meta property="og:title" content="Authorpreneur — Turn Your Expertise Into a Published Book" />
     <meta property="og:description"
-        content="Luxury visibility, press &amp; prestige for published authors. Italy, 22.02.2026.." />
-    <meta property="og:image" content="{{ asset('images/share_image.jpg') }}" />
+        content="Become a recognized authority and grow your business with a published book. A 6-month program by 11-time bestselling author Mirav Tarkka. 100% bestseller success rate." />
+    <meta property="og:image" content="{{ asset('images/authorpreneur.jpeg') }}" />
     <meta property="og:url" content="{{ config('app.url') }}" />
     <meta property="og:type" content="website" />
 
     <!-- Twitter Card (for Twitter/X) -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="VIP Day | The Published Author Experience" />
+    <meta name="twitter:title" content="Authorpreneur — Turn Your Expertise Into a Published Book" />
     <meta name="twitter:description"
-        content="Luxury visibility, press &amp; prestige for published authors. Italy, 22.02.2026." />
-    <meta name="twitter:image" content="{{ asset('images/share_image.jpg') }}" />
+        content="A 6-month high-touch program to write, publish, and position your book as a business asset. Guided by Mirav Tarkka, 11-time bestselling author." />
+    <meta name="twitter:image" content="{{ asset('images/authorpreneur.jpeg') }}" />
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
