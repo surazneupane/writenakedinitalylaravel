@@ -8,14 +8,14 @@
     {{-- ==========================================
          HERO
          ========================================== --}}
-    <section class="relative mt-20 sm:mt-0 pt-40 pb-24 md:pt-32 md:pb-32 px-6 overflow-hidden bg-off-white">
+    <section class="relative mt-16 sm:mt-0 pt-40 pb-24 md:pt-32 md:pb-32 px-6 overflow-hidden bg-off-white">
         {{-- Soft decorative glows --}}
         <div class="absolute inset-0 pointer-events-none">
             <div class="absolute -top-32 -right-32 w-[500px] h-[500px] bg-gold/[0.04] rounded-full blur-[100px]"></div>
             <div class="absolute -bottom-32 -left-32 w-[400px] h-[400px] bg-gold/[0.04] rounded-full blur-[100px]"></div>
         </div>
 
-        <div class="container mx-auto max-w-7xl relative z-10">
+        <div class="container mx-auto max-w-7xl relative z-10 mt-0 md:mt-[70px] xl:mt-0">
             <div class="flex flex-col lg:flex-row items-center gap-12 xl:gap-20">
 
                 {{-- Left: Text --}}
@@ -45,7 +45,7 @@
                                     </svg>
                                 </span>
                                 <span
-                                    class="text-[#3a3a3a] text-base font-medium leading-relaxed">{{ $item }}</span>
+                                    class="text-[#3a3a3a] text-lg font-medium leading-relaxed">{{ $item }}</span>
                             </li>
                         @endforeach
                     </ul>
@@ -57,7 +57,7 @@
 
                 {{-- Right: Image --}}
                 <div class="w-full lg:w-[50%] ap-fade-in-right">
-                    <div class="relative mx-auto max-w-sm lg:max-w-lg">
+                    <div class="relative mx-auto lg:max-w-lg">
                         {{-- Gold shadow behind --}}
                         <div class="absolute top-6 left-6 right-0 bottom-0 bg-gold/15 rounded-lg blur-[2px]"></div>
                         <img src="{{ asset('images/LFG.png') }}" alt="LFG Publish Masterclass"

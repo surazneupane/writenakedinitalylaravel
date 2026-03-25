@@ -8,14 +8,14 @@
     {{-- ==========================================
          HERO
          ========================================== --}}
-    <section class="relative mt-20 sm:mt-0 pt-40 pb-24 md:pt-32 md:pb-32 px-6 overflow-hidden bg-off-white">
+    <section class="relative mt-16 sm:mt-0 pt-40 pb-24 md:pt-32 md:pb-32 px-6 overflow-hidden bg-off-white">
         {{-- Soft decorative glows --}}
         <div class="absolute inset-0 pointer-events-none">
             <div class="absolute -top-32 -right-32 w-[500px] h-[500px] bg-gold/[0.04] rounded-full blur-[100px]"></div>
             <div class="absolute -bottom-32 -left-32 w-[400px] h-[400px] bg-gold/[0.04] rounded-full blur-[100px]"></div>
         </div>
 
-        <div class="container mx-auto max-w-7xl relative z-10">
+        <div class="container mx-auto max-w-7xl relative z-10 mt-0 md:mt-[70px] xl:mt-0">
             <div class="flex flex-col lg:flex-row items-center gap-12 xl:gap-20">
 
                 {{-- Left: Text --}}
@@ -268,7 +268,7 @@
                             </div>
                             <div class="md:w-2/3">
                                 <ul
-                                    class="ap-bullet-gold space-y-2 text-[#3a3a3a] font-light text-base leading-relaxed mb-4">
+                                    class="ap-bullet-gold space-y-2 text-[#3a3a3a] font-light text-lg leading-relaxed mb-4">
                                     @foreach ($item['bullets'] as $bullet)
                                         <li>{{ $bullet }}</li>
                                     @endforeach
@@ -315,7 +315,7 @@
                     <div class="bg-white p-12 border border-gray-200 shadow-xl rounded-sm h-full flex flex-col">
                         <span class="ap-separator mb-6"></span>
                         <h2 class="ap-luxury-heading text-4xl mb-12 italic text-dark">Results To Expect</h2>
-                        <ul class="ap-bullet-gold space-y-4 text-[#3a3a3a] font-medium flex-grow">
+                        <ul class="ap-bullet-gold space-y-4 text-[#3a3a3a] font-medium flex-grow text-lg">
                             <li>A finished, polished book ready for publication</li>
                             <li>Clear, aligned message and positioning</li>
                             <li>A strategic publishing and launch plan</li>
@@ -434,7 +434,7 @@
                             class="absolute top-4 left-6 text-[5rem] leading-none font-display text-gold/10 pointer-events-none select-none">
                             &ldquo;</div>
                         <div class="relative z-10">
-                            <p class="text-[#3a3a3a] text-sm md:text-base font-light italic leading-[1.85] mb-8">
+                            <p class="text-[#3a3a3a] text-base md:text-lg font-light italic leading-[1.9] mb-8 max-w-4xl">
                                 "You are such a professional and inspiration and by taking care of every detail you made
                                 me feel like home and honored. Sharing with other authors was really nice, because of
                                 this you let me discover a new me as writer and have a vision about how far I can go.
@@ -458,7 +458,7 @@
                             class="absolute top-4 left-6 text-[5rem] leading-none font-display text-gold/10 pointer-events-none select-none">
                             &ldquo;</div>
                         <div class="relative z-10">
-                            <p class="text-[#3a3a3a] text-sm md:text-base font-light italic leading-[1.85] mb-8">
+                            <p class="text-[#3a3a3a] text-base md:text-lg font-light italic leading-[1.9] mb-8 max-w-4xl">
                                 "I joined a five day challenge with Mirav and discovered the perfect formula for me. Her
                                 power shots set me up for the day, emotionally and physically. The format of the session
                                 is what I love the most. I am never bored. I never know what Mirav will come up with
