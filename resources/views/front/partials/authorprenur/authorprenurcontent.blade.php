@@ -341,95 +341,95 @@
 
 
     {{-- ==========================================
-         TESTIMONIALS
+         TESTIMONIAL
          ========================================== --}}
     <section class="py-28 bg-accent-bg">
-        <div class="container mx-auto px-8 max-w-6xl">
+        <div class="container mx-auto px-8 max-w-7xl">
             <div class="text-center mb-20 ap-fade-in">
                 <span class="ap-separator mx-auto mb-6"></span>
                 <h2 class="ap-luxury-heading text-4xl md:text-5xl italic text-dark">What Our Authors Say</h2>
             </div>
 
-            {{-- Featured testimonial — Alina (full width) --}}
-            <div class="mb-12 ap-fade-in">
-                <div class="relative bg-white rounded-xl p-12 md:p-16 border border-gold/15 shadow-lg overflow-hidden">
-                    {{-- Decorative quote mark --}}
-                    <div
-                        class="absolute top-6 left-8 text-[8rem] leading-none font-display text-gold/10 pointer-events-none select-none">
-                        &ldquo;</div>
-                    <div class="relative z-10">
-                        <p
-                            class="text-[#3a3a3a] text-base md:text-lg
-                         font-light italic leading-[1.9] mb-8 max-w-4xl">
-                            "If you want to hold your book in your hands, the person you should choose is Mirav and her
-                            bestselling program. Mirav and her team work hard to bring your book to life. The entire
-                            process is a transformational experience, from writing your book to committing to getting
-                            published, to designing your vision on the book cover, and finally seeing it on Amazon as a
-                            #1 bestseller. It's a wonderful feeling of accomplishment and gratitude for all the people
-                            who made this book happen. Mirav is successful because she has made 80 authors bestsellers
-                            before me, and now I am one of those authors. She is going to bring many more authors and
-                            books to life. Remember to be yourself during this process and enjoy it. Stay true to your
-                            dreams and keep shining!"
-                        </p>
-                        <div class="flex items-center gap-4">
-                            <span class="w-10 h-[2px] bg-gold block"></span>
-                            <span class="text-[13px] font-extrabold uppercase tracking-[0.25em] text-gold">Alina</span>
+            <div class="flex flex-col lg:flex-row items-center gap-14 xl:gap-20">
+
+                {{-- Left: Video --}}
+                <div class="w-full lg:w-5/12 ap-fade-in-left">
+                    <div class="relative">
+                        <div class="absolute top-6 left-6 right-0 bottom-0 bg-gold/15 rounded-lg blur-[2px]"></div>
+                        <div class="relative overflow-hidden rounded-lg shadow-2xl border border-gold/10 bg-dark">
+                            <video controls playsinline autoplay muted loop class="w-full h-auto block">
+                                <source src="{{ asset('images/client_video.mp4') }}" type="video/mp4" />
+                            </video>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            {{-- Two-column testimonials --}}
-            <div class="grid md:grid-cols-2 gap-10 ap-stagger">
-
-                {{-- Renato --}}
-                <div class="ap-fade-in">
-                    <div
-                        class="relative bg-white rounded-xl p-10 border border-gold/10 shadow-sm hover:shadow-lg hover:border-gold/20 transition-all duration-500 h-full overflow-hidden">
+                {{-- Right: Testimonial --}}
+                <div class="w-full lg:w-7/12 ap-fade-in-right">
+                    <div class="relative">
+                        {{-- Decorative quote mark --}}
                         <div
-                            class="absolute top-4 left-6 text-[5rem] leading-none font-display text-gold/10 pointer-events-none select-none">
-                            &ldquo;</div>
+                            class="absolute -top-6 -left-4 text-[8rem] leading-none font-display text-gold/10 pointer-events-none select-none">
+                            &ldquo;
+                        </div>
+
                         <div class="relative z-10">
-                            <p
-                                class="text-[#3a3a3a] text-base md:text-lg font-light italic leading-[1.9] mb-8 max-w-4xl">
-                                "You are such a professional and inspiration and by taking care of every detail you made
-                                me feel like home and honored. Sharing with other authors was really nice, because of
-                                this you let me discover a new me as writer and have a vision about how far I can go.
-                                I'm looking forward to repeat this deep experience with you and other writers because
-                                the magic, the sparkling comes from you."
+                            <p class="text-gold-dark italic font-display text-2xl md:text-3xl leading-snug mb-8">
+                                "Every step we take together feels like a new doorway opening"
                             </p>
-                            <div class="flex items-center gap-4">
-                                <span class="w-8 h-[2px] bg-gold block"></span>
+
+                            <div class="space-y-5 text-[#3a3a3a] text-base md:text-[17px] font-light leading-[1.9]">
+                                <p class="font-medium text-dark">Dear Mirav,</p>
+                                <p>
+                                    When I think of you, the first image that arises is that of a <strong
+                                        class="font-semibold text-dark">luminous warrior</strong> — a woman who forges
+                                    paths where others only see walls. Your energy carries that rare and precious fusion
+                                    of strategy and soul; you are fire and compassion, direction and embrace.
+                                </p>
+                                <p>
+                                    Working by your side has shown me a mirror in which I can see myself greater.
+                                    Because you don't just believe in me — you <strong
+                                        class="font-semibold text-dark">reflect me in my own greatness</strong> — and
+                                    that, Mirav, is a gift very few possess.
+                                </p>
+                                <p>
+                                    Every step we take together feels like a new doorway opening. And what I cherish
+                                    most is your ability to <strong class="font-semibold text-dark">celebrate every
+                                        victory</strong>, no matter how small or grand. Your joy in acknowledging each
+                                    milestone uplifts me, grounds me, and reminds me that success can also be tender.
+                                </p>
+                                <p>
+                                    Thank you for your faith in me, for your loving and professional dedication, and for
+                                    that unique way you work — intense, passionate, deeply committed, yet always with
+                                    your heart wide open. Thank you for sheltering me not only with your brilliance but
+                                    with your humanity. Thank you for letting me feel the warmth of your family, for
+                                    allowing the love of your daughters to touch my soul.
+                                </p>
+                                <p>
+                                    I bless your path with everything good life can bring. May the Universe surprise you
+                                    with blessings far greater than you can yet imagine. May the light you give return
+                                    to you multiplied — through every project, every dream, every smile of your girls.
+                                </p>
+                            </div>
+
+                            {{-- Author --}}
+                            <div class="flex items-center gap-4 mt-8">
+                                <span class="w-10 h-[2px] bg-gold block"></span>
                                 <span
-                                    class="text-[13px] font-extrabold uppercase tracking-[0.25em] text-gold">Renato</span>
+                                    class="text-[13px] font-extrabold uppercase tracking-[0.25em] text-gold">Zalhára</span>
                             </div>
-                        </div>
-                    </div>
-                </div>
 
-                {{-- Wendy Panther --}}
-                <div class="ap-fade-in">
-                    <div
-                        class="relative bg-white rounded-xl p-10 border border-gold/10 shadow-sm hover:shadow-lg hover:border-gold/20 transition-all duration-500 h-full overflow-hidden">
-                        <div
-                            class="absolute top-4 left-6 text-[5rem] leading-none font-display text-gold/10 pointer-events-none select-none">
-                            &ldquo;</div>
-                        <div class="relative z-10">
-                            <p
-                                class="text-[#3a3a3a] text-base md:text-lg font-light italic leading-[1.9] mb-8 max-w-4xl">
-                                "I joined a five day challenge with Mirav and discovered the perfect formula for me. Her
-                                power shots set me up for the day, emotionally and physically. The format of the session
-                                is what I love the most. I am never bored. I never know what Mirav will come up with
-                                next to keep us stimulated and physically fit. My face and body have both toned up and I
-                                feel physically stronger. I have met some lovely people, and found a way to keep fit
-                                that suits me. I would recommend Mirav's power shots for anyone looking for a fun and
-                                flexible way to keep fit with a bunch of spiritual and likeminded people."
-                            </p>
-                            <div class="flex items-center gap-4">
-                                <span class="w-8 h-[2px] bg-gold block"></span>
-                                <span class="text-[13px] font-extrabold uppercase tracking-[0.25em] text-gold">Wendy
-                                    Panther</span>
-                            </div>
+                            {{-- Read More Stories --}}
+                            <a href="#"
+                                class="inline-flex items-center gap-2 mt-10 text-gold font-semibold text-lg tracking-wide group transition-all duration-300 hover:gap-3">
+                                Read more stories
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </div>
