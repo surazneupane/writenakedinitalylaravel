@@ -151,56 +151,154 @@
          ========================================== --}}
     <section class="py-24 md:py-32 bg-accent-bg px-6">
         <div class="container mx-auto max-w-5xl">
-            <div class="st-fade-in">
-                <div class="st-featured-quote">
-                    <div class="relative z-10">
-                        <span
-                            class="inline-block text-gold-dark text-[12px] font-extrabold uppercase tracking-[0.3em] mb-6">Featured
-                            Story</span>
 
-                        <h3 class="font-display text-3xl md:text-4xl italic text-dark mb-8 leading-snug">
-                            "Her power shots set me up for the day, emotionally and physically."
-                        </h3>
+            <div class="text-center mb-16 st-fade-in">
+                <span class="st-separator mx-auto mb-6"></span>
+                <h2 class="font-display st-section-heading text-4xl md:text-5xl italic text-dark mb-4">Featured Stories
+                </h2>
+                <p class="text-[#666] text-lg font-light max-w-xl mx-auto">Heartfelt words from authors who experienced
+                    the transformation firsthand.</p>
+            </div>
 
-                        <div class="space-y-5 text-[#3a3a3a] text-base md:text-[17px] font-light leading-[1.9]">
-                            <p>
-                                As a spiritual worker I was well aware that I was not keeping myself as physically fit
-                                as I would like. I had become aware of general aches and pains and how I was finding it
-                                difficult to get up off the floor when I had been sat playing with my grandchildren.
-                            </p>
-                            <p>
-                                I joined a five day challenge with Mirav and discovered the <strong
-                                    class="font-semibold text-dark">perfect formula for me</strong>. Her power shots set
-                                me up for the day, emotionally and physically. I use the session to check in with my
-                                alignment.
-                            </p>
-                            <p>
-                                The format of the session is what I love the most. I am never bored. I never know what
-                                Mirav will come up with next to keep us stimulated and physically fit. I've learnt face
-                                yoga, eye yoga, Krav Maga, toned my arms, butt and other places, and now look forward to
-                                the famous 45 second wiggle.
-                            </p>
-                            <p>
-                                My face and body have both toned up and I feel <strong
-                                    class="font-semibold text-dark">physically stronger</strong>. I have met some lovely
-                                people, and found a way to keep fit that suits me.
-                            </p>
-                            <p>
-                                I would recommend Mirav's power shots for anyone like myself looking for a <strong
-                                    class="font-semibold text-dark">fun and flexible way to keep fit</strong> with a
-                                bunch of spiritual and likeminded people.
-                            </p>
-                        </div>
+            <div class="space-y-10">
 
-                        {{-- Author --}}
-                        <div class="flex items-center gap-4 mt-10">
-                            <span class="w-10 h-[2px] bg-gold block"></span>
-                            <span class="text-[13px] font-extrabold uppercase tracking-[0.25em] text-gold">Wendy
-                                Panther</span>
+                {{-- Testimonial 1 — Wendy --}}
+                <div class="st-fade-in">
+                    <div class="st-featured-quote">
+                        <div class="relative z-10">
+                            <h3 class="font-display text-3xl md:text-4xl italic text-dark mb-8 leading-snug">
+                                "Her power shots set me up for the day, emotionally and physically."
+                            </h3>
+
+                            <div class="space-y-5 text-[#3a3a3a] text-base md:text-[17px] font-light leading-[1.9]">
+                                <p>
+                                    As a spiritual worker I was well aware that I was not keeping myself as physically
+                                    fit
+                                    as I would like. I had become aware of general aches and pains and how I was finding
+                                    it
+                                    difficult to get up off the floor when I had been sat playing with my grandchildren.
+                                </p>
+                                <p>
+                                    I joined a five day challenge with Mirav and discovered the <strong
+                                        class="font-semibold text-dark">perfect formula for me</strong>. Her power shots
+                                    set
+                                    me up for the day, emotionally and physically. I use the session to check in with my
+                                    alignment.
+                                </p>
+                                <p>
+                                    The format of the session is what I love the most. I am never bored. I never know
+                                    what
+                                    Mirav will come up with next to keep us stimulated and physically fit. I've learnt
+                                    face
+                                    yoga, eye yoga, Krav Maga, toned my arms, butt and other places, and now look
+                                    forward to
+                                    the famous 45 second wiggle.
+                                </p>
+                                <p>
+                                    My face and body have both toned up and I feel <strong
+                                        class="font-semibold text-dark">physically stronger</strong>. I have met some
+                                    lovely
+                                    people, and found a way to keep fit that suits me.
+                                </p>
+                                <p>
+                                    I would recommend Mirav's power shots for anyone like myself looking for a <strong
+                                        class="font-semibold text-dark">fun and flexible way to keep fit</strong> with a
+                                    bunch of spiritual and likeminded people.
+                                </p>
+                            </div>
+
+                            <div class="flex items-center gap-4 mt-10">
+                                <span class="w-10 h-[2px] bg-gold block"></span>
+                                <span class="text-[13px] font-extrabold uppercase tracking-[0.25em] text-gold">Wendy
+                                    Panther</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+
+                {{-- Renato & Alina — side by side --}}
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                    {{-- Testimonial 2 — Renato --}}
+                    <div class="st-fade-in">
+                        <div class="st-featured-quote h-full">
+                            <div class="relative z-10">
+                                <h3 class="font-display text-2xl md:text-3xl italic text-dark mb-6 leading-snug">
+                                    "The magic, the sparkling comes from you."
+                                </h3>
+
+                                <div
+                                    class="space-y-4 text-[#3a3a3a] text-[15px] md:text-base font-light leading-[1.85]">
+                                    <p class="font-medium text-dark">Dear Mirav,</p>
+                                    <p>
+                                        I want to express my gratitude for this beautiful event. The place, food, wine,
+                                        moments, everything was beautiful, because Lecce is overwhelming. Italy all it
+                                        is. You are such a
+                                        <strong class="font-semibold text-dark">professional and inspiration</strong>
+                                        and by taking care of every detail you made me feel like home and honored.
+                                    </p>
+                                    <p>
+                                        Sharing with other authors was really nice, because of this you let me discover
+                                        a <strong class="font-semibold text-dark">new me as a writer</strong> and have
+                                        a vision about how far I can go. I'm looking forward to repeat this deep
+                                        experience with you and other writers because the magic, the sparkling comes
+                                        from you.
+                                    </p>
+                                </div>
+
+                                <div class="flex items-center gap-4 mt-8">
+                                    <span class="w-10 h-[2px] bg-gold block"></span>
+                                    <span
+                                        class="text-[13px] font-extrabold uppercase tracking-[0.25em] text-gold">Renato</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {{-- Testimonial 3 — Alina --}}
+                    <div class="st-fade-in">
+                        <div class="st-featured-quote h-full">
+                            <div class="relative z-10">
+                                <h3 class="font-display text-2xl md:text-3xl italic text-dark mb-6 leading-snug">
+                                    "The entire process is a transformational experience."
+                                </h3>
+
+                                <div
+                                    class="space-y-4 text-[#3a3a3a] text-[15px] md:text-base font-light leading-[1.85]">
+                                    <p>
+                                        If you want to hold your book in your hands, the person you should choose is
+                                        <strong class="font-semibold text-dark">Mirav and her bestselling
+                                            program</strong>.
+                                        Mirav and her team work hard to bring your book to life.
+                                    </p>
+                                    <p>
+                                        The entire process is a transformational experience, from writing your book to
+                                        committing to getting published, to designing your vision on the book cover, and
+                                        finally seeing it on Amazon as a <strong class="font-semibold text-dark">#1
+                                            bestseller</strong>. It's a wonderful feeling of accomplishment and
+                                        gratitude for all the people who made this book happen.
+                                    </p>
+                                    <p>
+                                        I've had a lot of help, support and I'm grateful for that. Mirav is successful
+                                        because she has made 80 authors bestsellers before me, and now I am one of
+                                        those authors. She is going to bring many more authors and books to life.
+                                        Remember to <strong class="font-semibold text-dark">be yourself</strong> during
+                                        this process and enjoy it. Stay true to your dreams and keep shining!
+                                    </p>
+                                </div>
+
+                                <div class="flex items-center gap-4 mt-8">
+                                    <span class="w-10 h-[2px] bg-gold block"></span>
+                                    <span
+                                        class="text-[13px] font-extrabold uppercase tracking-[0.25em] text-gold">Alina</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>{{-- end grid --}}
+
+            </div>{{-- end space-y --}}
         </div>
     </section>
 
