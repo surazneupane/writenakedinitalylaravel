@@ -420,7 +420,7 @@
                             </div>
 
                             {{-- Read More Stories --}}
-                            <a href="#"
+                            <a href="{{ route('front.home.page', 'stories') }}"
                                 class="inline-flex items-center gap-2 mt-10 text-gold font-semibold text-lg tracking-wide group transition-all duration-300 hover:gap-3">
                                 Read more stories
                                 <svg xmlns="http://www.w3.org/2000/svg"
