@@ -133,12 +133,13 @@
 
     <div class="relative z-40 text-white"
         style="background: linear-gradient(135deg, #7a6020 0%, #96782a 30%, #a8873a 50%, #96782a 70%, #7a6020 100%);">
-        <div class="flex items-center justify-center gap-3 sm:gap-4 px-4 py-3.5 border-b border-white/10">
-            <span class="text-white/90 text-lg">&#9889;</span>
-            <span class="text-xs sm:text-sm font-bold tracking-[0.2em] uppercase text-white/90">
-                Flash Sale &mdash; 48 Hours Only &mdash; Price Goes Up When the Timer Hits Zero
+        <div class="flex items-center justify-center gap-2 sm:gap-4 px-3 sm:px-4 py-3.5 border-b border-white/10">
+            <span class="text-white/90 text-base sm:text-lg hidden sm:inline">&#9889;</span>
+            <span
+                class="text-[11px] sm:text-sm font-bold tracking-[0.15em] sm:tracking-[0.2em] uppercase text-white/90 text-center leading-snug">
+                Flash Sale &mdash; 48 Hours Only<br class="sm:hidden"> Price Goes Up When the Timer Hits Zero
             </span>
-            <span class="text-white/90 text-lg">&#9889;</span>
+            <span class="text-white/90 text-base sm:text-lg hidden sm:inline">&#9889;</span>
         </div>
     </div>
 
