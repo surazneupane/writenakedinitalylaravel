@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Front\HomeController;
+use App\Http\Controllers\SiteMapController;
 use Illuminate\Support\Facades\Route;
 
 // Route::get('/', function () {
@@ -14,3 +15,5 @@ Route::post('/download/activation', [HomeController::class, 'downloadActivation'
 Route::post('/download/meditation', [HomeController::class, 'downloadMeditaion'])->name('front.download.sleepmeditation');
 Route::post('/download/roadmap', [HomeController::class, 'downloadRoadmap'])->name('front.download.roadmap');
 Route::post('/download/masterclass', [HomeController::class, 'downloadMasterclass'])->name('front.download.masterclass');
+
+Route::get('/generate/sitemap', [SiteMapController::class, 'generate'])->name('sitemap.generate');
