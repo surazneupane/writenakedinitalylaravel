@@ -119,6 +119,8 @@
             transform: scale(1.03);
         }
     </style>
+    @include('front.partials.common.google_analytics')
+
 </head>
 
 <body class="antialiased text-[#2d2d2d] font-body bg-off-white">

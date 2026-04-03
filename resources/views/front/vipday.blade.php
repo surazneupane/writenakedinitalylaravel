@@ -36,6 +36,8 @@
         href="https://fonts.googleapis.com/css2?family=Butler:wght@400;700;900&family=Manrope:wght@400;500;700&display=swap"
         rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    @include('front.partials.common.google_analytics')
+
 </head>
 
 <body>

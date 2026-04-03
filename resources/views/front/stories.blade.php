@@ -53,6 +53,8 @@
             }
         }
     </script>
+    @include('front.partials.common.google_analytics')
+
 </head>
 
 <body class="antialiased font-body text-[#2d2d2d]">

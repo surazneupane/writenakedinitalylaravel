@@ -55,6 +55,8 @@
         }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    @include('front.partials.common.google_analytics')
+
 </head>
 
 <body>

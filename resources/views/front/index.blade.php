@@ -40,6 +40,7 @@
         rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="https://www.google.com/recaptcha/api.js?render={{ config('services.recaptcha.site_key') }}"></script>
+    @include('front.partials.common.google_analytics')
 </head>
 
 <body>
