@@ -65,14 +65,24 @@
          HERO SECTION
          ========================================== --}}
     <section class="mt-16 stories-hero pt-40 pb-24 md:pt-48 md:pb-32 px-6">
+        {{-- Sparkle particles --}}
+        <div class="st-sparkle hidden lg:block"></div>
+        <div class="st-sparkle hidden lg:block"></div>
+        <div class="st-sparkle hidden lg:block"></div>
+        <div class="st-sparkle hidden lg:block"></div>
+        <div class="st-sparkle hidden lg:block"></div>
+
         <div class="container mx-auto max-w-7xl relative z-10">
             <div class="text-center">
                 {{-- Floating decorative elements --}}
                 <div
-                    class="absolute top-0 left-10 w-20 h-20 border border-gold/10 rounded-full st-float hidden lg:block">
+                    class="absolute top-0 left-10 w-24 h-24 border border-gold/10 rounded-full st-float hidden lg:block">
                 </div>
                 <div
-                    class="absolute bottom-10 right-20 w-14 h-14 border border-gold/10 rounded-full st-float-delay hidden lg:block">
+                    class="absolute bottom-10 right-20 w-16 h-16 border border-gold/10 rounded-full st-float-delay hidden lg:block">
+                </div>
+                <div
+                    class="absolute top-1/2 right-10 w-10 h-10 border border-gold/5 rounded-full st-float hidden lg:block">
                 </div>
 
                 <span class="st-separator mx-auto mb-8"></span>
@@ -89,17 +99,17 @@
                         class="text-gold-light font-semibold">bestsellers</strong>.
                 </p>
 
-                {{-- Stats row --}}
-                <div class="flex flex-wrap justify-center gap-8 md:gap-16 mt-16">
-                    <div class="text-center">
+                {{-- Stats row with glass boxes --}}
+                <div class="flex flex-wrap justify-center gap-6 md:gap-10 mt-16">
+                    <div class="st-stat-box text-center">
                         <div class="st-stat-number font-display">100+</div>
                         <div class="text-white/50 text-sm uppercase tracking-[0.2em] mt-2">Authors Guided</div>
                     </div>
-                    <div class="text-center">
+                    <div class="st-stat-box text-center">
                         <div class="st-stat-number font-display">100%</div>
                         <div class="text-white/50 text-sm uppercase tracking-[0.2em] mt-2">Bestseller Rate</div>
                     </div>
-                    <div class="text-center">
+                    <div class="st-stat-box text-center">
                         <div class="st-stat-number font-display">11</div>
                         <div class="text-white/50 text-sm uppercase tracking-[0.2em] mt-2">Mirav's Bestsellers</div>
                     </div>
@@ -112,10 +122,13 @@
     {{-- ==========================================
          VIDEO STORIES
          ========================================== --}}
-    <section class="py-24 md:py-32 bg-off-white px-6">
+    <section class="py-24 md:py-32 bg-off-white px-6 relative">
+        <div class="st-section-divider absolute top-0 left-0 right-0"></div>
         <div class="container mx-auto max-w-7xl">
-            <div class="text-center mb-16 st-fade-in">
+            <div class="text-center mb-20 st-fade-in">
                 <span class="st-separator mx-auto mb-6"></span>
+                <span class="inline-block text-gold text-[12px] font-extrabold uppercase tracking-[0.35em] mb-4">Video
+                    Testimonials</span>
                 <h2 class="font-display st-section-heading text-4xl md:text-5xl italic text-dark mb-4">Watch Their
                     Stories</h2>
                 <p class="text-[#666] text-lg font-light max-w-xl mx-auto">Hear firsthand from authors who transformed
@@ -151,11 +164,14 @@
     {{-- ==========================================
          FEATURED WRITTEN TESTIMONIAL
          ========================================== --}}
-    <section class="py-24 md:py-32 bg-accent-bg px-6">
+    <section class="py-24 md:py-32 bg-accent-bg px-6 relative">
+        <div class="st-section-divider absolute top-0 left-0 right-0"></div>
         <div class="container mx-auto max-w-5xl">
 
-            <div class="text-center mb-16 st-fade-in">
+            <div class="text-center mb-20 st-fade-in">
                 <span class="st-separator mx-auto mb-6"></span>
+                <span class="inline-block text-gold text-[12px] font-extrabold uppercase tracking-[0.35em] mb-4">In
+                    Their Words</span>
                 <h2 class="font-display st-section-heading text-4xl md:text-5xl italic text-dark mb-4">Featured Stories
                 </h2>
                 <p class="text-[#666] text-lg font-light max-w-xl mx-auto">Heartfelt words from authors who experienced
@@ -182,7 +198,8 @@
                                 </p>
                                 <p>
                                     I joined a five day challenge with Mirav and discovered the <strong
-                                        class="font-semibold text-dark">perfect formula for me</strong>. Her power shots
+                                        class="font-semibold text-dark">perfect formula for me</strong>. Her power
+                                    shots
                                     set
                                     me up for the day, emotionally and physically. I use the session to check in with my
                                     alignment.
@@ -204,7 +221,8 @@
                                 </p>
                                 <p>
                                     I would recommend Mirav's power shots for anyone like myself looking for a <strong
-                                        class="font-semibold text-dark">fun and flexible way to keep fit</strong> with a
+                                        class="font-semibold text-dark">fun and flexible way to keep fit</strong> with
+                                    a
                                     bunch of spiritual and likeminded people.
                                 </p>
                             </div>
@@ -339,10 +357,13 @@
     {{-- ==========================================
          TESTIMONIAL GALLERY — Written Testimonials
          ========================================== --}}
-    <section class="py-24 md:py-32 bg-off-white px-6">
+    <section class="py-24 md:py-32 bg-off-white px-6 relative">
+        <div class="st-section-divider absolute top-0 left-0 right-0"></div>
         <div class="container mx-auto max-w-7xl">
-            <div class="text-center mb-16 st-fade-in">
+            <div class="text-center mb-20 st-fade-in">
                 <span class="st-separator mx-auto mb-6"></span>
+                <span
+                    class="inline-block text-gold text-[12px] font-extrabold uppercase tracking-[0.35em] mb-4">Gallery</span>
                 <h2 class="font-display st-section-heading text-4xl md:text-5xl italic text-dark mb-4">In Their Own
                     Words</h2>
                 <p class="text-[#666] text-lg font-light max-w-xl mx-auto">Unfiltered testimonials from our authors —
@@ -357,36 +378,35 @@
                 <button class="st-tab" data-filter="author">Authors</button>
             </div>
 
-            {{-- Masonry Gallery --}}
-            <div class="st-masonry st-stagger" id="testimonialGallery">
+            {{-- Gallery Grid --}}
+            <div class="st-gallery-grid st-stagger" id="testimonialGallery">
 
-                {{-- Written testimonial screenshots --}}
                 <div class="st-gallery-item st-fade-in" data-category="written">
                     <div class="st-testimonial-img" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/Carlo-eng.jpg') }}" alt="Carlo's Testimonial"
+                        <img src="{{ asset('images/testimonials/sample4.svg') }}" alt="Author Testimonial"
                             loading="lazy" />
                     </div>
                 </div>
 
                 <div class="st-gallery-item st-fade-in" data-category="author">
-                    <div class="st-author-card" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/Aubrey.jpg') }}" alt="Aubrey" loading="lazy" />
+                    <div class="st-testimonial-img" onclick="openLightbox(this)">
+                        <img src="{{ asset('images/testimonials/sample5.svg') }}" alt="Aubrey" loading="lazy" />
                         <div class="st-author-overlay">
                             <span class="text-[13px] font-extrabold uppercase tracking-[0.2em]">Aubrey</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="st-gallery-item st-fade-in" data-category="written">
-                    <div class="st-testimonial-img" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/Nicola-eng.jpg') }}" alt="Nicola's Testimonial"
+                <div class="st-gallery-item st-fade-in" data-category="message">
+                    <div class="st-whatsapp-card" onclick="openLightbox(this)">
+                        <img src="{{ asset('images/testimonials/sample4.svg') }}" alt="Message Testimonial"
                             loading="lazy" />
                     </div>
                 </div>
 
                 <div class="st-gallery-item st-fade-in" data-category="author">
-                    <div class="st-author-card" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/Beverley.jpg') }}" alt="Beverley" loading="lazy" />
+                    <div class="st-testimonial-img" onclick="openLightbox(this)">
+                        <img src="{{ asset('images/testimonials/sample5.svg') }}" alt="Beverley" loading="lazy" />
                         <div class="st-author-overlay">
                             <span class="text-[13px] font-extrabold uppercase tracking-[0.2em]">Beverley</span>
                         </div>
@@ -395,30 +415,30 @@
 
                 <div class="st-gallery-item st-fade-in" data-category="written">
                     <div class="st-testimonial-img" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/Vince-eng.jpg') }}" alt="Vince's Testimonial"
+                        <img src="{{ asset('images/testimonials/sample4.svg') }}" alt="Author Testimonial"
                             loading="lazy" />
                     </div>
                 </div>
 
                 <div class="st-gallery-item st-fade-in" data-category="author">
-                    <div class="st-author-card" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/Eva.jpg') }}" alt="Eva" loading="lazy" />
+                    <div class="st-testimonial-img" onclick="openLightbox(this)">
+                        <img src="{{ asset('images/testimonials/sample5.svg') }}" alt="Eva" loading="lazy" />
                         <div class="st-author-overlay">
                             <span class="text-[13px] font-extrabold uppercase tracking-[0.2em]">Eva</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="st-gallery-item st-fade-in" data-category="written">
-                    <div class="st-testimonial-img" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/Elena (1).jpg') }}" alt="Elena's Testimonial"
+                <div class="st-gallery-item st-fade-in" data-category="message">
+                    <div class="st-whatsapp-card" onclick="openLightbox(this)">
+                        <img src="{{ asset('images/testimonials/sample4.svg') }}" alt="Message Testimonial"
                             loading="lazy" />
                     </div>
                 </div>
 
                 <div class="st-gallery-item st-fade-in" data-category="author">
-                    <div class="st-author-card" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/Heidi.jpg') }}" alt="Heidi" loading="lazy" />
+                    <div class="st-testimonial-img" onclick="openLightbox(this)">
+                        <img src="{{ asset('images/testimonials/sample5.svg') }}" alt="Heidi" loading="lazy" />
                         <div class="st-author-overlay">
                             <span class="text-[13px] font-extrabold uppercase tracking-[0.2em]">Heidi</span>
                         </div>
@@ -427,30 +447,30 @@
 
                 <div class="st-gallery-item st-fade-in" data-category="written">
                     <div class="st-testimonial-img" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/Cristina (1).jpg') }}" alt="Cristina's Testimonial"
+                        <img src="{{ asset('images/testimonials/sample4.svg') }}" alt="Author Testimonial"
                             loading="lazy" />
                     </div>
                 </div>
 
                 <div class="st-gallery-item st-fade-in" data-category="author">
-                    <div class="st-author-card" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/James.jpg') }}" alt="James" loading="lazy" />
+                    <div class="st-testimonial-img" onclick="openLightbox(this)">
+                        <img src="{{ asset('images/testimonials/sample5.svg') }}" alt="James" loading="lazy" />
                         <div class="st-author-overlay">
                             <span class="text-[13px] font-extrabold uppercase tracking-[0.2em]">James</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="st-gallery-item st-fade-in" data-category="written">
-                    <div class="st-testimonial-img" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/17.jpg') }}" alt="Author Testimonial"
+                <div class="st-gallery-item st-fade-in" data-category="message">
+                    <div class="st-whatsapp-card" onclick="openLightbox(this)">
+                        <img src="{{ asset('images/testimonials/sample4.svg') }}" alt="Message Testimonial"
                             loading="lazy" />
                     </div>
                 </div>
 
                 <div class="st-gallery-item st-fade-in" data-category="author">
-                    <div class="st-author-card" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/Jane.jpg') }}" alt="Jane" loading="lazy" />
+                    <div class="st-testimonial-img" onclick="openLightbox(this)">
+                        <img src="{{ asset('images/testimonials/sample5.svg') }}" alt="Jane" loading="lazy" />
                         <div class="st-author-overlay">
                             <span class="text-[13px] font-extrabold uppercase tracking-[0.2em]">Jane</span>
                         </div>
@@ -459,30 +479,30 @@
 
                 <div class="st-gallery-item st-fade-in" data-category="written">
                     <div class="st-testimonial-img" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/18.jpg') }}" alt="Author Testimonial"
+                        <img src="{{ asset('images/testimonials/sample4.svg') }}" alt="Author Testimonial"
                             loading="lazy" />
                     </div>
                 </div>
 
                 <div class="st-gallery-item st-fade-in" data-category="author">
-                    <div class="st-author-card" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/Jasjit.jpg') }}" alt="Jasjit" loading="lazy" />
+                    <div class="st-testimonial-img" onclick="openLightbox(this)">
+                        <img src="{{ asset('images/testimonials/sample5.svg') }}" alt="Jasjit" loading="lazy" />
                         <div class="st-author-overlay">
                             <span class="text-[13px] font-extrabold uppercase tracking-[0.2em]">Jasjit</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="st-gallery-item st-fade-in" data-category="written">
-                    <div class="st-testimonial-img" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/19.jpg') }}" alt="Author Testimonial"
+                <div class="st-gallery-item st-fade-in" data-category="message">
+                    <div class="st-whatsapp-card" onclick="openLightbox(this)">
+                        <img src="{{ asset('images/testimonials/sample4.svg') }}" alt="Message Testimonial"
                             loading="lazy" />
                     </div>
                 </div>
 
                 <div class="st-gallery-item st-fade-in" data-category="author">
-                    <div class="st-author-card" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/Jola.jpg') }}" alt="Jola" loading="lazy" />
+                    <div class="st-testimonial-img" onclick="openLightbox(this)">
+                        <img src="{{ asset('images/testimonials/sample5.svg') }}" alt="Jola" loading="lazy" />
                         <div class="st-author-overlay">
                             <span class="text-[13px] font-extrabold uppercase tracking-[0.2em]">Jola</span>
                         </div>
@@ -491,96 +511,64 @@
 
                 <div class="st-gallery-item st-fade-in" data-category="written">
                     <div class="st-testimonial-img" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/46.jpg') }}" alt="Author Testimonial"
+                        <img src="{{ asset('images/testimonials/sample4.svg') }}" alt="Author Testimonial"
                             loading="lazy" />
                     </div>
                 </div>
 
                 <div class="st-gallery-item st-fade-in" data-category="author">
-                    <div class="st-author-card" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/Martina (1).jpg') }}" alt="Martina"
-                            loading="lazy" />
+                    <div class="st-testimonial-img" onclick="openLightbox(this)">
+                        <img src="{{ asset('images/testimonials/sample5.svg') }}" alt="Martina" loading="lazy" />
                         <div class="st-author-overlay">
                             <span class="text-[13px] font-extrabold uppercase tracking-[0.2em]">Martina</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="st-gallery-item st-fade-in" data-category="written">
-                    <div class="st-testimonial-img" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/47.jpg') }}" alt="Author Testimonial"
+                <div class="st-gallery-item st-fade-in" data-category="message">
+                    <div class="st-whatsapp-card" onclick="openLightbox(this)">
+                        <img src="{{ asset('images/testimonials/sample4.svg') }}" alt="Message Testimonial"
                             loading="lazy" />
                     </div>
                 </div>
 
                 <div class="st-gallery-item st-fade-in" data-category="author">
-                    <div class="st-author-card" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/Martine.jpg') }}" alt="Martine" loading="lazy" />
+                    <div class="st-testimonial-img" onclick="openLightbox(this)">
+                        <img src="{{ asset('images/testimonials/sample5.svg') }}" alt="Martine" loading="lazy" />
                         <div class="st-author-overlay">
                             <span class="text-[13px] font-extrabold uppercase tracking-[0.2em]">Martine</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="st-gallery-item st-fade-in" data-category="written">
-                    <div class="st-testimonial-img" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/48.jpg') }}" alt="Author Testimonial"
-                            loading="lazy" />
-                    </div>
-                </div>
-
                 <div class="st-gallery-item st-fade-in" data-category="author">
-                    <div class="st-author-card" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/Natalia.jpg') }}" alt="Natalia" loading="lazy" />
+                    <div class="st-testimonial-img" onclick="openLightbox(this)">
+                        <img src="{{ asset('images/testimonials/sample4.svg') }}" alt="Natalia" loading="lazy" />
                         <div class="st-author-overlay">
                             <span class="text-[13px] font-extrabold uppercase tracking-[0.2em]">Natalia</span>
                         </div>
                     </div>
                 </div>
 
-                {{-- Messages / WhatsApp --}}
-                <div class="st-gallery-item st-fade-in" data-category="message">
-                    <div class="st-whatsapp-card" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/WhatsApp Image 2024-02-24 at 12.00.53.jpeg') }}"
-                            alt="WhatsApp Testimonial" loading="lazy" />
-                    </div>
-                </div>
-
                 <div class="st-gallery-item st-fade-in" data-category="author">
-                    <div class="st-author-card" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/Nicole.jpg') }}" alt="Nicole" loading="lazy" />
+                    <div class="st-testimonial-img" onclick="openLightbox(this)">
+                        <img src="{{ asset('images/testimonials/sample5.svg') }}" alt="Nicole" loading="lazy" />
                         <div class="st-author-overlay">
                             <span class="text-[13px] font-extrabold uppercase tracking-[0.2em]">Nicole</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="st-gallery-item st-fade-in" data-category="message">
-                    <div class="st-whatsapp-card" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/WhatsApp Image 2024-02-24 at 12.00.54.jpeg') }}"
-                            alt="WhatsApp Testimonial" loading="lazy" />
+                <div class="st-gallery-item st-fade-in" data-category="written">
+                    <div class="st-testimonial-img" onclick="openLightbox(this)">
+                        <img src="{{ asset('images/testimonials/sample4.svg') }}" alt="Author Testimonial"
+                            loading="lazy" />
                     </div>
                 </div>
 
                 <div class="st-gallery-item st-fade-in" data-category="author">
-                    <div class="st-author-card" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/Nina.jpg') }}" alt="Nina" loading="lazy" />
-                        <div class="st-author-overlay">
-                            <span class="text-[13px] font-extrabold uppercase tracking-[0.2em]">Nina</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="st-gallery-item st-fade-in" data-category="message">
-                    <div class="st-whatsapp-card" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/WhatsApp Image 2024-02-24 at 12.00.53 (1).jpeg') }}"
-                            alt="WhatsApp Testimonial" loading="lazy" />
-                    </div>
-                </div>
-
-                <div class="st-gallery-item st-fade-in" data-category="author">
-                    <div class="st-author-card" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/Pauline.jpg') }}" alt="Pauline" loading="lazy" />
+                    <div class="st-testimonial-img" onclick="openLightbox(this)">
+                        <img src="{{ asset('images/testimonials/sample5.svg') }}" alt="Pauline" loading="lazy" />
                         <div class="st-author-overlay">
                             <span class="text-[13px] font-extrabold uppercase tracking-[0.2em]">Pauline</span>
                         </div>
@@ -589,46 +577,32 @@
 
                 <div class="st-gallery-item st-fade-in" data-category="message">
                     <div class="st-whatsapp-card" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/WhatsApp Image 2024-02-25 at 12.16.18.jpeg') }}"
-                            alt="WhatsApp Testimonial" loading="lazy" />
+                        <img src="{{ asset('images/testimonials/sample4.svg') }}" alt="Message Testimonial"
+                            loading="lazy" />
                     </div>
                 </div>
 
                 <div class="st-gallery-item st-fade-in" data-category="author">
-                    <div class="st-author-card" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/Shalini.jpg') }}" alt="Shalini" loading="lazy" />
+                    <div class="st-testimonial-img" onclick="openLightbox(this)">
+                        <img src="{{ asset('images/testimonials/sample5.svg') }}" alt="Shalini" loading="lazy" />
                         <div class="st-author-overlay">
                             <span class="text-[13px] font-extrabold uppercase tracking-[0.2em]">Shalini</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="st-gallery-item st-fade-in" data-category="message">
-                    <div class="st-whatsapp-card" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/WhatsApp Image 2024-02-26 at 12.18.57.jpeg') }}"
-                            alt="WhatsApp Testimonial" loading="lazy" />
-                    </div>
-                </div>
-
                 <div class="st-gallery-item st-fade-in" data-category="author">
-                    <div class="st-author-card" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/Emelle.jpg') }}" alt="Emelle" loading="lazy" />
+                    <div class="st-testimonial-img" onclick="openLightbox(this)">
+                        <img src="{{ asset('images/testimonials/sample4.svg') }}" alt="Emelle" loading="lazy" />
                         <div class="st-author-overlay">
                             <span class="text-[13px] font-extrabold uppercase tracking-[0.2em]">Emelle</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="st-gallery-item st-fade-in" data-category="message">
-                    <div class="st-whatsapp-card" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/WhatsApp Image 2024-02-24 at 12.41.15.jpeg') }}"
-                            alt="WhatsApp Testimonial" loading="lazy" />
-                    </div>
-                </div>
-
                 <div class="st-gallery-item st-fade-in" data-category="author">
-                    <div class="st-author-card" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/Sarah.jpg') }}" alt="Sarah" loading="lazy" />
+                    <div class="st-testimonial-img" onclick="openLightbox(this)">
+                        <img src="{{ asset('images/testimonials/sample5.svg') }}" alt="Sarah" loading="lazy" />
                         <div class="st-author-overlay">
                             <span class="text-[13px] font-extrabold uppercase tracking-[0.2em]">Sarah</span>
                         </div>
@@ -637,55 +611,39 @@
 
                 <div class="st-gallery-item st-fade-in" data-category="message">
                     <div class="st-whatsapp-card" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/WhatsApp Image 2023-11-20 at 17.04.09.jpeg') }}"
-                            alt="WhatsApp Testimonial" loading="lazy" />
+                        <img src="{{ asset('images/testimonials/sample4.svg') }}" alt="Message Testimonial"
+                            loading="lazy" />
                     </div>
                 </div>
 
                 <div class="st-gallery-item st-fade-in" data-category="author">
-                    <div class="st-author-card" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/Yoel.jpg') }}" alt="Yoel" loading="lazy" />
+                    <div class="st-testimonial-img" onclick="openLightbox(this)">
+                        <img src="{{ asset('images/testimonials/sample5.svg') }}" alt="Yoel" loading="lazy" />
                         <div class="st-author-overlay">
                             <span class="text-[13px] font-extrabold uppercase tracking-[0.2em]">Yoel</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="st-gallery-item st-fade-in" data-category="message">
-                    <div class="st-whatsapp-card" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/WhatsApp Image 2023-11-20 at 17.04.09 (1).jpeg') }}"
-                            alt="WhatsApp Testimonial" loading="lazy" />
-                    </div>
-                </div>
-
                 <div class="st-gallery-item st-fade-in" data-category="author">
-                    <div class="st-author-card" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/jana.jpg') }}" alt="Jana" loading="lazy" />
+                    <div class="st-testimonial-img" onclick="openLightbox(this)">
+                        <img src="{{ asset('images/testimonials/sample4.svg') }}" alt="Jana" loading="lazy" />
                         <div class="st-author-overlay">
                             <span class="text-[13px] font-extrabold uppercase tracking-[0.2em]">Jana</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="st-gallery-item st-fade-in" data-category="message">
-                    <div class="st-whatsapp-card" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/WhatsApp Image 2023-11-21 at 17.48.31.jpeg') }}"
-                            alt="WhatsApp Testimonial" loading="lazy" />
-                    </div>
-                </div>
-
                 <div class="st-gallery-item st-fade-in" data-category="written">
                     <div class="st-testimonial-img" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/331136248_527223442861998_8458549661641420274_n.jpg') }}"
-                            alt="Testimonial" loading="lazy" />
+                        <img src="{{ asset('images/testimonials/sample5.svg') }}" alt="Testimonial"
+                            loading="lazy" />
                     </div>
                 </div>
 
-                {{-- Remaining authors --}}
                 <div class="st-gallery-item st-fade-in" data-category="author">
-                    <div class="st-author-card" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/Sarah-Fast.jpg') }}" alt="Sarah Fast"
-                            loading="lazy" />
+                    <div class="st-testimonial-img" onclick="openLightbox(this)">
+                        <img src="{{ asset('images/testimonials/sample4.svg') }}" alt="Sarah Fast" loading="lazy" />
                         <div class="st-author-overlay">
                             <span class="text-[13px] font-extrabold uppercase tracking-[0.2em]">Sarah Fast</span>
                         </div>
@@ -693,8 +651,8 @@
                 </div>
 
                 <div class="st-gallery-item st-fade-in" data-category="author">
-                    <div class="st-author-card" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/Sarah-Lines.jpg') }}" alt="Sarah Lines"
+                    <div class="st-testimonial-img" onclick="openLightbox(this)">
+                        <img src="{{ asset('images/testimonials/sample5.svg') }}" alt="Sarah Lines"
                             loading="lazy" />
                         <div class="st-author-overlay">
                             <span class="text-[13px] font-extrabold uppercase tracking-[0.2em]">Sarah Lines</span>
@@ -702,7 +660,7 @@
                     </div>
                 </div>
 
-            </div>{{-- end masonry --}}
+            </div>{{-- end gallery grid --}}
         </div>
     </section>
 
@@ -710,29 +668,32 @@
     {{-- ==========================================
          CALL TO ACTION
          ========================================== --}}
-    <section class="py-24 md:py-32 bg-dark px-6 relative overflow-hidden">
+    <section class="py-28 md:py-36 bg-dark px-6 relative overflow-hidden">
         <div class="absolute inset-0 pointer-events-none">
-            <div class="absolute -top-32 -right-32 w-[500px] h-[500px] bg-gold/[0.04] rounded-full blur-[100px]"></div>
-            <div class="absolute -bottom-32 -left-32 w-[400px] h-[400px] bg-gold/[0.04] rounded-full blur-[100px]">
+            <div class="absolute -top-32 -right-32 w-[500px] h-[500px] bg-gold/[0.05] rounded-full blur-[120px]"></div>
+            <div class="absolute -bottom-32 -left-32 w-[400px] h-[400px] bg-gold/[0.05] rounded-full blur-[120px]">
             </div>
         </div>
 
-        <div class="container mx-auto max-w-4xl relative z-10 text-center st-fade-in">
+        <div class="container mx-auto max-w-4xl relative z-10 text-center st-fade-in st-cta-glow">
             <span class="st-separator mx-auto mb-8"></span>
+            <span class="inline-block text-gold-light text-[12px] font-extrabold uppercase tracking-[0.4em] mb-6">
+                Ready to Begin?
+            </span>
             <h2 class="font-display st-section-heading text-4xl md:text-5xl lg:text-6xl italic text-white mb-8">
                 Your Story Could Be <span class="text-gold-light">Next</span>
             </h2>
-            <p class="text-white/60 text-lg md:text-xl font-light max-w-2xl mx-auto mb-12 leading-relaxed">
+            <p class="text-white/60 text-lg md:text-xl font-light max-w-2xl mx-auto mb-14 leading-relaxed">
                 Join 100+ authors who turned their expertise into bestselling books.
                 The only missing piece is <strong class="text-gold-light font-semibold">you</strong>.
             </p>
-            <div class="flex flex-wrap justify-center gap-4">
+            <div class="flex flex-wrap justify-center gap-5">
                 <a href="{{ route('front.home.page', 'masterclass') }}"
-                    class="inline-block px-10 py-4 bg-gold text-white font-bold text-sm uppercase tracking-[0.15em] rounded-[2px] border-2 border-gold transition-all duration-400 hover:bg-transparent hover:text-gold-light">
+                    class="inline-block px-12 py-4 bg-gradient-to-r from-gold to-gold-light text-white font-bold text-sm uppercase tracking-[0.15em] rounded-full border-2 border-transparent transition-all duration-500 hover:shadow-[0_8px_30px_rgba(190,150,51,0.4)] hover:scale-105">
                     Start Your Journey
                 </a>
                 <a href="https://calendly.com/peppercoaching/your-book-my-priority" target="_blank"
-                    class="inline-block px-10 py-4 bg-transparent text-white font-bold text-sm uppercase tracking-[0.15em] rounded-[2px] border-2 border-white/30 transition-all duration-400 hover:bg-white hover:text-dark hover:border-white">
+                    class="inline-block px-12 py-4 bg-transparent text-white font-bold text-sm uppercase tracking-[0.15em] rounded-full border-2 border-white/20 transition-all duration-500 hover:bg-white hover:text-dark hover:border-white hover:scale-105">
                     Book a Call
                 </a>
             </div>
@@ -772,6 +733,9 @@
             });
 
             animElements.forEach(el => observer.observe(el));
+
+            // Also observe scale-up elements
+            document.querySelectorAll('.st-scale-up').forEach(el => observer.observe(el));
         });
 
         // Filter tabs
