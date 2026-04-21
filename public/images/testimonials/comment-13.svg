@@ -1,0 +1,101 @@
+<svg width="100%" viewBox="0 0 680 960" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8e6f24" />
+      <stop offset="50%" stop-color="#be9633" />
+      <stop offset="100%" stop-color="#d4b761" />
+    </linearGradient>
+
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#000000" flood-opacity="0.12" />
+    </filter>
+  </defs>
+
+  <!-- TOP GOLD LINE -->
+  <rect x="0" y="0" width="680" height="3" fill="url(#goldGrad)" />
+
+  <!-- HANGER -->
+  <rect x="290" y="85" width="100" height="14" fill="#fdfdfb" stroke="#e6e6e6" rx="4" />
+
+  <!-- CARD -->
+  <rect x="56" y="110" width="568" height="780" rx="12" fill="#ffffff" stroke="#eeeeee" filter="url(#shadow)" />
+
+  <!-- TOP BORDER -->
+  <rect x="56" y="110" width="568" height="3" fill="url(#goldGrad)" />
+
+  <!-- STARS -->
+  <g fill="#be9633">
+    <path d="M280,155 L283,164 L292,164 L285,170 L288,179 L280,173 L272,179 L275,170 L268,164 L277,164 Z" />
+    <path d="M310,155 L313,164 L322,164 L315,170 L318,179 L310,173 L302,179 L305,170 L298,164 L307,164 Z" />
+    <path d="M340,155 L343,164 L352,164 L345,170 L348,179 L340,173 L332,179 L335,170 L328,164 L337,164 Z" />
+    <path d="M370,155 L373,164 L382,164 L375,170 L378,179 L370,173 L362,179 L365,170 L358,164 L367,164 Z" />
+    <path d="M400,155 L403,164 L412,164 L405,170 L408,179 L400,173 L392,179 L395,170 L388,164 L397,164 Z" />
+  </g>
+
+  <!-- QUOTE -->
+  <text x="80" y="240" font-family="Georgia, serif" font-size="80" fill="#be9633" opacity="0.15">"</text>
+
+  <!-- BLOCK 1 -->
+  <text x="340" y="260" text-anchor="middle" font-family="Georgia, serif" font-size="15.5" fill="#1f1f1f"
+    font-style="italic">
+
+    <tspan x="340" dy="0">I’ve had the pleasure of not only working with</tspan>
+    <tspan x="340" dy="24">Mirav multiple times.a few times now, but training </tspan>
+    <tspan x="340" dy="24">with her as well. She always brings boundless enthusiasm,</tspan>
+    <tspan x="340" dy="24">i can-do attitude and positive energy.</tspan>
+
+    <tspan x="340" dy="28" font-style="normal" font-weight="700" fill="#8e6f24">
+      whether it’s training or a work project.
+    </tspan>
+
+  </text>
+
+  <!-- DIVIDER -->
+  <line x1="150" y1="420" x2="530" y2="420" stroke="#be9633" stroke-opacity="0.25" />
+
+  <!-- BLOCK 2 -->
+  <text x="340" y="450" text-anchor="middle" font-family="Georgia, serif" font-size="15.5" fill="#1f1f1f"
+    font-style="italic">
+
+    <tspan x="340" dy="0">Most recently I’ve worked with her on the ONE book project and </tspan>
+    <tspan x="340" dy="24">she’s been a champ. It’s not easy getting a bunch of individuals </tspan>
+
+    <tspan x="340" dy="24">to come together, write chapters, produce assets, </tspan>
+    <tspan x="340" dy="24">promote and more, especially on a tight deadline BUT </tspan>
+
+    <tspan x="340" dy="28" font-style="normal" font-weight="700" fill="#8e6f24">
+      Mirav has done it.
+    </tspan>
+
+  </text>
+
+  <!-- DIVIDER -->
+  <line x1="150" y1="600" x2="530" y2="600" stroke="#be9633" stroke-opacity="0.25" />
+
+  <!-- BLOCK 3 -->
+  <text x="340" y="630" text-anchor="middle" font-family="Georgia, serif" font-size="15.5" fill="#1f1f1f"
+    font-style="italic">
+
+    <tspan x="340" dy="0">She kept the entire project moving fast</tspan>
+    <tspan x="340" dy="24">towards success. and</tspan>
+
+    <tspan x="340" dy="28" font-style="normal" font-weight="700" fill="#8e6f24">
+       this is what she’s great at.
+    </tspan>
+
+  </text>
+
+  <!-- CLOSING QUOTE -->
+  <text x="590" y="760" font-family="Georgia, serif" font-size="80" fill="#be9633" opacity="0.15"
+    text-anchor="end">"</text>
+
+  <!-- SIGNATURE LINE -->
+  <line x1="270" y1="815" x2="410" y2="815" stroke="#be9633" stroke-opacity="0.4" />
+
+  <!-- SIGNATURE -->
+  <text x="340" y="865" text-anchor="middle" font-family="cursive" font-size="46" fill="#8e6f24">
+    James
+  </text>
+
+</svg>
