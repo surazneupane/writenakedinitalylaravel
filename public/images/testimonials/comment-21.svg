@@ -2,156 +2,122 @@
 
   <defs>
     <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#8e6f24"/>
-      <stop offset="50%" stop-color="#be9633"/>
-      <stop offset="100%" stop-color="#d4b761"/>
+      <stop offset="0%" stop-color="#8e6f24" />
+      <stop offset="50%" stop-color="#be9633" />
+      <stop offset="100%" stop-color="#d4b761" />
     </linearGradient>
 
     <filter id="shadow">
-      <feDropShadow dx="0" dy="12" stdDeviation="18"
-        flood-color="#000000" flood-opacity="0.12"/>
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#000000" flood-opacity="0.12" />
     </filter>
   </defs>
 
   <!-- TOP GOLD LINE -->
-  <rect x="0" y="0" width="680" height="3" fill="url(#goldGrad)"/>
+  <rect x="0" y="0" width="680" height="3" fill="url(#goldGrad)" />
 
   <!-- HANGER -->
-  <rect x="290" y="85" width="100" height="14"
-    fill="#fdfdfb" stroke="#e6e6e6" rx="4"/>
+  <rect x="290" y="85" width="100" height="14" fill="#fdfdfb" stroke="#e6e6e6" rx="4" />
 
   <!-- CARD -->
-  <rect x="56" y="110" width="568" height="780" rx="12"
-    fill="#ffffff"
-    stroke="#eeeeee"
-    filter="url(#shadow)"/>
+  <rect x="56" y="110" width="568" height="780" rx="12" fill="#ffffff" stroke="#eeeeee" filter="url(#shadow)" />
 
   <!-- TOP BORDER -->
-  <rect x="56" y="110" width="568" height="3" fill="url(#goldGrad)"/>
+  <rect x="56" y="110" width="568" height="3" fill="url(#goldGrad)" />
 
   <!-- STARS -->
   <g fill="#be9633">
-    <path d="M280,155 L283,164 L292,164 L285,170 L288,179 L280,173 L272,179 L275,170 L268,164 L277,164 Z"/>
-    <path d="M310,155 L313,164 L322,164 L315,170 L318,179 L310,173 L302,179 L305,170 L298,164 L307,164 Z"/>
-    <path d="M340,155 L343,164 L352,164 L345,170 L348,179 L340,173 L332,179 L335,170 L328,164 L337,164 Z"/>
-    <path d="M370,155 L373,164 L382,164 L375,170 L378,179 L370,173 L362,179 L365,170 L358,164 L367,164 Z"/>
-    <path d="M400,155 L403,164 L412,164 L405,170 L408,179 L400,173 L392,179 L395,170 L388,164 L397,164 Z"/>
+    <path d="M280,155 L283,164 L292,164 L285,170 L288,179 L280,173 L272,179 L275,170 L268,164 L277,164 Z" />
+    <path d="M310,155 L313,164 L322,164 L315,170 L318,179 L310,173 L302,179 L305,170 L298,164 L307,164 Z" />
+    <path d="M340,155 L343,164 L352,164 L345,170 L348,179 L340,173 L332,179 L335,170 L328,164 L337,164 Z" />
+    <path d="M370,155 L373,164 L382,164 L375,170 L378,179 L370,173 L362,179 L365,170 L358,164 L367,164 Z" />
+    <path d="M400,155 L403,164 L412,164 L405,170 L408,179 L400,173 L392,179 L395,170 L388,164 L397,164 Z" />
   </g>
 
   <!-- QUOTE -->
-  <text x="80" y="240"
-    font-family="Georgia, serif"
-    font-size="80"
-    fill="#be9633"
-    opacity="0.15">"</text>
+  <text x="80" y="240" font-family="Georgia, serif" font-size="80" fill="#be9633" opacity="0.15">"</text>
 
   <!-- BLOCK 1 -->
-  <text x="340" y="255"
-    text-anchor="middle"
-    font-family="Georgia, serif"
-    font-size="15.2"
-    fill="#1f1f1f"
+  <text x="340" y="210" text-anchor="middle" font-family="Georgia, serif" font-size="15.2" fill="#1f1f1f"
     font-style="italic">
 
-    <tspan x="340" dy="0">Working with Mirav to optimize</tspan>
-    <tspan x="340" dy="22">my book’s visibility on Amazon</tspan>
-    <tspan x="340" dy="22">was a game-changing experience.</tspan>
-    <tspan x="340" dy="22">From the first meeting, her expertise</tspan>
-    <tspan x="340" dy="22">and passion were unmistakable.</tspan>
+    <tspan x="340" dy="0">I had the pleasure of working with Mirav to optimize the</tspan>
+    <tspan x="340" dy="22">visibility of my book on Amazon, and I must say that her</tspan>
+    <tspan x="340" dy="22">that her expertise and dedication made an extraordinary</tspan>
 
-    <tspan x="340" dy="26"
-      font-style="normal"
-      font-weight="700"
-      fill="#8e6f24">
-      She knows exactly how to stand out.
+    <tspan x="340" dy="26" font-style="normal" font-weight="700" fill="#8e6f24">
+      difference in my publishing journey.
     </tspan>
 
   </text>
 
   <!-- DIVIDER -->
-  <line x1="150" y1="420" x2="530" y2="420"
-    stroke="#be9633" stroke-opacity="0.25"/>
+  <line x1="150" y1="300" x2="530" y2="300" stroke="#be9633" stroke-opacity="0.25" />
 
   <!-- BLOCK 2 -->
-  <text x="340" y="450"
-    text-anchor="middle"
-    font-family="Georgia, serif"
-    font-size="15.2"
-    fill="#1f1f1f"
+  <text x="340" y="325" text-anchor="middle" font-family="Georgia, serif" font-size="15.2" fill="#1f1f1f"
     font-style="italic">
 
-    <tspan x="340" dy="0">Her deep understanding of Amazon’s</tspan>
-    <tspan x="340" dy="22">systems and her constant availability</tspan>
-    <tspan x="340" dy="22">made every step clear and manageable.</tspan>
-    <tspan x="340" dy="22">She answered every question</tspan>
-    <tspan x="340" dy="22">with patience and precision.</tspan>
+    <tspan x="340" dy="0">From the fist meeting, Mirav demonstrated herself to be highly </tspan>
+    <tspan x="340" dy="22">knowledgeable and passionate about the world of publishing on</tspan>
+    <tspan x="340" dy="22">Amazon. She has demonstrated a deep understanding of the</tspan>
+    <tspan x="340" dy="22">mechanisms that govern the platform and knows how to make</tspan>
+    <tspan x="340" dy="22"> a book stand out among the myriad of titles present. What struck</tspan>
+    <tspan x="340" dy="22"> me most was her availability. Mirav was always ready to answer </tspan>
+    <tspan x="340" dy="22">my questions, clarify my doubts and offer valuable suggestions.</tspan>
+    <tspan x="340" dy="22"> Her patience in walking me through every </tspan>
+    <tspan x="340" dy="22"></tspan>
 
-    <tspan x="340" dy="26"
-      font-style="normal"
-      font-weight="700"
-      fill="#8e6f24">
-      Support beyond expectations.
+
+    <tspan x="340" dy="26" font-style="normal" font-weight="700" fill="#8e6f24">
+      step of the process was invaluable.
     </tspan>
 
   </text>
 
   <!-- DIVIDER -->
-  <line x1="150" y1="600" x2="530" y2="600"
-    stroke="#be9633" stroke-opacity="0.25"/>
+  <line x1="150" y1="530" x2="530" y2="530" stroke="#be9633" stroke-opacity="0.25" />
 
   <!-- BLOCK 3 -->
-  <text x="340" y="630"
-    text-anchor="middle"
-    font-family="Georgia, serif"
-    font-size="15.2"
-    fill="#1f1f1f"
+  <text x="340" y="540" text-anchor="middle" font-family="Georgia, serif" font-size="15.2" fill="#1f1f1f"
     font-style="italic">
 
-    <tspan x="340" dy="0">Thanks to her strategies, my book</tspan>
-    <tspan x="340" dy="22">climbed the Amazon rankings</tspan>
-    <tspan x="340" dy="22">and reached a wider audience.</tspan>
+    <tspan x="340" dy="22">Thanks to Mirav’s expertise, my book began to climb the Amazon</tspan>
+    <tspan x="340" dy="22">rankings significantly. Not only did it optimize my book’s positioning,</tspan>
+    <tspan x="340" dy="22">but it also provided valuable marketing and promotion strategies that</tspan>
+    <tspan x="340" dy="22"> helped reach a broader audience. Ultimately, Mirav is an amazing</tspan>
 
-    <tspan x="340" dy="26"
-      font-style="normal"
-      font-weight="700"
-      fill="#8e6f24">
-      A powerful partner for success.
-    </tspan>
+    <tspan x="340" dy="22"> resource for anyone looking to succeed on Amazon. Her expertise,</tspan>
+    <tspan x="340" dy="22"> helpfulness and passion for her clients’ success are evident every</tspan>
+    <tspan x="340" dy="22">step of the way. I highly recommend her service to anyone with</tspan>
+    <tspan x="340" dy="22" font-style="normal" font-weight="700" fill="#8e6f24">Amazon publishing aspirations with publishing ambitions..</tspan>
 
-    <tspan x="340" dy="22">I highly recommend her to anyone</tspan>
-    <tspan x="340" dy="22">with publishing ambitions.</tspan>
 
   </text>
 
   <!-- CLOSING QUOTE -->
-  <text x="590" y="760"
-    font-family="Georgia, serif"
-    font-size="80"
-    fill="#be9633"
-    opacity="0.15"
+  <text x="590" y="760" font-family="Georgia, serif" font-size="80" fill="#be9633" opacity="0.15"
     text-anchor="end">"</text>
 
   <!-- THANK YOU -->
-  <text x="340" y="790"
-    text-anchor="middle"
-    font-family="Georgia, serif"
-    font-size="15.2"
-    fill="#1f1f1f"
+  <text x="340" y="760" text-anchor="middle" font-family="Georgia, serif" font-size="15.2" fill="#1f1f1f"
     font-style="italic">
-    Thank you for your exceptional support.
+    Thank you again, Mirav, for your exceptional support in my
+  </text>
+  <text x="340" y="780" text-anchor="middle" font-family="Georgia, serif" font-size="15.2" fill="#1f1f1f"
+    font-style="italic">
+     editorial journey. I look forward to continuing to
+  </text>
+  <text x="340" y="800" text-anchor="middle" font-family="Georgia, serif" font-size="15.2" fill="#1f1f1f"
+    font-style="italic">
+    work with you to reach new heights.
   </text>
 
   <!-- SIGNATURE LINE -->
-  <line x1="270" y1="815" x2="410" y2="815"
-    stroke="#be9633" stroke-opacity="0.4"/>
+  <line x1="270" y1="815" x2="410" y2="815" stroke="#be9633" stroke-opacity="0.4" />
 
   <!-- SIGNATURE -->
-  <text x="340" y="865"
-    text-anchor="middle"
-    font-family="cursive"
-    font-size="46"
-    fill="#8e6f24">
-    Nicolas
+  <text x="340" y="865" text-anchor="middle" font-family="cursive" font-size="46" fill="#8e6f24">
+    Nicola
   </text>
 
 </svg>

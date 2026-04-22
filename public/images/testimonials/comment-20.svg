@@ -78,60 +78,65 @@
     font-size="15.2"
     fill="#1a1a1a">
 
-    <tspan x="340" dy="0">The influence of your personality</tspan>
-    <tspan x="340" dy="22">on me is beyond words.</tspan>
-    <tspan x="340" dy="22">Your way of living, valuing every moment,</tspan>
-    <tspan x="340" dy="22">even through challenges, inspires deeply.</tspan>
+    <tspan x="340" dy="0">For me, to explain the influence of your personality on me</tspan>
+    <tspan x="340" dy="22">is unexplainable..So many worlds in my head and finely </tspan>
+    <tspan x="340" dy="22">- nothing that can express my respect and admiration</tspan>
+    <tspan x="340" dy="22">of how you live this Life,</tspan>
 
     <tspan x="340" dy="26"
       font-weight="700"
       fill="#8e6f24">
-      A life lived with purpose and presence.
+      How you -a mother, how you -a coach, how you -a friend
     </tspan>
 
   </text>
 
   <!-- BLOCK 2 -->
-  <text x="340" y="420"
+  <text x="340" y="380"
     text-anchor="middle"
     font-family="Arial, sans-serif"
     font-size="15.2"
     fill="#1a1a1a">
 
-    <tspan x="340" dy="0">As a coach, you elevate people</tspan>
-    <tspan x="340" dy="22">to a level where they feel unstoppable.</tspan>
-    <tspan x="340" dy="22">As a mother, your presence is constant,</tspan>
-    <tspan x="340" dy="22">full of love, energy and connection.</tspan>
+    <tspan x="340" dy="0">If you are in a life of someone - that's mean this person is</tspan>
+    <tspan x="340" dy="22">under your full cover. If you are Coach - your client will jump</tspan>
+    <tspan x="340" dy="22">into the sky because his(her) energy level, the perspective of </tspan>
+    <tspan x="340" dy="22">new life that You open for them, that charge-just can't keep</tspan>
+    <tspan x="340" dy="22"> on the earth - they need to be flying!!! If you a mother </tspan>
+    <tspan x="340" dy="22">-your children feels your presence all</tspan>
+    <tspan x="340" dy="22">time, you are always with them despite you work, your busy days</tspan>
+    <tspan x="340" dy="22">-you find a time to go with the for full day picnic,to be a life-table </tspan>
+    <tspan x="340" dy="22">for them to scream,to laugh, to jump, to run.. here I describe what</tspan>
 
     <tspan x="340" dy="26"
       font-weight="700"
       fill="#8e6f24">
-      You lift people beyond their limits.
+       happens with me during(and after) every meeiting with you!
     </tspan>
 
   </text>
 
   <!-- DIVIDER -->
-  <line x1="150" y1="590" x2="530" y2="590"
+  <line x1="150" y1="640" x2="530" y2="640"
     stroke="#8e6f24" stroke-opacity="0.25"/>
 
   <!-- BLOCK 3 -->
-  <text x="340" y="630"
+  <text x="340" y="680"
     text-anchor="middle"
     font-family="Arial, sans-serif"
     font-size="15.2"
     fill="#1a1a1a">
 
-    <tspan x="340" dy="0">Every interaction leaves me inspired,</tspan>
-    <tspan x="340" dy="22">energized and transformed.</tspan>
+    <tspan x="340" dy="0">I would like to Thank you, for all your support for so </tspan>
+    <tspan x="340" dy="22">qualitatively communication that You give to me!</tspan>
 
     <tspan x="340" dy="26"
       font-weight="700"
       fill="#8e6f24">
-      You are my guru, my energy, my role model.
+      You are my Guru, my charger, my role model.
     </tspan>
 
-    <tspan x="340" dy="22">Thank you for everything.</tspan>
+    <tspan x="340" dy="22">Thank you</tspan>
 
   </text>
 

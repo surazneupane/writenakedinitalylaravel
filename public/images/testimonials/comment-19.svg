@@ -2,151 +2,109 @@
 
   <defs>
     <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#8e6f24"/>
-      <stop offset="50%" stop-color="#be9633"/>
-      <stop offset="100%" stop-color="#d4b761"/>
+      <stop offset="0%" stop-color="#8e6f24" />
+      <stop offset="50%" stop-color="#be9633" />
+      <stop offset="100%" stop-color="#d4b761" />
     </linearGradient>
 
     <filter id="shadow">
-      <feDropShadow dx="0" dy="12" stdDeviation="18"
-        flood-color="#000000" flood-opacity="0.12"/>
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#000000" flood-opacity="0.12" />
     </filter>
   </defs>
 
   <!-- TOP GOLD LINE -->
-  <rect x="0" y="0" width="680" height="3" fill="url(#goldGrad)"/>
+  <rect x="0" y="0" width="680" height="3" fill="url(#goldGrad)" />
 
   <!-- HANGER -->
-  <rect x="290" y="85" width="100" height="14"
-    fill="#fdfdfb" stroke="#e6e6e6" rx="4"/>
+  <rect x="290" y="85" width="100" height="14" fill="#fdfdfb" stroke="#e6e6e6" rx="4" />
 
   <!-- CARD -->
-  <rect x="56" y="110" width="568" height="780" rx="12"
-    fill="#ffffff"
-    stroke="#eeeeee"
-    filter="url(#shadow)"/>
+  <rect x="56" y="110" width="568" height="780" rx="12" fill="#ffffff" stroke="#eeeeee" filter="url(#shadow)" />
 
   <!-- TOP BORDER -->
-  <rect x="56" y="110" width="568" height="3" fill="url(#goldGrad)"/>
+  <rect x="56" y="110" width="568" height="3" fill="url(#goldGrad)" />
 
   <!-- STARS -->
   <g fill="#be9633">
-    <path d="M280,155 L283,164 L292,164 L285,170 L288,179 L280,173 L272,179 L275,170 L268,164 L277,164 Z"/>
-    <path d="M310,155 L313,164 L322,164 L315,170 L318,179 L310,173 L302,179 L305,170 L298,164 L307,164 Z"/>
-    <path d="M340,155 L343,164 L352,164 L345,170 L348,179 L340,173 L332,179 L335,170 L328,164 L337,164 Z"/>
-    <path d="M370,155 L373,164 L382,164 L375,170 L378,179 L370,173 L362,179 L365,170 L358,164 L367,164 Z"/>
-    <path d="M400,155 L403,164 L412,164 L405,170 L408,179 L400,173 L392,179 L395,170 L388,164 L397,164 Z"/>
+    <path d="M280,155 L283,164 L292,164 L285,170 L288,179 L280,173 L272,179 L275,170 L268,164 L277,164 Z" />
+    <path d="M310,155 L313,164 L322,164 L315,170 L318,179 L310,173 L302,179 L305,170 L298,164 L307,164 Z" />
+    <path d="M340,155 L343,164 L352,164 L345,170 L348,179 L340,173 L332,179 L335,170 L328,164 L337,164 Z" />
+    <path d="M370,155 L373,164 L382,164 L375,170 L378,179 L370,173 L362,179 L365,170 L358,164 L367,164 Z" />
+    <path d="M400,155 L403,164 L412,164 L405,170 L408,179 L400,173 L392,179 L395,170 L388,164 L397,164 Z" />
   </g>
 
   <!-- QUOTE -->
-  <text x="80" y="240"
-    font-family="Georgia, serif"
-    font-size="80"
-    fill="#be9633"
-    opacity="0.15">"</text>
+  <text x="80" y="240" font-family="Georgia, serif" font-size="80" fill="#be9633" opacity="0.15">"</text>
 
   <!-- BLOCK 1 -->
-  <text x="340" y="260"
-    text-anchor="middle"
-    font-family="Georgia, serif"
-    font-size="15.4"
-    fill="#1f1f1f"
+  <text x="340" y="260" text-anchor="middle" font-family="Georgia, serif" font-size="15.4" fill="#1f1f1f"
     font-style="italic">
 
-    <tspan x="340" dy="0">Mirav balances her professional life</tspan>
-    <tspan x="340" dy="24">with her devotion as a single mother,</tspan>
-    <tspan x="340" dy="24">through exceptional discipline</tspan>
-    <tspan x="340" dy="24">and self-organisation.</tspan>
+    <tspan x="340" dy="0">Mirav manages to balance her professional life</tspan>
+    <tspan x="340" dy="24">with her single mother devotion to her children</tspan>
+    <tspan x="340" dy="24">thanks to arigorous self-organization</tspan>
 
-    <tspan x="340" dy="28"
-      font-style="normal"
-      font-weight="700"
-      fill="#8e6f24">
-      Strength shaped by experience.
+    <tspan x="340" dy="28" font-style="normal" font-weight="700" fill="#8e6f24">
+      skill she acquired in the military.
     </tspan>
 
   </text>
 
   <!-- DIVIDER -->
-  <line x1="150" y1="430" x2="530" y2="430"
-    stroke="#be9633" stroke-opacity="0.25"/>
+  <line x1="150" y1="380" x2="530" y2="380" stroke="#be9633" stroke-opacity="0.25" />
 
   <!-- BLOCK 2 -->
-  <text x="340" y="460"
-    text-anchor="middle"
-    font-family="Georgia, serif"
-    font-size="15.4"
-    fill="#1f1f1f"
+  <text x="340" y="420" text-anchor="middle" font-family="Georgia, serif" font-size="15.4" fill="#1f1f1f"
     font-style="italic">
 
-    <tspan x="340" dy="0">During the ONE project,</tspan>
-    <tspan x="340" dy="24">she inspired and motivated her team,</tspan>
-    <tspan x="340" dy="24">bringing everyone together with purpose.</tspan>
+    <tspan x="340" dy="0">But, above all, during the whole << ONE>> team</tspan>
+    <tspan x="340" dy="24">work, she succeeded in motivationg her << troops>></tspan>
+    <tspan x="340" dy="24">This << Undefeated iron lady>> is a born leader</tspan>
+    <tspan x="340" dy="24">as she gets you out of your comport zone to</tspan>
 
-    <tspan x="340" dy="28"
-      font-style="normal"
-      font-weight="700"
-      fill="#8e6f24">
-      A true born leader.
+
+    <tspan x="340" dy="28" font-style="normal" font-weight="700" fill="#8e6f24">
+      extract the best version of yourself.
     </tspan>
 
   </text>
 
   <!-- DIVIDER -->
-  <line x1="150" y1="600" x2="530" y2="600"
-    stroke="#be9633" stroke-opacity="0.25"/>
+  <line x1="150" y1="570" x2="530" y2="570" stroke="#be9633" stroke-opacity="0.25" />
 
   <!-- BLOCK 3 -->
-  <text x="340" y="630"
-    text-anchor="middle"
-    font-family="Georgia, serif"
-    font-size="15.4"
-    fill="#1f1f1f"
+  <text x="340" y="610" text-anchor="middle" font-family="Georgia, serif" font-size="15.4" fill="#1f1f1f"
     font-style="italic">
 
-    <tspan x="340" dy="0">She pushed me beyond my comfort zone</tspan>
-    <tspan x="340" dy="24">and revealed talents I never knew I had.</tspan>
+    <tspan x="340" dy="0">During the time working together,</tspan>
+    <tspan x="340" dy="24">she unveiled talents in me </tspan>
 
-    <tspan x="340" dy="28"
-      font-style="normal"
-      font-weight="700"
-      fill="#8e6f24">
-      The best version of myself emerged.
+    <tspan x="340" dy="28" font-style="normal" font-weight="700" fill="#8e6f24">
+      I never thought I possessed!
     </tspan>
 
-    <tspan x="340" dy="24">I am deeply grateful for this journey</tspan>
-    <tspan x="340" dy="24">and our meaningful connection.</tspan>
 
   </text>
 
   <!-- CLOSING QUOTE -->
-  <text x="590" y="760"
-    font-family="Georgia, serif"
-    font-size="80"
-    fill="#be9633"
-    opacity="0.15"
+  <text x="590" y="760" font-family="Georgia, serif" font-size="80" fill="#be9633" opacity="0.15"
     text-anchor="end">"</text>
 
   <!-- THANK YOU -->
-  <text x="340" y="790"
-    text-anchor="middle"
-    font-family="Georgia, serif"
-    font-size="15.4"
-    fill="#1f1f1f"
+  <text x="340" y="760" text-anchor="middle" font-family="Georgia, serif" font-size="15.4" fill="#1f1f1f"
     font-style="italic">
-    Thank you with all my heart.
+    For this extraordinary experience and the very close friendship,
+  </text>
+  <text x="340" y="790" text-anchor="middle" font-family="Georgia, serif" font-size="15.4" fill="#1f1f1f"
+    font-style="italic">
+    I truly thank her with all my heart.
   </text>
 
   <!-- SIGNATURE LINE -->
-  <line x1="270" y1="815" x2="410" y2="815"
-    stroke="#be9633" stroke-opacity="0.4"/>
+  <line x1="270" y1="815" x2="410" y2="815" stroke="#be9633" stroke-opacity="0.4" />
 
   <!-- SIGNATURE -->
-  <text x="340" y="865"
-    text-anchor="middle"
-    font-family="cursive"
-    font-size="46"
-    fill="#8e6f24">
+  <text x="340" y="865" text-anchor="middle" font-family="cursive" font-size="46" fill="#8e6f24">
     Martine
   </text>
 

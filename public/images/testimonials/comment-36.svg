@@ -39,45 +39,93 @@
   </g>
 
   <!-- QUOTE -->
-  <text x="80" y="250"
+  <text x="80" y="240"
     font-family="Georgia, serif"
     font-size="80"
     fill="#be9633"
     opacity="0.15">"</text>
 
-  <!-- TEXT -->
-  <text x="340" y="320"
+  <!-- BLOCK 1 -->
+  <text x="340" y="260"
     text-anchor="middle"
     font-family="Georgia, serif"
-    font-size="17"
+    font-size="14.8"
     fill="#1f1f1f"
     font-style="italic">
 
-    <tspan x="340" dy="0">Mirav is the real deal.</tspan>
-    <tspan x="340" dy="26">If you are wanting to be activated</tspan>
-    <tspan x="340" dy="26">into writing, then definitely dive in!</tspan>
+    <tspan x="340" dy="0">I had stories constantly in my head —</tspan>
+    <tspan x="340" dy="22">characters waking me at night,</tspan>
+    <tspan x="340" dy="22">dancing through my days.</tspan>
+    <tspan x="340" dy="22">Every spare moment, I wrote.</tspan>
+
+    <tspan x="340" dy="26"
+      font-style="normal"
+      font-weight="700"
+      fill="#8e6f24">
+      Writing became unstoppable.
+    </tspan>
+
+  </text>
+
+  <!-- DIVIDER -->
+  <line x1="150" y1="420" x2="530" y2="420"
+    stroke="#be9633" stroke-opacity="0.25"/>
+
+  <!-- BLOCK 2 -->
+  <text x="340" y="450"
+    text-anchor="middle"
+    font-family="Georgia, serif"
+    font-size="14.8"
+    fill="#1f1f1f"
+    font-style="italic">
+
+    <tspan x="340" dy="0">After publishing, I changed my life.</tspan>
+    <tspan x="340" dy="22">More stories kept coming…</tspan>
+    <tspan x="340" dy="22">until the passion faded.</tspan>
+
+    <tspan x="340" dy="26"
+      font-style="normal"
+      font-weight="700"
+      fill="#8e6f24">
+      Then I met Mirav.
+    </tspan>
+
+  </text>
+
+  <!-- DIVIDER -->
+  <line x1="150" y1="600" x2="530" y2="600"
+    stroke="#be9633" stroke-opacity="0.25"/>
+
+  <!-- BLOCK 3 -->
+  <text x="340" y="630"
+    text-anchor="middle"
+    font-family="Georgia, serif"
+    font-size="14.8"
+    fill="#1f1f1f"
+    font-style="italic">
+
+    <tspan x="340" dy="0">She reignited my fire,</tspan>
+    <tspan x="340" dy="22">helped me push past fear,</tspan>
+    <tspan x="340" dy="22">and I wrote two more books.</tspan>
+
+    <tspan x="340" dy="26"
+      font-style="normal"
+      font-weight="700"
+      fill="#8e6f24">
+      A rare mix of gem and fire.
+    </tspan>
+
+    <tspan x="340" dy="22">Don’t miss the chance to work</tspan>
+    <tspan x="340" dy="22">with the best in the industry.</tspan>
 
   </text>
 
   <!-- CLOSING QUOTE -->
-  <text x="590" y="720"
+  <text x="590" y="760"
     font-family="Georgia, serif"
     font-size="80"
     fill="#be9633"
     opacity="0.15"
     text-anchor="end">"</text>
-
-  <!-- SIGNATURE LINE -->
-  <line x1="250" y1="800" x2="430" y2="800"
-    stroke="#be9633" stroke-opacity="0.4"/>
-
-  <!-- SIGNATURE -->
-  <text x="340" y="860"
-    text-anchor="middle"
-    font-family="cursive"
-    font-size="42"
-    fill="#8e6f24">
-    Nicky Hartel
-  </text>
 
 </svg>
