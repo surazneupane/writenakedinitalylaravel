@@ -1,16 +1,20 @@
 <svg width="100%" viewBox="0 0 680 960" xmlns="http://www.w3.org/2000/svg">
 
   <defs>
+
+    <!-- Gold -->
     <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#8e6f24"/>
       <stop offset="50%" stop-color="#be9633"/>
       <stop offset="100%" stop-color="#d4b761"/>
     </linearGradient>
 
+    <!-- Card shadow -->
     <filter id="shadow">
       <feDropShadow dx="0" dy="12" stdDeviation="18"
         flood-color="#000000" flood-opacity="0.12"/>
     </filter>
+
   </defs>
 
   <!-- TOP GOLD LINE -->
@@ -49,13 +53,22 @@
   <text x="340" y="270"
     text-anchor="middle"
     font-family="Georgia, serif"
-    font-size="16"
+    font-size="15.8"
     fill="#1f1f1f"
     font-style="italic">
 
-    <tspan x="340" dy="0">Mirav is a truly amazing being</tspan>
-    <tspan x="340" dy="26">full of life energy &</tspan>
-    <tspan x="340" dy="26">is truly motivated in all that she does.</tspan>
+    <tspan x="340" dy="0">Thanks to the incredible Mirav Tarkka,</tspan>
+    <tspan x="340" dy="26">my book "Sulla Vetta del Tubo" has become</tspan>
+    <tspan x="340" dy="26">an</tspan>
+
+    <tspan x="340" dy="30"
+      font-style="normal"
+      font-weight="700"
+      fill="#8e6f24">
+      INTERNATIONAL BEST-SELLER
+    </tspan>
+
+    <tspan x="340" dy="26">on Amazon in 4 countries and 11 categories!</tspan>
 
   </text>
 
@@ -67,26 +80,51 @@
   <text x="340" y="470"
     text-anchor="middle"
     font-family="Georgia, serif"
-    font-size="16"
+    font-size="15.8"
     fill="#1f1f1f"
     font-style="italic">
 
-    <tspan x="340" dy="0">She made sure we all felt</tspan>
+    <tspan x="340" dy="0">Anyone who has written a book and wants</tspan>
+    <tspan x="340" dy="26">to make it an Amazon Best-Seller,</tspan>
+    <tspan x="340" dy="26">contact Mirav immediately —</tspan>
 
     <tspan x="340" dy="30"
       font-style="normal"
       font-weight="700"
       fill="#8e6f24">
-      SPECIAL & SUPPORTED
+      she is a genius at what she does!
     </tspan>
 
-    <tspan x="340" dy="26">us all 100%</tspan>
-    <tspan x="340" dy="26">in our journey of writing together.</tspan>
+  </text>
+
+  <!-- DIVIDER -->
+  <line x1="150" y1="590" x2="530" y2="590"
+    stroke="#be9633" stroke-opacity="0.25"/>
+
+  <!-- BLOCK 3 -->
+  <text x="340" y="630"
+    text-anchor="middle"
+    font-family="Georgia, serif"
+    font-size="15.8"
+    fill="#1f1f1f"
+    font-style="italic">
+
+    <tspan x="340" dy="0">Having a Best-Selling book</tspan>
+
+    <tspan x="340" dy="26"
+      font-style="normal"
+      font-weight="700"
+      fill="#8e6f24">
+      increases authority and credibility
+    </tspan>
+
+    <tspan x="340" dy="26">of a brand, therefore increases sales</tspan>
+    <tspan x="340" dy="26">and business turnover.</tspan>
 
   </text>
 
   <!-- CLOSING QUOTE -->
-  <text x="590" y="740"
+  <text x="590" y="770"
     font-family="Georgia, serif"
     font-size="80"
     fill="#be9633"
@@ -94,13 +132,13 @@
     text-anchor="end">"</text>
 
   <!-- THANK YOU -->
-  <text x="340" y="780"
+  <text x="340" y="790"
     text-anchor="middle"
     font-family="Georgia, serif"
     font-size="16"
     fill="#1f1f1f"
     font-style="italic">
-    Thank you so much, Mirav.
+    Thank you so much, Mirav!
   </text>
 
   <!-- SIGNATURE LINE -->
@@ -113,7 +151,7 @@
     font-family="cursive"
     font-size="46"
     fill="#8e6f24">
-    Sarah lines
+    Vince
   </text>
 
 </svg>

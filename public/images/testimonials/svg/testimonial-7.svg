@@ -49,46 +49,41 @@
   <text x="340" y="260"
     text-anchor="middle"
     font-family="Georgia, serif"
-    font-size="14.8"
+    font-size="14.5"
     fill="#1f1f1f"
     font-style="italic">
 
-    <tspan x="340" dy="0">I had stories constantly in my head —</tspan>
-    <tspan x="340" dy="22">characters waking me at night,</tspan>
-    <tspan x="340" dy="22">dancing through my days.</tspan>
-    <tspan x="340" dy="22">Every spare moment, I wrote.</tspan>
-
-    <tspan x="340" dy="26"
-      font-style="normal"
+    <tspan x="340" dy="0">Effectiveness, determination, professionalism and human </tspan>
+    <tspan x="340" dy="22">relationship, this is what I personally received with the</tspan>
+    <tspan x="340" dy="24" font-style="normal"
       font-weight="700"
-      fill="#8e6f24">
-      Writing became unstoppable.
-    </tspan>
+      fill="#8e6f24"> collaboration with Mirav,</tspan>
+    <tspan x="340" dy="22">which was dedicated to those like me who were</tspan>
+    <tspan x="340" dy="22">approaching the world of publishing for the</tspan>
+    <tspan x="340" dy="22">first time.</tspan>
 
   </text>
 
   <!-- DIVIDER -->
-  <line x1="150" y1="420" x2="530" y2="420"
+  <line x1="150" y1="430" x2="530" y2="430"
     stroke="#be9633" stroke-opacity="0.25"/>
 
   <!-- BLOCK 2 -->
-  <text x="340" y="450"
+  <text x="340" y="460"
     text-anchor="middle"
     font-family="Georgia, serif"
-    font-size="14.8"
+    font-size="14.5"
     fill="#1f1f1f"
     font-style="italic">
 
-    <tspan x="340" dy="0">After publishing, I changed my life.</tspan>
-    <tspan x="340" dy="22">More stories kept coming…</tspan>
-    <tspan x="340" dy="22">until the passion faded.</tspan>
-
-    <tspan x="340" dy="26"
-      font-style="normal"
+    <tspan x="340" dy="0">Providing me with competence and professionalism,</tspan>
+    <tspan x="340" dy="22" font-style="normal"
       font-weight="700"
-      fill="#8e6f24">
-      Then I met Mirav.
-    </tspan>
+      fill="#8e6f24">in a world that is approaching artificial intelligence</tspan>
+    <tspan x="340" dy="22">even in the publishing field, she was able to create</tspan>
+    <tspan x="340" dy="22">a real human relationship with me, also giving me</tspan>
+    <tspan x="340" dy="22">extra consultancy not just the minimum expected</tspan>
+    <tspan x="340" dy="22">in a collaboration contract.</tspan>
 
   </text>
 
@@ -100,23 +95,19 @@
   <text x="340" y="630"
     text-anchor="middle"
     font-family="Georgia, serif"
-    font-size="14.8"
+    font-size="14.5"
     fill="#1f1f1f"
     font-style="italic">
 
-    <tspan x="340" dy="0">She reignited my fire,</tspan>
-    <tspan x="340" dy="22">helped me push past fear,</tspan>
-    <tspan x="340" dy="22">and I wrote two more books.</tspan>
-
-    <tspan x="340" dy="26"
+    <tspan x="340" dy="0"
       font-style="normal"
       font-weight="700"
       fill="#8e6f24">
-      A rare mix of gem and fire.
+      THE RESULTS WERE BEYOND MY EXPECTATIONS!
     </tspan>
 
-    <tspan x="340" dy="22">Don’t miss the chance to work</tspan>
-    <tspan x="340" dy="22">with the best in the industry.</tspan>
+    <tspan x="340" dy="24">If I were to publish a next book she will be,</tspan>
+    <tspan x="340" dy="22">for sure, the first person I contact.</tspan>
 
   </text>
 
@@ -127,5 +118,18 @@
     fill="#be9633"
     opacity="0.15"
     text-anchor="end">"</text>
+
+  <!-- SIGNATURE LINE -->
+  <line x1="270" y1="815" x2="410" y2="815"
+    stroke="#be9633" stroke-opacity="0.4"/>
+
+  <!-- SIGNATURE -->
+  <text x="340" y="865"
+    text-anchor="middle"
+    font-family="cursive"
+    font-size="46"
+    fill="#8e6f24">
+    Carlo
+  </text>
 
 </svg>

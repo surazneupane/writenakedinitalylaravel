@@ -49,18 +49,22 @@
   <text x="340" y="260"
     text-anchor="middle"
     font-family="Georgia, serif"
-    font-size="16"
+    font-size="14.8"
     fill="#1f1f1f"
     font-style="italic">
 
-    <tspan x="340" dy="0">Mirav is a truly amazing being</tspan>
-    <tspan x="340" dy="24">full of life energy & is truly motivated</tspan>
+    <tspan x="340" dy="0">I was in a place where I didn’t know what to do but I had</tspan>
+    <tspan x="340" dy="22"> a ton of stories in my head. The characters started waking </tspan>
+    <tspan x="340" dy="22">me up in the middle of the night. They danced in my head</tspan>
+    <tspan x="340" dy="22">during the day. When I should have been paying attention</tspan>
+    <tspan x="340" dy="22">paying attention in the quarterly meeting at my job</tspan>
 
-    <tspan x="340" dy="30"
+
+    <tspan x="340" dy="26"
       font-style="normal"
       font-weight="700"
       fill="#8e6f24">
-      in all that she does.
+      I wrote scenes for my first novel.
     </tspan>
 
   </text>
@@ -73,19 +77,54 @@
   <text x="340" y="450"
     text-anchor="middle"
     font-family="Georgia, serif"
-    font-size="16"
+    font-size="14.8"
     fill="#1f1f1f"
     font-style="italic">
 
-    <tspan x="340" dy="0">She made sure we all felt SPECIAL &</tspan>
-    <tspan x="340" dy="24"> SUPPORTED us all 100% in</tspan>
-    <tspan x="340" dy="26" font-style="normal"
+    <tspan x="340" dy="0">While I rode shotgun I’d write. Anytime I caught a break</tspan>
+    <tspan x="340" dy="22"> I’d write. Once I published the first book I left my job.</tspan>
+    <tspan x="340" dy="22"></tspan>
+    <tspan x="340" dy="22">I started a new career and my next book came flooding in.</tspan>
+    <tspan x="340" dy="22">After publishing that one, I had different characters waiting </tspan>
+    <tspan x="340" dy="22">their turn to live on the pages of a book.</tspan>
+    <tspan x="340" dy="22">The problem was the passion had died down inside of me.</tspan>
+
+    <tspan x="340" dy="26"
+      font-style="normal"
       font-weight="700"
-      fill="#8e6f24">journey of writing together.</tspan>
+      fill="#8e6f24">
+       That was until I met Mirav.
+    </tspan>
 
   </text>
 
+  <!-- DIVIDER -->
+  <line x1="150" y1="630" x2="530" y2="630"
+    stroke="#be9633" stroke-opacity="0.25"/>
 
+  <!-- BLOCK 3 -->
+  <text x="340" y="660"
+    text-anchor="middle"
+    font-family="Georgia, serif"
+    font-size="14.8"
+    fill="#1f1f1f"
+    font-style="italic">
+
+    <tspan x="340" dy="0">She gave me the spark I needed to be resilient</tspan>
+    <tspan x="340" dy="22">and push beyond the pain and fear that blocked me.</tspan>
+    <tspan x="340" dy="22">I wrote two more books with her guidance.</tspan>
+    <tspan x="340" dy="22">She is a gem and a fireball all wrapped in one.</tspan>
+
+    <tspan x="340" dy="26"
+      font-style="normal"
+      font-weight="700"
+      fill="#8e6f24">
+      Her passion and zeal for the writing world is impeccable.
+    </tspan>
+
+    <tspan x="340" dy="22">Don’t miss the chance to work with the best in the industry.</tspan>
+
+  </text>
 
   <!-- CLOSING QUOTE -->
   <text x="590" y="760"
@@ -94,28 +133,5 @@
     fill="#be9633"
     opacity="0.15"
     text-anchor="end">"</text>
-
-  <!-- THANK YOU -->
-  <text x="340" y="790"
-    text-anchor="middle"
-    font-family="Georgia, serif"
-    font-size="16"
-    fill="#1f1f1f"
-    font-style="italic">
-    Thank you so much, Mirav.
-  </text>
-
-  <!-- SIGNATURE LINE -->
-  <line x1="270" y1="815" x2="410" y2="815"
-    stroke="#be9633" stroke-opacity="0.4"/>
-
-  <!-- SIGNATURE -->
-  <text x="340" y="865"
-    text-anchor="middle"
-    font-family="cursive"
-    font-size="46"
-    fill="#8e6f24">
-    Sarah
-  </text>
 
 </svg>

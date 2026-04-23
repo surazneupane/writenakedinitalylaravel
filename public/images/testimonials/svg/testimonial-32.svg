@@ -1,6 +1,7 @@
 <svg width="100%" viewBox="0 0 680 960" xmlns="http://www.w3.org/2000/svg">
 
   <defs>
+    <!-- Shadow -->
     <filter id="shadow">
       <feDropShadow dx="0" dy="14" stdDeviation="18"
         flood-color="#000000" flood-opacity="0.18"/>
@@ -71,66 +72,24 @@
     <path d="M400,155 L403,164 L412,164 L405,170 L408,179 L400,173 L392,179 L395,170 L388,164 L397,164 Z"/>
   </g>
 
-  <!-- BLOCK 1 -->
-  <text x="340" y="250"
+  <!-- TEXT (CENTERED PROPERLY) -->
+  <text x="340" y="450"
     text-anchor="middle"
     font-family="Arial, sans-serif"
-    font-size="15.3"
+    font-size="17"
     fill="#1a1a1a">
 
-    <tspan x="340" dy="0">Thanks to the incredible Mirav Tarkka,</tspan>
-    <tspan x="340" dy="24"> my book 'Sulla Vetta del Tubo' has become an</tspan>
+    <tspan x="340" dy="0">This was one of my favourite workshops</tspan>
+    <tspan x="340" dy="28">with Mirav Tarkka!</tspan>
 
-    <tspan x="340" dy="30"
+    <tspan x="340" dy="34"
       font-weight="700"
       fill="#8e6f24">
-      INTERNATIONAL BEST-SELLER
+      Shivers ran down my back
     </tspan>
 
-    <tspan x="340" dy="24">on Amazon in 4 countries and 11 different categories!</tspan>
-
-  </text>
-
-  <!-- BLOCK 2 -->
-  <text x="340" y="440"
-    text-anchor="middle"
-    font-family="Arial, sans-serif"
-    font-size="15.3"
-    fill="#1a1a1a">
-
-    <tspan x="340" dy="0">Anyone who has written a book and wants to make it an</tspan>
-    <tspan x="340" dy="24">Amazon Best-Seller, contact Mirav immediately,</tspan>
-
-    <tspan x="340" dy="30"
-      font-weight="700"
-      fill="#8e6f24">
-      She is a genius at what she does!
-    </tspan>
-
-  </text>
-
-  <!-- DIVIDER -->
-  <line x1="150" y1="620" x2="530" y2="620"
-    stroke="#8e6f24" stroke-opacity="0.25"/>
-
-  <!-- BLOCK 3 -->
-  <text x="340" y="660"
-    text-anchor="middle"
-    font-family="Arial, sans-serif"
-    font-size="15.3"
-    fill="#1a1a1a">
-    <tspan x="340" dy="0">Having a Best-Selling book increases the  </tspan>
-
-    <tspan x="340" dy="30"
-      font-weight="700"
-      fill="#8e6f24">
-      authority and credibility of a brand,
-    </tspan>
-        <tspan x="340" dy="24">therefore increases </tspan>
-
-    <tspan x="340" dy="24">the sales and turnover for your business.</tspan>
-
-    <tspan x="340" dy="28">Thank you so much, Mirav!</tspan>
+    <tspan x="340" dy="28">just thinking back at what it</tspan>
+    <tspan x="340" dy="28">uncovered for me!❤️</tspan>
 
   </text>
 
@@ -138,9 +97,9 @@
   <text x="340" y="865"
     text-anchor="middle"
     font-family="cursive"
-    font-size="46"
+    font-size="42"
     fill="#8e6f24">
-    Vince
+    Jessica Sankala
   </text>
 
 </svg>

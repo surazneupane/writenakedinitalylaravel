@@ -46,105 +46,47 @@
     opacity="0.15">"</text>
 
   <!-- BLOCK 1 -->
-  <text x="340" y="230"
+  <text x="340" y="270"
     text-anchor="middle"
     font-family="Georgia, serif"
-    font-size="15.5"
+    font-size="16"
     fill="#1f1f1f"
     font-style="italic">
 
-    <tspan x="340" dy="0">First of all, I am extremely honoured,</tspan>
-    <tspan x="340" dy="24">because you gave us your most intimate self.</tspan>
-    <tspan x="340" dy="24">Your strong visual presence & your your brilliant </tspan>
-    <tspan x="340" dy="24">“I will lift cars if necessary” strength, laser-focused </tspan>
-        <tspan x="340" dy="28"
-      font-style="normal"
-      font-weight="700"
-      fill="#8e6f24">
-      mind & your loving soul.
-    </tspan>
+    <tspan x="340" dy="0">Mirav is a truly amazing being</tspan>
+    <tspan x="340" dy="26">full of life energy &amp;</tspan>
+    <tspan x="340" dy="26">is truly motivated in all that she does.</tspan>
 
   </text>
 
   <!-- DIVIDER -->
-  <line x1="150" y1="350" x2="530" y2="350"
+  <line x1="150" y1="430" x2="530" y2="430"
     stroke="#be9633" stroke-opacity="0.25"/>
 
   <!-- BLOCK 2 -->
-  <text x="340" y="380"
+  <text x="340" y="470"
     text-anchor="middle"
     font-family="Georgia, serif"
-    font-size="15.5"
+    font-size="16"
     fill="#1f1f1f"
     font-style="italic">
 
-    <tspan x="340" dy="0">Showing up the way you did, every day,</tspan>
-    <tspan x="340" dy="24">in empowering energy was truly inspiring.</tspan>
-    <tspan x="340" dy="24">I have never had such a dedicated project leader.</tspan>
-    <tspan x="340" dy="24">so meeting you is like going to the beach</tspan>
+    <tspan x="340" dy="0">She made sure we all felt</tspan>
 
-    <tspan x="340" dy="28"
+    <tspan x="340" dy="30"
       font-style="normal"
       font-weight="700"
       fill="#8e6f24">
-      for the first time — so freaking exciting.
+      SPECIAL &amp; SUPPORTED
     </tspan>
 
-  </text>
-
-  <!-- DIVIDER -->
-  <line x1="150" y1="500" x2="530" y2="500"
-    stroke="#be9633" stroke-opacity="0.25"/>
-
-  <!-- BLOCK 3 -->
-  <text x="340" y="530"
-    text-anchor="middle"
-    font-family="Georgia, serif"
-    font-size="15.5"
-    fill="#1f1f1f"
-    font-style="italic">
-
-    <tspan x="340" dy="0">I highly appreciated your understanding</tspan>
-    <tspan x="340" dy="24">& flexibility when times were challenging.</tspan>
-    <tspan x="340" dy="24">And your kick in the ass when work simply had to be done.</tspan>
-    <tspan x="340" dy="24">You gave clear guidance, you organized everything.</tspan>
-
-    <tspan x="340" dy="28"
-      font-style="normal"
-      font-weight="700"
-      fill="#8e6f24">
-      You are fu***** bulletproof.
-    </tspan>
-
-  </text>
-
-    <!-- DIVIDER -->
-  <line x1="150" y1="650" x2="530" y2="650"
-    stroke="#be9633" stroke-opacity="0.25"/>
-
-    <!-- BLOCK 4 -->
-  <text x="340" y="680"
-    text-anchor="middle"
-    font-family="Georgia, serif"
-    font-size="15.5"
-    fill="#1f1f1f"
-    font-style="italic">
-
-    <tspan x="340" dy="0">Lastly, I feel like part of your family because </tspan>
-    <tspan x="340" dy="24">you are that welcoming. You were my </tspan>
-    <tspan x="340" dy="24">teacher, my inspiration & my support. </tspan>
-
-    <tspan x="340" dy="28"
-      font-style="normal"
-      font-weight="700"
-      fill="#8e6f24">
-      Everything that family is.
-    </tspan>
+    <tspan x="340" dy="26">us all 100%</tspan>
+    <tspan x="340" dy="26">in our journey of writing together.</tspan>
 
   </text>
 
   <!-- CLOSING QUOTE -->
-  <text x="590" y="770"
+  <text x="590" y="740"
     font-family="Georgia, serif"
     font-size="80"
     fill="#be9633"
@@ -152,13 +94,13 @@
     text-anchor="end">"</text>
 
   <!-- THANK YOU -->
-  <text x="340" y="790"
+  <text x="340" y="780"
     text-anchor="middle"
     font-family="Georgia, serif"
-    font-size="15.5"
+    font-size="16"
     fill="#1f1f1f"
     font-style="italic">
-    I would jump onto a speeding train with you anytime!
+    Thank you so much, Mirav.
   </text>
 
   <!-- SIGNATURE LINE -->
@@ -171,7 +113,7 @@
     font-family="cursive"
     font-size="46"
     fill="#8e6f24">
-    Olja
+    Sarah lines
   </text>
 
 </svg>

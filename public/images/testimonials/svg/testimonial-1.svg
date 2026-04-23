@@ -46,77 +46,100 @@
     opacity="0.15">"</text>
 
   <!-- BLOCK 1 -->
-  <text x="340" y="270"
+  <text x="340" y="230"
     text-anchor="middle"
     font-family="Georgia, serif"
-    font-size="15.6"
+    font-size="15.5"
     fill="#1f1f1f"
     font-style="italic">
 
-    <tspan x="340" dy="0">Efficacia, determinazione, professionalità</tspan>
-    <tspan x="340" dy="24">e rapporto umano — questo è ciò che</tspan>
-    <tspan x="340" dy="24">ho ricevuto collaborando con Mirav.</tspan>
-
-    <tspan x="340" dy="28"
+    <tspan x="340" dy="0">First of all, I am extremely honoured,</tspan>
+    <tspan x="340" dy="24">because you gave us your most intimate self.</tspan>
+    <tspan x="340" dy="24">Your strong visual presence &amp; your your brilliant </tspan>
+    <tspan x="340" dy="24">“I will lift cars if necessary” strength, laser-focused </tspan>
+        <tspan x="340" dy="28"
       font-style="normal"
       font-weight="700"
       fill="#8e6f24">
-      Un supporto concreto fin dal primo passo.
+      mind &amp; your loving soul.
     </tspan>
 
   </text>
 
   <!-- DIVIDER -->
-  <line x1="150" y1="420" x2="530" y2="420"
+  <line x1="150" y1="350" x2="530" y2="350"
     stroke="#be9633" stroke-opacity="0.25"/>
 
   <!-- BLOCK 2 -->
-  <text x="340" y="450"
+  <text x="340" y="380"
     text-anchor="middle"
     font-family="Georgia, serif"
-    font-size="15.6"
+    font-size="15.5"
     fill="#1f1f1f"
     font-style="italic">
 
-    <tspan x="340" dy="0">Per chi, come me, si avvicinava per la prima</tspan>
-    <tspan x="340" dy="24">volta al mondo dell’editoria, ha offerto</tspan>
-    <tspan x="340" dy="24">competenza, professionalità e attenzione.</tspan>
-    <tspan x="340" dy="24">Anche in un settore sempre più vicino</tspan>
-    <tspan x="340" dy="24">all’intelligenza artificiale,</tspan>
+    <tspan x="340" dy="0">Showing up the way you did, every day,</tspan>
+    <tspan x="340" dy="24">in empowering energy was truly inspiring.</tspan>
+    <tspan x="340" dy="24">I have never had such a dedicated project leader.</tspan>
+    <tspan x="340" dy="24">so meeting you is like going to the beach</tspan>
 
     <tspan x="340" dy="28"
       font-style="normal"
       font-weight="700"
       fill="#8e6f24">
-      ha costruito un vero rapporto umano.
+      for the first time — so freaking exciting.
     </tspan>
 
   </text>
 
   <!-- DIVIDER -->
-  <line x1="150" y1="620" x2="530" y2="620"
+  <line x1="150" y1="500" x2="530" y2="500"
     stroke="#be9633" stroke-opacity="0.25"/>
 
   <!-- BLOCK 3 -->
-  <text x="340" y="650"
+  <text x="340" y="530"
     text-anchor="middle"
     font-family="Georgia, serif"
-    font-size="15.6"
+    font-size="15.5"
     fill="#1f1f1f"
     font-style="italic">
 
-    <tspan x="340" dy="0">Ha dato anche consulenze extra,</tspan>
-    <tspan x="340" dy="24">oltre quanto previsto.</tspan>
+    <tspan x="340" dy="0">I highly appreciated your understanding</tspan>
+    <tspan x="340" dy="24">&amp; flexibility when times were challenging.</tspan>
+    <tspan x="340" dy="24">And your kick in the ass when work simply had to be done.</tspan>
+    <tspan x="340" dy="24">You gave clear guidance, you organized everything.</tspan>
 
     <tspan x="340" dy="28"
       font-style="normal"
       font-weight="700"
       fill="#8e6f24">
-      Il risultato è andato oltre le aspettative.
+      You are fu***** bulletproof.
     </tspan>
 
-    <tspan x="340" dy="24">Senza dubbio, per il prossimo libro</tspan>
-    <tspan x="340" dy="24">sarà la prima persona che contatterò.</tspan>
+  </text>
+
+    <!-- DIVIDER -->
+  <line x1="150" y1="650" x2="530" y2="650"
+    stroke="#be9633" stroke-opacity="0.25"/>
+
+    <!-- BLOCK 4 -->
+  <text x="340" y="680"
+    text-anchor="middle"
+    font-family="Georgia, serif"
+    font-size="15.5"
+    fill="#1f1f1f"
+    font-style="italic">
+
+    <tspan x="340" dy="0">Lastly, I feel like part of your family because </tspan>
+    <tspan x="340" dy="24">you are that welcoming. You were my </tspan>
+    <tspan x="340" dy="24">teacher, my inspiration &amp; my support. </tspan>
+
+    <tspan x="340" dy="28"
+      font-style="normal"
+      font-weight="700"
+      fill="#8e6f24">
+      Everything that family is.
+    </tspan>
 
   </text>
 
@@ -128,6 +151,16 @@
     opacity="0.15"
     text-anchor="end">"</text>
 
+  <!-- THANK YOU -->
+  <text x="340" y="790"
+    text-anchor="middle"
+    font-family="Georgia, serif"
+    font-size="15.5"
+    fill="#1f1f1f"
+    font-style="italic">
+    I would jump onto a speeding train with you anytime!
+  </text>
+
   <!-- SIGNATURE LINE -->
   <line x1="270" y1="815" x2="410" y2="815"
     stroke="#be9633" stroke-opacity="0.4"/>
@@ -138,7 +171,7 @@
     font-family="cursive"
     font-size="46"
     fill="#8e6f24">
-    Carlo
+    Olja
   </text>
 
 </svg>

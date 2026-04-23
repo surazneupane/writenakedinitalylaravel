@@ -69,8 +69,8 @@
   <!-- BLOCK 1 -->
   <text x="340" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="15.5" fill="#1a1a1a">
 
-    <tspan x="340" dy="0">Mirav Tarkka was incredibly helpful</tspan>
-    <tspan x="340" dy="24">in publishing our new book</tspan>
+    <tspan x="340" dy="0">Mirav Tarkka was so helpful in publishing</tspan>
+    <tspan x="340" dy="24"> our new book</tspan>
 
     <tspan x="340" dy="28" font-weight="700" fill="#8e6f24">
       Permission for Self-Love.
@@ -104,10 +104,10 @@
   <text x="340" y="640" text-anchor="middle" font-family="Arial, sans-serif" font-size="15.5" fill="#1a1a1a">
 
     <tspan x="340" dy="0">She is a great communicator,</tspan>
-    <tspan x="340" dy="24">a motivational diva and a,</tspan>
+    <tspan x="340" dy="24">a motivational diva, and a true</tspan>
 
     <tspan x="340" dy="28" font-weight="700" fill="#8e6f24">
-      true queen in the publishing world.
+      queen in the Bestseller publishing world.
     </tspan>
 
   </text>

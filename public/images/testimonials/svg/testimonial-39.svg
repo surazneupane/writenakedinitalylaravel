@@ -49,64 +49,76 @@
   <text x="340" y="260"
     text-anchor="middle"
     font-family="Georgia, serif"
-    font-size="16"
+    font-size="14.5"
     fill="#1f1f1f"
     font-style="italic">
 
-    <tspan x="340" dy="0">Mirav has totally changed my life,</tspan>
-    <tspan x="340" dy="24">my point of view — my everything.</tspan>
+    <tspan x="340" dy="0">Dear Mirav:</tspan>
 
-    <tspan x="340" dy="30"
+    <tspan x="340" dy="22">I want to express my gratitude for this beautiful</tspan>
+    <tspan x="340" dy="20">event. The place, food, wine, moments, everything</tspan>
+    <tspan x="340" dy="20">was beautiful, because Lecce is overwhelming.</tspan>
+    <tspan x="340" dy="20">Italy all it is.</tspan>
+
+    <tspan x="340" dy="24"
       font-style="normal"
       font-weight="700"
       fill="#8e6f24">
-      A transformation beyond words.
+      The magic, the sparkling does not belong to this.
     </tspan>
 
   </text>
 
   <!-- DIVIDER -->
-  <line x1="150" y1="420" x2="530" y2="420"
+  <line x1="150" y1="430" x2="530" y2="430"
     stroke="#be9633" stroke-opacity="0.25"/>
 
   <!-- BLOCK 2 -->
-  <text x="340" y="450"
+  <text x="340" y="460"
     text-anchor="middle"
     font-family="Georgia, serif"
-    font-size="16"
+    font-size="14.5"
     fill="#1f1f1f"
     font-style="italic">
 
-    <tspan x="340" dy="0">Working with her gave me power</tspan>
-    <tspan x="340" dy="24">and inner strength.</tspan>
-    <tspan x="340" dy="24">Her story, her journey,</tspan>
-    <tspan x="340" dy="24">and who she has become</tspan>
-    <tspan x="340" dy="24">are deeply inspiring.</tspan>
+    <tspan x="340" dy="0">You are such a professional and inspiration</tspan>
+    <tspan x="340" dy="20">and by taking care of every detail </tspan>
+    <tspan x="340" dy="22" font-style="normal"
+      font-weight="700"
+      fill="#8e6f24">you made me feel like home and honored.</tspan>
+
+    <tspan x="340" dy="24">Sharing with other authors was really nice,</tspan>
+    <tspan x="340" dy="20">because of this you let me discover a new me</tspan>
+    <tspan x="340" dy="20">as writer and have a vision about</tspan>
+        <tspan x="340" dy="20" font-style="normal"
+      font-weight="700"
+      fill="#8e6f24">how far I can go.</tspan>
 
   </text>
 
   <!-- DIVIDER -->
-  <line x1="150" y1="620" x2="530" y2="620"
+  <line x1="150" y1="600" x2="530" y2="600"
     stroke="#be9633" stroke-opacity="0.25"/>
 
   <!-- BLOCK 3 -->
-  <text x="340" y="650"
+  <text x="340" y="630"
     text-anchor="middle"
     font-family="Georgia, serif"
-    font-size="16"
+    font-size="14.5"
     fill="#1f1f1f"
     font-style="italic">
 
-    <tspan x="340" dy="0">Nothing can bring us women down.</tspan>
+    <tspan x="340" dy="0">I´m looking forward to repeat this deep experience</tspan>
+    <tspan x="340" dy="20">with you and other writers because</tspan>
 
-    <tspan x="340" dy="30"
+    <tspan x="340" dy="24"
       font-style="normal"
       font-weight="700"
       fill="#8e6f24">
-      We should never give up.
+      the magic, the sparkling comes from you.
     </tspan>
 
-    <tspan x="340" dy="24">She is the real princess ♥</tspan>
+    <tspan x="340" dy="24">Your writer,</tspan>
 
   </text>
 
@@ -118,35 +130,18 @@
     opacity="0.15"
     text-anchor="end">"</text>
 
-  <!-- THANK YOU -->
-  <text x="340" y="760"
-    text-anchor="middle"
-    font-family="Georgia, serif"
-    font-size="16"
-    fill="#1f1f1f"
-    font-style="italic">
-    Thank you Mirav!
-  </text>
-
   <!-- SIGNATURE LINE -->
-  <line x1="240" y1="815" x2="440" y2="815"
+  <line x1="260" y1="815" x2="420" y2="815"
     stroke="#be9633" stroke-opacity="0.4"/>
+  
 
   <!-- SIGNATURE -->
   <text x="340" y="865"
     text-anchor="middle"
     font-family="cursive"
-    font-size="40"
+    font-size="44"
     fill="#8e6f24">
-    Nina Menegatto
-  </text>
-    <text x="340" y="800"
-    text-anchor="middle"
-    font-family="Georgia, serif"
-    font-size="16"
-    fill="#1f1f1f"
-    font-style="italic">
-    (Princess of Seborga)
+    Renato
   </text>
 
 </svg>
