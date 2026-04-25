@@ -355,349 +355,67 @@
 
 
     {{-- ==========================================
-    TESTIMONIAL GALLERY — Written Testimonials
+    TESTIMONIAL GALLERY
     ========================================== --}}
-    <section class="py-24 md:py-32 bg-off-white px-6 relative">
+    <section class="st-gallery-section py-24 md:py-32 px-6 relative overflow-hidden">
         <div class="st-section-divider absolute top-0 left-0 right-0"></div>
-        <div class="container mx-auto max-w-7xl">
+
+        {{-- Ambient background glows --}}
+        <div
+            class="absolute top-0 right-0 w-[700px] h-[700px] bg-gold/[0.04] rounded-full blur-[140px] pointer-events-none -translate-y-1/2 translate-x-1/4">
+        </div>
+        <div
+            class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-gold/[0.03] rounded-full blur-[120px] pointer-events-none translate-y-1/3 -translate-x-1/4">
+        </div>
+
+        <div class="container mx-auto max-w-[1400px] relative z-10">
+
+            {{-- Section header --}}
             <div class="text-center mb-20 st-fade-in">
                 <span class="st-separator mx-auto mb-6"></span>
-                <span
-                    class="inline-block text-gold text-[12px] font-extrabold uppercase tracking-[0.35em] mb-4">Gallery</span>
-                <h2 class="font-display st-section-heading text-4xl md:text-5xl italic text-dark mb-4">In Their Own
-                    Words</h2>
-                <p class="text-[#666] text-lg font-light max-w-xl mx-auto">Unfiltered testimonials from our authors —
-                    screenshots, messages, and heartfelt notes.</p>
+                <span class="inline-block text-gold text-[12px] font-extrabold uppercase tracking-[0.35em] mb-5">In
+                    Their Own Words</span>
+                <h2 class="font-display text-4xl md:text-5xl lg:text-[3.75rem] italic text-dark mb-6 leading-[1.1]">
+                    Stories of <em class="st-heading-outline">Transformation</em>
+                </h2>
+                <p class="text-[#666] text-lg font-light max-w-2xl mx-auto leading-relaxed mb-10">
+                    Unfiltered voices from 100+ authors who believed, wrote, and became bestsellers —
+                    in their own words, screenshots, and heartfelt messages.
+                </p>
+                <div
+                    class="inline-flex items-center gap-3 px-7 py-3 rounded-full bg-gradient-to-r from-gold/[0.08] to-gold-light/[0.12] border border-gold/20 backdrop-blur-sm">
+                    <span class="w-1.5 h-1.5 rounded-full bg-gold animate-pulse inline-block"></span>
+                    <span class="text-[11px] font-extrabold uppercase tracking-[0.3em] text-gold-dark">40 Author
+                        Stories</span>
+                    <span class="w-1.5 h-1.5 rounded-full bg-gold animate-pulse inline-block"
+                        style="animation-delay:.5s"></span>
+                </div>
             </div>
 
-            {{-- Filter Tabs --}}
-            <div class="flex flex-wrap justify-center gap-3 mb-12 st-fade-in">
-                <button class="st-tab active" data-filter="all">All</button>
-                <button class="st-tab" data-filter="written">Written</button>
-                <button class="st-tab" data-filter="message">Messages</button>
-                <button class="st-tab" data-filter="author">Authors</button>
-            </div>
-
-            {{-- Gallery Grid --}}
-            <div class="st-gallery-grid st-stagger" id="testimonialGallery">
-
-                <div class="st-gallery-item st-fade-in" data-category="written">
-                    <div class="st-testimonial-img" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/svg/testimonial-1.svg') }}" alt="Author Testimonial"
-                            loading="lazy" />
-                    </div>
-                </div>
-
-                <div class="st-gallery-item st-fade-in" data-category="author">
-                    <div class="st-testimonial-img" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/svg/testimonial-2.svg') }}" alt="Melissa" loading="lazy" />
-                        <div class="st-author-overlay">
-                            <span class="text-[13px] font-extrabold uppercase tracking-[0.2em]">Melissa</span>
+            {{-- Masonry Gallery --}}
+            <div class="st-masonry-grid" id="testimonialGallery">
+                @foreach (range(1, 40) as $i)
+                    <div class="st-gallery-item st-fade-in">
+                        <div class="st-masonry-card" onclick="openLightbox(this)">
+                            <div class="st-masonry-card-inner">
+                                <img src="{{ asset('images/testimonials/svg/testimonial-' . $i . '.svg') }}"
+                                    alt="Author Testimonial {{ $i }}" loading="lazy" />
+                            </div>
+                            <div class="st-masonry-zoom-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <circle cx="11" cy="11" r="8" />
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                                    <line x1="11" y1="8" x2="11" y2="14" />
+                                    <line x1="8" y1="11" x2="14" y2="11" />
+                                </svg>
+                            </div>
                         </div>
                     </div>
-                </div>
+                @endforeach
+            </div>{{-- end masonry grid --}}
 
-                <div class="st-gallery-item st-fade-in" data-category="message">
-                    <div class="st-whatsapp-card" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/svg/testimonial-3.svg') }}" alt="Message Testimonial"
-                            loading="lazy" />
-                    </div>
-                </div>
-
-                <div class="st-gallery-item st-fade-in" data-category="author">
-                    <div class="st-testimonial-img" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/svg/testimonial-4.svg') }}" alt="Jola" loading="lazy" />
-                        <div class="st-author-overlay">
-                            <span class="text-[13px] font-extrabold uppercase tracking-[0.2em]">Jola</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="st-gallery-item st-fade-in" data-category="written">
-                    <div class="st-testimonial-img" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/svg/testimonial-5.svg') }}" alt="Author Testimonial"
-                            loading="lazy" />
-                    </div>
-                </div>
-
-                <div class="st-gallery-item st-fade-in" data-category="author">
-                    <div class="st-testimonial-img" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/svg/testimonial-6.svg') }}" alt="Beverly" loading="lazy" />
-                        <div class="st-author-overlay">
-                            <span class="text-[13px] font-extrabold uppercase tracking-[0.2em]">Beverly</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="st-gallery-item st-fade-in" data-category="message">
-                    <div class="st-whatsapp-card" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/svg/testimonial-7.svg') }}" alt="Message Testimonial"
-                            loading="lazy" />
-                    </div>
-                </div>
-
-                <div class="st-gallery-item st-fade-in" data-category="author">
-                    <div class="st-testimonial-img" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/svg/testimonial-8.svg') }}" alt="Cristina" loading="lazy" />
-                        <div class="st-author-overlay">
-                            <span class="text-[13px] font-extrabold uppercase tracking-[0.2em]">Cristina</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="st-gallery-item st-fade-in" data-category="written">
-                    <div class="st-testimonial-img" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/svg/testimonial-9.svg') }}" alt="Author Testimonial"
-                            loading="lazy" />
-                    </div>
-                </div>
-
-                <div class="st-gallery-item st-fade-in" data-category="author">
-                    <div class="st-testimonial-img" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/svg/testimonial-10.svg') }}" alt="Emelle" loading="lazy" />
-                        <div class="st-author-overlay">
-                            <span class="text-[13px] font-extrabold uppercase tracking-[0.2em]">Emelle</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="st-gallery-item st-fade-in" data-category="message">
-                    <div class="st-whatsapp-card" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/svg/testimonial-11.svg') }}" alt="Message Testimonial"
-                            loading="lazy" />
-                    </div>
-                </div>
-
-                <div class="st-gallery-item st-fade-in" data-category="author">
-                    <div class="st-testimonial-img" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/svg/testimonial-12.svg') }}" alt="Heidi" loading="lazy" />
-                        <div class="st-author-overlay">
-                            <span class="text-[13px] font-extrabold uppercase tracking-[0.2em]">Heidi</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="st-gallery-item st-fade-in" data-category="written">
-                    <div class="st-testimonial-img" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/svg/testimonial-13.svg') }}" alt="Author Testimonial"
-                            loading="lazy" />
-                    </div>
-                </div>
-
-                <div class="st-gallery-item st-fade-in" data-category="author">
-                    <div class="st-testimonial-img" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/svg/testimonial-14.svg') }}" alt="Jana" loading="lazy" />
-                        <div class="st-author-overlay">
-                            <span class="text-[13px] font-extrabold uppercase tracking-[0.2em]">Jana</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="st-gallery-item st-fade-in" data-category="message">
-                    <div class="st-whatsapp-card" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/svg/testimonial-15.svg') }}" alt="Message Testimonial"
-                            loading="lazy" />
-                    </div>
-                </div>
-
-                <div class="st-gallery-item st-fade-in" data-category="author">
-                    <div class="st-testimonial-img" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/svg/testimonial-16.svg') }}" alt="Jasjit" loading="lazy" />
-                        <div class="st-author-overlay">
-                            <span class="text-[13px] font-extrabold uppercase tracking-[0.2em]">Jasjit</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="st-gallery-item st-fade-in" data-category="written">
-                    <div class="st-testimonial-img" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/svg/testimonial-17.svg') }}" alt="Author Testimonial"
-                            loading="lazy" />
-                    </div>
-                </div>
-
-                <div class="st-gallery-item st-fade-in" data-category="author">
-                    <div class="st-testimonial-img" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/svg/testimonial-18.svg') }}" alt="Martina" loading="lazy" />
-                        <div class="st-author-overlay">
-                            <span class="text-[13px] font-extrabold uppercase tracking-[0.2em]">Martina</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="st-gallery-item st-fade-in" data-category="message">
-                    <div class="st-whatsapp-card" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/svg/testimonial-19.svg') }}" alt="Message Testimonial"
-                            loading="lazy" />
-                    </div>
-                </div>
-
-                <div class="st-gallery-item st-fade-in" data-category="author">
-                    <div class="st-testimonial-img" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/svg/testimonial-20.svg') }}" alt="Natalia" loading="lazy" />
-                        <div class="st-author-overlay">
-                            <span class="text-[13px] font-extrabold uppercase tracking-[0.2em]">Natalia</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="st-gallery-item st-fade-in" data-category="author">
-                    <div class="st-testimonial-img" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/svg/testimonial-21.svg') }}" alt="Natalia" loading="lazy" />
-                    </div>
-                </div>
-
-                <div class="st-gallery-item st-fade-in" data-category="author">
-                    <div class="st-testimonial-img" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/svg/testimonial-22.svg') }}" alt="Nicole" loading="lazy" />
-                        <div class="st-author-overlay">
-                            <span class="text-[13px] font-extrabold uppercase tracking-[0.2em]">Nicole</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="st-gallery-item st-fade-in" data-category="written">
-                    <div class="st-testimonial-img" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/svg/testimonial-23.svg') }}" alt="Author Testimonial"
-                            loading="lazy" />
-                    </div>
-                </div>
-
-                <div class="st-gallery-item st-fade-in" data-category="author">
-                    <div class="st-testimonial-img" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/svg/testimonial-24.svg') }}" alt="Sarah" loading="lazy" />
-                        <div class="st-author-overlay">
-                            <span class="text-[13px] font-extrabold uppercase tracking-[0.2em]">Sarah</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="st-gallery-item st-fade-in" data-category="message">
-                    <div class="st-whatsapp-card" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/svg/testimonial-25.svg') }}" alt="Message Testimonial"
-                            loading="lazy" />
-                    </div>
-                </div>
-
-                <div class="st-gallery-item st-fade-in" data-category="author">
-                    <div class="st-testimonial-img" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/svg/testimonial-26.svg') }}" alt="Sarha" loading="lazy" />
-                        <div class="st-author-overlay">
-                            <span class="text-[13px] font-extrabold uppercase tracking-[0.2em]">Sarha</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="st-gallery-item st-fade-in" data-category="author">
-                    <div class="st-testimonial-img" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/svg/testimonial-27.svg') }}" alt="Sarah lines" loading="lazy" />
-                        <div class="st-author-overlay">
-                            <span class="text-[13px] font-extrabold uppercase tracking-[0.2em]">Sarah lines</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="st-gallery-item st-fade-in" data-category="author">
-                    <div class="st-testimonial-img" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/svg/testimonial-28.svg') }}" alt="Shalini" loading="lazy" />
-                        <div class="st-author-overlay">
-                            <span class="text-[13px] font-extrabold uppercase tracking-[0.2em]">Shalini</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="st-gallery-item st-fade-in" data-category="author">
-                    <div class="st-testimonial-img" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/svg/testimonial-29.svg') }}" alt="Wedny panther"
-                            loading="lazy" />
-
-                    </div>
-                </div>
-
-                <div class="st-gallery-item st-fade-in" data-category="author">
-                    <div class="st-testimonial-img" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/svg/testimonial-30.svg') }}" alt="Vince" loading="lazy" />
-                        <div class="st-author-overlay">
-                            <span class="text-[13px] font-extrabold uppercase tracking-[0.2em]">Vince</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="st-gallery-item st-fade-in" data-category="written">
-                    <div class="st-testimonial-img" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/svg/testimonial-31.svg') }}" alt="Testimonial" loading="lazy" />
-                    </div>
-                </div>
-
-                <div class="st-gallery-item st-fade-in" data-category="author">
-                    <div class="st-testimonial-img" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/svg/testimonial-32.svg') }}" alt="Jessica Sankala" loading="lazy" />
-                        <div class="st-author-overlay">
-                            <span class="text-[13px] font-extrabold uppercase tracking-[0.2em]">Jessica Sankala</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="st-gallery-item st-fade-in" data-category="author">
-                    <div class="st-testimonial-img" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/svg/testimonial-33.svg') }}" alt="Sarah Lines" loading="lazy" />
-                    </div>
-                </div>
-
-                <div class="st-gallery-item st-fade-in" data-category="author">
-                    <div class="st-testimonial-img" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/svg/testimonial-34.svg') }}" alt="Slavomira Harcegova" loading="lazy" />
-                        <div class="st-author-overlay">
-                            <span class="text-[13px] font-extrabold uppercase tracking-[0.2em]">Slavomira Harcegova</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="st-gallery-item st-fade-in" data-category="author">
-                    <div class="st-testimonial-img" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/svg/testimonial-35.svg') }}" alt="Sarah Lines" loading="lazy" />
-                    </div>
-                </div>
-
-                <div class="st-gallery-item st-fade-in" data-category="author">
-                    <div class="st-testimonial-img" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/svg/testimonial-36.svg') }}" alt="Cheryl Barker" loading="lazy" />
-                        <div class="st-author-overlay">
-                            <span class="text-[13px] font-extrabold uppercase tracking-[0.2em]">Cheryl Barker</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="st-gallery-item st-fade-in" data-category="author">
-                    <div class="st-testimonial-img" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/svg/testimonial-37.svg') }}" alt="Sarah Lines" loading="lazy" />
-                    </div>
-                </div>
-
-                <div class="st-gallery-item st-fade-in" data-category="author">
-                    <div class="st-testimonial-img" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/svg/testimonial-38.svg') }}" alt="Jane Anderson" loading="lazy" />
-                        <div class="st-author-overlay">
-                            <span class="text-[13px] font-extrabold uppercase tracking-[0.2em]">Jane Anderson</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="st-gallery-item st-fade-in" data-category="author">
-                    <div class="st-testimonial-img" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/svg/testimonial-39.svg') }}" alt="Sarah Lines" loading="lazy" />
-                    </div>
-                </div>
-
-                <div class="st-gallery-item st-fade-in" data-category="author">
-                    <div class="st-testimonial-img" onclick="openLightbox(this)">
-                        <img src="{{ asset('images/testimonials/svg/testimonial-40.svg') }}" alt="Alina" loading="lazy" />
-                        <div class="st-author-overlay">
-                            <span class="text-[13px] font-extrabold uppercase tracking-[0.2em]">Alina</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>{{-- end gallery grid --}}
         </div>
     </section>
 
@@ -755,7 +473,7 @@
     ========================================== --}}
     <script>
         // Scroll animations
-        document.addEventListener('DOMContentLoaded', function () {
+        document.addEventListener('DOMContentLoaded', function() {
             const animElements = document.querySelectorAll('.st-fade-in, .st-fade-in-left, .st-fade-in-right');
 
             const observer = new IntersectionObserver((entries) => {
@@ -773,26 +491,6 @@
 
             // Also observe scale-up elements
             document.querySelectorAll('.st-scale-up').forEach(el => observer.observe(el));
-        });
-
-        // Filter tabs
-        document.querySelectorAll('.st-tab').forEach(tab => {
-            tab.addEventListener('click', function () {
-                // Update active tab
-                document.querySelectorAll('.st-tab').forEach(t => t.classList.remove('active'));
-                this.classList.add('active');
-
-                const filter = this.dataset.filter;
-                const items = document.querySelectorAll('.st-gallery-item');
-
-                items.forEach(item => {
-                    if (filter === 'all' || item.dataset.category === filter) {
-                        item.classList.remove('hidden');
-                    } else {
-                        item.classList.add('hidden');
-                    }
-                });
-            });
         });
 
         // Lightbox
@@ -814,7 +512,7 @@
             }
         }
 
-        document.addEventListener('keydown', function (e) {
+        document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape') {
                 document.getElementById('lightbox').classList.remove('active');
                 document.body.style.overflow = '';

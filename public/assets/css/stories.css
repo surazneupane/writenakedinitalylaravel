@@ -710,3 +710,177 @@
     height: 1px;
     background: linear-gradient(90deg, transparent 5%, rgba(190, 150, 51, 0.15) 50%, transparent 95%);
 }
+
+/* ----------------------------------------
+   GALLERY SECTION — Premium Background
+   ---------------------------------------- */
+.st-gallery-section {
+    background:
+        radial-gradient(ellipse at 100% 0%, rgba(190, 150, 51, 0.04) 0%, transparent 50%),
+        radial-gradient(ellipse at 0% 100%, rgba(190, 150, 51, 0.03) 0%, transparent 50%),
+        #f7f7f2;
+}
+
+/* ----------------------------------------
+   HEADING OUTLINE — Gold stroke text
+   ---------------------------------------- */
+.st-heading-outline {
+    color: #be9633;
+    display: inline-block;
+    font-style: italic;
+}
+
+/* ----------------------------------------
+   GALLERY GRID — CSS Grid, strict 3-per-row
+   ---------------------------------------- */
+.st-masonry-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    align-items: start;
+}
+
+@media (max-width: 1024px) {
+    .st-masonry-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .st-masonry-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Center the lone orphan item when 40 mod 3 = 1 leftover */
+.st-masonry-grid .st-gallery-item:last-child:nth-child(3n + 1) {
+    grid-column: 2;
+}
+
+@media (max-width: 1024px) {
+    .st-masonry-grid .st-gallery-item:last-child:nth-child(2n + 1) {
+        grid-column: 1 / -1;
+        max-width: calc(50% - 0.625rem);
+        margin-inline: auto;
+    }
+}
+
+.st-masonry-grid .st-gallery-item {
+    display: block;
+}
+
+/* ----------------------------------------
+   MASONRY CARD — Premium hover card
+   ---------------------------------------- */
+.st-masonry-card {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    cursor: pointer;
+    background: #fff;
+    box-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.05),
+        0 6px 24px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(190, 150, 51, 0.1);
+    transition:
+        transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1),
+        box-shadow 0.5s cubic-bezier(0.165, 0.84, 0.44, 1),
+        border-color 0.4s ease;
+}
+
+.st-masonry-card:hover {
+    transform: translateY(-10px) scale(1.015);
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.13),
+        0 0 0 1.5px rgba(190, 150, 51, 0.35),
+        0 0 40px rgba(190, 150, 51, 0.08);
+    border-color: transparent;
+}
+
+/* Gold top line on hover */
+.st-masonry-card-inner {
+    position: relative;
+    overflow: hidden;
+}
+
+.st-masonry-card-inner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #be9633, #d4b761, #f0d98c, #d4b761, #be9633);
+    background-size: 200% auto;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    z-index: 3;
+}
+
+.st-masonry-card:hover .st-masonry-card-inner::before {
+    transform: scaleX(1);
+}
+
+/* Shimmer sweep on hover */
+.st-masonry-card-inner::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -80%;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.12), transparent);
+    z-index: 2;
+    transition: left 0.7s ease;
+    pointer-events: none;
+}
+
+.st-masonry-card:hover .st-masonry-card-inner::after {
+    left: 130%;
+}
+
+.st-masonry-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.st-masonry-card:hover img {
+    transform: scale(1.04);
+}
+
+/* Zoom icon overlay */
+.st-masonry-zoom-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.7);
+    width: 44px;
+    height: 44px;
+    background: rgba(18, 18, 18, 0.75);
+    border: 1.5px solid rgba(190, 150, 51, 0.5);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #d4b761;
+    opacity: 0;
+    transition:
+        opacity 0.35s ease,
+        transform 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+    backdrop-filter: blur(6px);
+    z-index: 4;
+}
+
+.st-masonry-zoom-icon svg {
+    width: 18px;
+    height: 18px;
+}
+
+.st-masonry-card:hover .st-masonry-zoom-icon {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
